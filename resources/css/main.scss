@@ -1,0 +1,73 @@
+// 메인비주얼
+.main_visual {
+  width: 100%;
+  height: 44.25em;
+
+  .main_visual_image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    &:nth-of-type(1){
+      background-image: url(/resources/images/main/main_visual_1.png);
+    }
+
+    &:nth-of-type(2) {
+      display: none;
+      background-image: url(/resources/images/main/main_visual_2.gif);
+    }
+
+    &:nth-of-type(3) {
+      display: none;
+      background-image: url(/resources/images/main/main_visual_3.gif);
+    }
+
+    &:nth-of-type(4) {
+      display: none;
+      background-image: url(/resources/images/main/main_visual_4.gif);
+    }
+
+    .main_visual_title {
+      padding: 4.925em 0 0.715em;
+      width: 100%;
+      font-size: 3.5em;
+      font-weight: 300;
+      letter-spacing: -0.1em;
+      color: #3d3d3d;
+    }
+
+    .main_visual_more {
+      display: inline-block;
+      padding: 0.6em 3.25em 0.5em 1.45em;
+      color: #fff;
+      font-size: 1.25em;
+      font-weight: 700;
+      border-radius: 2px;
+      background-image: url(/resources/images/main/arrow_more.png);
+      background-color: rgba($color: #75849a, $alpha: 0.6);
+      background-repeat: no-repeat;
+      background-position: top 1em right 0.8em;
+    }
+  }
+}
+
+// 태블릿
+@media screen and (max-width: 1024px) {
+}
+
+// 모바일
+@media screen and (max-width: 720px) {
+  .main_visual {
+    height: 41.67em;
+
+    .main_visual_image {
+      .main_visual_more {
+        display: none;
+      }
+    }
+  }
+}
