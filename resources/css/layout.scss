@@ -6,6 +6,18 @@
     width: 100%;
 }
 
+.innerbox {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  &::after {
+    content: '';
+    display: block;
+    width: 100%;
+    clear: both;
+  }
+}
+
 // PC
 .header {
   height: 5.8125em;

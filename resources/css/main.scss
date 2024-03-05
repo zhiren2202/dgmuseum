@@ -55,6 +55,144 @@
   }
 }
 
+// 게시판
+.main_board {
+  height: 4.375em;
+  border-bottom: 1px solid #e8e8e8;
+  background-color: #fff;
+
+  .board_item_wrap {
+    position: relative;
+    width: 50%;
+    float: left;
+    padding: 0 7em 0 6em;
+    line-height: 4.375em;
+
+    .board_item_header {
+      position: absolute;
+      top: 0;
+      left: 0;
+      font-size: 1.25em;
+      letter-spacing: 0;
+    }
+
+    .board_item_title {
+      width: 100%;
+      display: inline-block;
+      color: #666666;
+      font-size: 1.06em;
+      letter-spacing: -0.07em;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .board_item_date {
+      position: absolute;
+      top: 0;
+      right: 1.8em;
+      color: #636363;
+      font-size: 1em;
+      letter-spacing: 0;
+    }
+  }
+}
+
+// 퀵메뉴
+.main_quickmenu {
+  background-color: #f4f4f4;
+}
+
+.guide_items {
+  padding: 1em;
+  width: 22.8em;
+  margin: 2.75em 0;
+  float: left;
+  color: #fff;
+  background-color: #75849a;
+
+  .guide_item {
+    width: 100%;
+    overflow: hidden;
+    margin: 0 0 7px 0;
+
+    dt {
+      float: left;
+      width: 5.25em;
+      height: 1.875em;
+      line-height: 1.875em;
+      text-align: center;
+      font-weight: 700;
+      color: #3e5370;
+      border-radius: 4px;
+      background-color: #fff;
+    }
+
+    dd {
+      float: left;
+      padding: 0 0 0 1em;
+    }
+  }
+}
+
+.quickmenu_circle_items {
+  width: 50.625em;
+  height: 100%;
+  margin: 2.75em 0;
+  float: right;
+  text-align: center;
+
+  .quickmenu_circle_item {
+    float: left;
+    margin: 0 4px;
+    font-weight: 700;
+    color: #666666;
+
+    &::before {
+      content: '';
+      display: block;
+      width: 7.875em;
+      height: 7.875em;
+      margin-bottom: 10px;
+      border-radius: 50%;
+      background-color: #fff;
+      background-repeat: no-repeat;
+      background-size: 70%;
+      background-position: center;
+    }
+
+    &:nth-of-type(1)::before {
+      background-image: url(/resources/images/main/quickmenu_circle_item_1.png);
+    }
+
+    &:nth-of-type(2)::before {
+      background-image: url(/resources/images/main/quickmenu_circle_item_2.png);
+    }
+
+    &:nth-of-type(3)::before {
+      background-image: url(/resources/images/main/quickmenu_circle_item_3.png);
+    }
+
+    &:nth-of-type(4)::before {
+      background-image: url(/resources/images/main/quickmenu_circle_item_4.png);
+    }
+
+    &:nth-of-type(5)::before {
+      background-image: url(/resources/images/main/quickmenu_circle_item_5.png);
+    }
+
+    &:nth-of-type(6)::before {
+      background-image: url(/resources/images/main/quickmenu_circle_item_6.png);
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .main_board .innerbox {
+    padding: 0 1em;
+  }
+}
+
 // 태블릿
 @media screen and (max-width: 1024px) {
 }
@@ -69,5 +207,22 @@
         display: none;
       }
     }
+  }
+
+  .main_board .board_item_wrap {
+    width: 100%;
+
+    &:last-of-type {
+      display: none;
+    }
+
+    .board_item_date {
+      right: 0;
+    }
+  }
+
+  .guide_items, .quickmenu_circle_items {
+    width: 100%;
+    clear: both;
   }
 }
