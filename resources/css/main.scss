@@ -187,6 +187,124 @@
   }
 }
 
+// 교육/행사
+.main_event {
+  padding: 4em 0;
+
+  .stt1 {
+    font-size: 2.125em;
+    float: left;
+  }
+}
+
+.event_tab_menu {
+  float: right;
+
+  li {
+    float: left;
+  }
+}
+
+.event_tab_button {
+  float: left;
+  font-size: 1.125em;
+  letter-spacing: -0.08em;
+
+  &::before {
+    content: '';
+    display: block;
+    float: left;
+    width: 1px;
+    height: 1em;
+    margin: 2px 0.9em;
+    background-color: #cfcfcf;
+  }
+
+  &.first::before {
+    content: '';
+    display: none;
+  }
+
+  &.active {
+    font-weight: 700;
+    color: #ff6600;
+  }
+}
+
+.event_tab_body {
+  display: none;
+  position: absolute;
+  top: 4em;
+  left: 0;
+  width: 100%;
+
+  &.active {
+    display: block;
+  }
+
+  .event_item {
+    position: relative;
+    padding: 15.375em 2em 1.8em;
+    width: 32%;
+    float: left;
+    color: #fff;
+
+    & + .event_item {
+      margin-left: 2%;
+    }
+
+    &:nth-of-type(1) {background-color: #ffba00;}
+    &:nth-of-type(2) {background-color: #f9554f;}
+    &:nth-of-type(3) {background-color: #149639;}
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 15.375em;
+    }
+
+    .event_item_top {
+      padding: 1.6em 0 0;
+      border-bottom: 1px solid rgba($color: #fff, $alpha: 0.5);
+      letter-spacing: -0.14em;
+
+      strong {
+        font-size: 1.375em;
+        font-weight: 700;
+      }
+      p {
+        margin-top: 0.5em;
+        letter-spacing: -0.07em;
+      }
+      button {}
+    }
+
+    .event_item_bottom {
+      padding: 2em 0 0;
+
+      dl {
+        width: 100%;
+        overflow: hidden;
+        margin: 0 0 0.8em;
+      }
+
+      dt {
+        float: left;
+        margin: 0 1.8em 0 0;
+      }
+      dd {
+        float: left;
+
+        strong {
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 1200px) {
   .main_board .innerbox {
     padding: 0 1em;
@@ -224,5 +342,19 @@
   .guide_items, .quickmenu_circle_items {
     width: 100%;
     clear: both;
+  }
+
+  .event_tab_button {
+    display: none;
+  }
+
+  .event_tab_body {
+    .event_item {
+      width: 100%;
+
+      & + .event_item {
+        margin: 0;
+      }
+    }
   }
 }
