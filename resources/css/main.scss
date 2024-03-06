@@ -32,7 +32,6 @@
     }
 
     .main_visual_title {
-      // padding: 4.925em 0 0.715em;
       position: absolute;
       top: 50%;
       transform: translate(0,-50%);
@@ -41,6 +40,10 @@
       font-weight: 300;
       letter-spacing: -0.1em;
       color: #3d3d3d;
+
+      br {
+        display: none;
+      }
     }
 
     .main_visual_more {
@@ -479,9 +482,6 @@
       .main_visual_title {
         font-size: 3.2em;
       }
-      // .main_visual_more {
-      //   display: none;
-      // }
     }
   }
 
@@ -529,5 +529,16 @@
 
   .main_banner {
     display: none;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  .main_visual .main_visual_image .main_visual_title {
+    font-size: 2.6em;
+
+    br {
+      display: block;
+    }
   }
 }
