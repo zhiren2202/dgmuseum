@@ -32,7 +32,10 @@
     }
 
     .main_visual_title {
-      padding: 4.925em 0 0.715em;
+      // padding: 4.925em 0 0.715em;
+      position: absolute;
+      top: 50%;
+      transform: translate(0,-50%);
       width: 100%;
       font-size: 3.5em;
       font-weight: 300;
@@ -41,6 +44,10 @@
     }
 
     .main_visual_more {
+      position: absolute;
+      top: 60%;
+      left: 50%;
+      transform: translate(-50%,0);
       display: inline-block;
       padding: 0.6em 3.25em 0.5em 1.45em;
       color: #fff;
@@ -469,9 +476,12 @@
     height: 41.67em;
 
     .main_visual_image {
-      .main_visual_more {
-        display: none;
+      .main_visual_title {
+        font-size: 3.2em;
       }
+      // .main_visual_more {
+      //   display: none;
+      // }
     }
   }
 
