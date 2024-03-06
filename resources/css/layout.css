@@ -86,6 +86,11 @@
   display: none;
 }
 
+@media screen and (max-width: 1200px) {
+  .innerbox {
+    padding: 0 1em;
+  }
+}
 @media screen and (max-width: 720px) {
   .header .header_navbar, .header .gnb {
     display: none;

@@ -59,7 +59,7 @@
   padding: 0 7em 0 6em;
   line-height: 4.375em;
 }
-.main_board .board_item_wrap .board_item_header {
+.main_board .board_item_wrap .board_item_head {
   position: absolute;
   top: 0;
   left: 0;
@@ -170,19 +170,15 @@
   float: left;
 }
 
-.event_tab_menu {
+.event_tab_head {
   float: right;
 }
-.event_tab_menu li {
-  float: left;
-}
-
-.event_tab_button {
+.event_tab_head .event_tab_button {
   float: left;
   font-size: 1.125em;
   letter-spacing: -0.08em;
 }
-.event_tab_button::before {
+.event_tab_head .event_tab_button::before {
   content: "";
   display: block;
   float: left;
@@ -191,88 +187,133 @@
   margin: 2px 0.9em;
   background-color: #cfcfcf;
 }
-.event_tab_button.first::before {
+.event_tab_head .event_tab_button.first::before {
   content: "";
   display: none;
 }
-.event_tab_button.active {
+.event_tab_head .event_tab_button.active {
   font-weight: 700;
   color: #ff6600;
 }
 
 .event_tab_body {
+  clear: both;
+  overflow: hidden;
+}
+
+.event_items {
   display: none;
-  position: absolute;
-  top: 4em;
-  left: 0;
   width: 100%;
 }
-.event_tab_body.active {
+.event_items.active {
   display: block;
 }
-.event_tab_body .event_item {
+.event_items .event_item {
   position: relative;
   padding: 15.375em 2em 1.8em;
   width: 32%;
   float: left;
   color: #fff;
 }
-.event_tab_body .event_item + .event_item {
+.event_items .event_item + .event_item {
   margin-left: 2%;
 }
-.event_tab_body .event_item:nth-of-type(1) {
+.event_items .event_item:nth-of-type(1) {
   background-color: #ffba00;
 }
-.event_tab_body .event_item:nth-of-type(2) {
+.event_items .event_item:nth-of-type(2) {
   background-color: #f9554f;
 }
-.event_tab_body .event_item:nth-of-type(3) {
+.event_items .event_item:nth-of-type(3) {
   background-color: #149639;
 }
-.event_tab_body .event_item img {
+.event_items .event_item img {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 15.375em;
 }
-.event_tab_body .event_item .event_item_top {
+.event_items .event_item .event_item_top {
   padding: 1.6em 0 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
   letter-spacing: -0.14em;
 }
-.event_tab_body .event_item .event_item_top strong {
+.event_items .event_item .event_item_top strong {
   font-size: 1.375em;
   font-weight: 700;
 }
-.event_tab_body .event_item .event_item_top p {
+.event_items .event_item .event_item_top p {
   margin-top: 0.5em;
   letter-spacing: -0.07em;
 }
-.event_tab_body .event_item .event_item_bottom {
+.event_items .event_item .event_item_bottom {
   padding: 2em 0 0;
 }
-.event_tab_body .event_item .event_item_bottom dl {
+.event_items .event_item .event_item_bottom dl {
   width: 100%;
   overflow: hidden;
   margin: 0 0 0.8em;
 }
-.event_tab_body .event_item .event_item_bottom dt {
+.event_items .event_item .event_item_bottom dt {
   float: left;
   margin: 0 1.8em 0 0;
 }
-.event_tab_body .event_item .event_item_bottom dd {
+.event_items .event_item .event_item_bottom dd {
   float: left;
 }
-.event_tab_body .event_item .event_item_bottom dd strong {
+.event_items .event_item .event_item_bottom dd strong {
   font-weight: 700;
 }
 
-@media screen and (max-width: 1200px) {
-  .main_board .innerbox {
-    padding: 0 1em;
-  }
+.main_exhibit {
+  padding: 5em 0;
+  height: 37.875em;
+  color: #fff;
+  background-image: url(/resources/images/main/main_exhibit.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
+.main_exhibit .stt1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 1.1875em;
+}
+
+.exhibit_items {
+  overflow: hidden;
+}
+.exhibit_items .exhibit_item {
+  display: none;
+}
+.exhibit_items .exhibit_item.active {
+  display: block;
+}
+.exhibit_items .exhibit_item .exhibit_item_detail {
+  float: left;
+  padding-top: 2.4em;
+  width: 32.5%;
+}
+.exhibit_items .exhibit_item .exhibit_item_detail h3 {
+  font-size: 2.25em;
+  font-weight: 700;
+}
+.exhibit_items .exhibit_item .exhibit_item_detail p {
+  padding: 1.6em 0 0;
+  font-size: 1.06em;
+  line-height: 1.6em;
+  letter-spacing: -0.045em;
+}
+.exhibit_items .exhibit_item .exhibit_item_img {
+  float: right;
+  width: 55.8333333333%;
+  height: 0;
+  padding-bottom: 37%;
+  background-color: #75849a;
+}
+
 @media screen and (max-width: 720px) {
   .main_visual {
     height: 41.67em;

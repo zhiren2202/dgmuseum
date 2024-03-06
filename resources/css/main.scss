@@ -68,7 +68,7 @@
     padding: 0 7em 0 6em;
     line-height: 4.375em;
 
-    .board_item_header {
+    .board_item_head {
       position: absolute;
       top: 0;
       left: 0;
@@ -197,45 +197,43 @@
   }
 }
 
-.event_tab_menu {
+.event_tab_head {
   float: right;
 
-  li {
+  .event_tab_button {
     float: left;
-  }
-}
-
-.event_tab_button {
-  float: left;
-  font-size: 1.125em;
-  letter-spacing: -0.08em;
-
-  &::before {
-    content: '';
-    display: block;
-    float: left;
-    width: 1px;
-    height: 1em;
-    margin: 2px 0.9em;
-    background-color: #cfcfcf;
-  }
-
-  &.first::before {
-    content: '';
-    display: none;
-  }
-
-  &.active {
-    font-weight: 700;
-    color: #ff6600;
+    font-size: 1.125em;
+    letter-spacing: -0.08em;
+  
+    &::before {
+      content: '';
+      display: block;
+      float: left;
+      width: 1px;
+      height: 1em;
+      margin: 2px 0.9em;
+      background-color: #cfcfcf;
+    }
+  
+    &.first::before {
+      content: '';
+      display: none;
+    }
+  
+    &.active {
+      font-weight: 700;
+      color: #ff6600;
+    }
   }
 }
 
 .event_tab_body {
+  clear: both;
+  overflow: hidden;
+}
+
+.event_items {
   display: none;
-  position: absolute;
-  top: 4em;
-  left: 0;
   width: 100%;
 
   &.active {
@@ -274,10 +272,12 @@
         font-size: 1.375em;
         font-weight: 700;
       }
+
       p {
         margin-top: 0.5em;
         letter-spacing: -0.07em;
       }
+
       button {}
     }
 
@@ -294,6 +294,7 @@
         float: left;
         margin: 0 1.8em 0 0;
       }
+
       dd {
         float: left;
 
@@ -305,9 +306,59 @@
   }
 }
 
-@media screen and (max-width: 1200px) {
-  .main_board .innerbox {
-    padding: 0 1em;
+// 기획전시
+.main_exhibit {
+  padding: 5em 0;
+  height: 37.875em;
+  color: #fff;
+  background-image: url(/resources/images/main/main_exhibit.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  .stt1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 1.1875em;
+  }
+}
+
+.exhibit_items {
+  overflow: hidden;
+
+  .exhibit_item {
+    display: none;
+
+    &.active {
+      display: block;
+    }
+
+    .exhibit_item_detail {
+      float: left;
+      padding-top: 2.4em;
+      width: 32.5%;
+
+      h3 {
+        font-size: 2.25em;
+        font-weight: 700;
+      }
+  
+      p {
+        padding: 1.6em 0 0;
+        font-size: 1.06em;
+        line-height: 1.6em;
+        letter-spacing: -0.045em;
+      }
+    }
+
+    .exhibit_item_img {
+      float: right;
+      width: 55.83333333333333%;
+      height: 0;
+      padding-bottom: 36.99999999997791%;
+      background-color: #75849a;
+    }
   }
 }
 
