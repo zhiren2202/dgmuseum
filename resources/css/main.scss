@@ -403,6 +403,62 @@
   }
 }
 
+// 배너모음
+.main_banner {
+  padding: 2em 0;
+  border-top: 1px solid #dfdfdf;
+
+  .innerbox {
+    padding: 0 21em 0 8.25em;
+  }
+
+  .stt1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 0.875em;
+    font-weight: 700;
+    letter-spacing: 0;
+  }
+}
+
+.banner_items_multi {
+  .banner_item {
+    display: block;
+    float: left;
+    margin-left: 8px;
+    width: 135px;
+    height: 44px;
+    border: 1px solid #dddddd;
+
+    &:first-of-type {
+      margin: 0;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.banner_items_uni {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(0, -50%);
+
+  .banner_item {
+    display: inline-block;
+    width: 262px;
+    height: 80px;
+    border: 1px solid #dddddd;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
 // 태블릿
 @media screen and (max-width: 1024px) {
 }
@@ -459,5 +515,9 @@
         display: block;
       }
     }
+  }
+
+  .main_banner {
+    display: none;
   }
 }
