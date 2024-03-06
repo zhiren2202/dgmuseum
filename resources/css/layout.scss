@@ -103,6 +103,95 @@
   }
 }
 
+.footer {
+  padding: 4em 0;
+  color: #fff;
+  text-align: center;
+  background-color: rgba($color: #4a4f5a, $alpha: 0.9);
+}
+
+.footer_link {
+  width: 454px;
+  margin: 0 auto;
+
+  &::after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+
+  .footer__logo {
+    display: block;
+    float: left;
+    width: 258px;
+    height: 38px;
+    opacity: 0.8;
+  }
+
+  .footer__sns {
+    display: block;
+    float: left;
+    width: 176px;
+    margin-left: 20px;
+
+    li {
+      display: block;
+      float: left;
+      width: 32px;
+      height: 32px;
+      margin-left: 4px;
+      border-radius: 50%;
+      border: 1px solid #dddddd;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+
+      &:nth-of-type(1) {
+        margin: 0;
+        background-image: url(/resources/images/main/ico_sns_facebook.png);
+      }
+
+      &:nth-of-type(2) {background-image: url(/resources/images/main/ico_sns_facebook.png);}
+      &:nth-of-type(3) {background-image: url(/resources/images/main/ico_sns_facebook.png);}
+      &:nth-of-type(4) {background-image: url(/resources/images/main/ico_sns_facebook.png);}
+      &:nth-of-type(5) {background-image: url(/resources/images/main/ico_sns_facebook.png);}
+    }
+  }
+}
+
+.footer_util {
+  margin: 2em 0 0;
+
+  &::after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+
+  li {
+    display: inline-block;
+    margin: 0 1em;
+
+    a {
+      color: #fff;
+      font-size: 0.9375em;
+      letter-spacing: -0.1em;
+    }
+  }
+}
+
+.footer_address {
+  margin: 1.4em 0 0.2em 0;
+  color: #c8c8c8;
+  font-size: 0.875em;
+}
+
+.footer_copyright {
+  color: #c8c8c8;
+  font-size: 0.75em;
+  letter-spacing: -0.05em;
+}
+
 
 
 @media screen and (max-width: 1200px) {
@@ -129,5 +218,9 @@
       top: 2.875em;
       right: 0;
     }
+  }
+
+  .footer_util {
+    display: none;
   }
 }
