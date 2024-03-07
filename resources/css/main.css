@@ -57,16 +57,22 @@
 }
 
 .main_board {
-  height: 4.375em;
+  height: 70px;
   border-bottom: 1px solid #e8e8e8;
   background-color: #fff;
 }
+.main_board .innerbox {
+  height: 100%;
+}
 .main_board .board_item_wrap {
   position: relative;
-  width: 50%;
   float: left;
   padding: 0 7em 0 6em;
-  line-height: 4.375em;
+  width: 50%;
+  height: 100%;
+}
+.main_board .board_item_wrap > * {
+  line-height: 70px;
 }
 .main_board .board_item_wrap .board_item_head {
   position: absolute;
@@ -111,6 +117,9 @@
   overflow: hidden;
   margin: 0 0 7px 0;
 }
+.guide_items .guide_item:last-of-type {
+  margin-bottom: 0;
+}
 .guide_items .guide_item dt {
   float: left;
   width: 5.25em;
@@ -128,7 +137,6 @@
 }
 
 .quickmenu_circle_items {
-  width: 50.625em;
   height: 100%;
   margin: 2.75em 0;
   float: right;
@@ -403,6 +411,39 @@
   width: 100%;
 }
 
+@media screen and (min-width: 721px) and (max-width: 1280px) {
+  .guide_items {
+    width: 100%;
+    clear: both;
+  }
+  .guide_items .guide_item {
+    width: initial;
+    float: left;
+    margin: 0;
+    margin-left: 1em;
+  }
+  .guide_items .guide_item:first-of-type {
+    margin: 0;
+  }
+  .quickmenu_circle_items {
+    width: 100%;
+    margin-top: 7em;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .main_quickmenu {
+    position: relative;
+  }
+  .main_quickmenu .innerbox {
+    position: static;
+  }
+  .guide_items {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+  }
+}
 @media screen and (max-width: 720px) {
   .main_visual {
     height: 41.67em;
@@ -412,16 +453,42 @@
   }
   .main_board .board_item_wrap {
     width: 100%;
+    padding: 0 10em 0 8em;
   }
   .main_board .board_item_wrap:last-of-type {
     display: none;
   }
+  .main_board .board_item_wrap .board_item_head {
+    font-size: 1.73em;
+  }
+  .main_board .board_item_wrap .board_item_title {
+    font-size: 1.885em;
+  }
   .main_board .board_item_wrap .board_item_date {
     right: 0;
+    font-size: 2em;
   }
-  .guide_items, .quickmenu_circle_items {
+  .guide_items {
+    padding: 2.5em;
     width: 100%;
     clear: both;
+  }
+  .guide_items .guide_item {
+    margin-bottom: 12px;
+  }
+  .guide_items .guide_item dt {
+    font-size: 2em;
+  }
+  .guide_items .guide_item dd {
+    font-size: 2.25em;
+  }
+  .guide_items .guide_item dd br {
+    display: none;
+  }
+  .quickmenu_circle_items {
+    width: 100%;
+    clear: both;
+    margin-top: 22em;
   }
   .event_tab_button {
     display: none;
