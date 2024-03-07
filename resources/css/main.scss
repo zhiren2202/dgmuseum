@@ -2,6 +2,57 @@
 .main_visual {
   width: 100%;
   height: 44.25em;
+}
+
+.main_visual_body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.main_visual_items {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 100%;
+  height: 100%;
+
+  .slick-list, .slick-track, .slick-slide {
+    height: 100%;
+
+    & > div {
+      position: relative;
+      width: 100%;
+      height: 100%;
+
+    }
+  }
+
+  .slick-dots {
+    bottom: 2.5em;
+
+    li {
+      button {
+        padding: 0;
+        border-radius: 50%;
+        background-color: #fff;
+  
+        &::before {
+          content: '';
+          opacity: 1;
+        }
+      }
+
+      &.slick-active button {
+        background-color: #ff6c13;
+      }
+    }
+  }
+}
+
+.main_visual_item {
+  height: 100%;
 
   .main_visual_image {
     position: relative;
@@ -12,29 +63,9 @@
     background-size: cover;
     background-position: center;
 
-    &:nth-of-type(1){
-      background-image: url(/resources/images/main/main_visual_1.png);
-    }
-
-    &:nth-of-type(2) {
-      display: none;
-      background-image: url(/resources/images/main/main_visual_2.gif);
-    }
-
-    &:nth-of-type(3) {
-      display: none;
-      background-image: url(/resources/images/main/main_visual_3.gif);
-    }
-
-    &:nth-of-type(4) {
-      display: none;
-      background-image: url(/resources/images/main/main_visual_4.gif);
-    }
-
     .main_visual_title {
-      position: absolute;
-      top: 50%;
-      transform: translate(0,-50%);
+      position: relative;
+      top: 40%;
       width: 100%;
       font-size: 3.5em;
       font-weight: 300;
@@ -62,6 +93,22 @@
       background-repeat: no-repeat;
       background-position: top 1em right 0.8em;
     }
+  }
+
+  .main_visual_image1 {
+    background-image: url(/resources/images/main/main_visual_1.png);
+  }
+
+  .main_visual_image2 {
+    background-image: url(/resources/images/main/main_visual_2.gif);
+  }
+
+  .main_visual_image3 {
+    background-image: url(/resources/images/main/main_visual_3.gif);
+  }
+
+  .main_visual_image4 {
+    background-image: url(/resources/images/main/main_visual_4.gif);
   }
 }
 
@@ -530,11 +577,11 @@
 @media screen and (max-width: 720px) {
   .main_visual {
     height: 41.67em;
+  }
 
-    .main_visual_image {
-      .main_visual_title {
-        font-size: 3.2em;
-      }
+  .main_visual_image {
+    .main_visual_title {
+      font-size: 3.2em;
     }
   }
 
