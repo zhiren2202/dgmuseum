@@ -54,7 +54,7 @@
 .main_visual_item {
   height: 100%;
 
-  .main_visual_image {
+  [class*='main_visual_image'] {
     position: relative;
     width: 100%;
     height: 100%;
@@ -205,53 +205,53 @@
 }
 
 .quickmenu_circle_items {
+  width: 70%;
   height: 100%;
   margin: 2.75em 0;
   float: right;
   text-align: center;
 
-  .quickmenu_circle_item {
+  [class*='quickmenu_circle_item'] {
     float: left;
-    margin: 0 4px;
     font-weight: 700;
     color: #666666;
-
+  
     &::before {
       content: '';
       display: block;
       width: 7.875em;
       height: 7.875em;
-      margin-bottom: 10px;
+      margin: 0 auto 10px;
       border-radius: 50%;
       background-color: #fff;
       background-repeat: no-repeat;
       background-size: 70%;
       background-position: center;
     }
-
-    &:nth-of-type(1)::before {
-      background-image: url(/resources/images/main/quickmenu_circle_item_1.png);
-    }
-
-    &:nth-of-type(2)::before {
-      background-image: url(/resources/images/main/quickmenu_circle_item_2.png);
-    }
-
-    &:nth-of-type(3)::before {
-      background-image: url(/resources/images/main/quickmenu_circle_item_3.png);
-    }
-
-    &:nth-of-type(4)::before {
-      background-image: url(/resources/images/main/quickmenu_circle_item_4.png);
-    }
-
-    &:nth-of-type(5)::before {
-      background-image: url(/resources/images/main/quickmenu_circle_item_5.png);
-    }
-
-    &:nth-of-type(6)::before {
-      background-image: url(/resources/images/main/quickmenu_circle_item_6.png);
-    }
+  }
+  
+  .quickmenu_circle_item1::before {
+    background-image: url(/resources/images/main/quickmenu_circle_item_1.png);
+  }
+  
+  .quickmenu_circle_item2::before {
+    background-image: url(/resources/images/main/quickmenu_circle_item_2.png);
+  }
+  
+  .quickmenu_circle_item3::before {
+    background-image: url(/resources/images/main/quickmenu_circle_item_3.png);
+  }
+  
+  .quickmenu_circle_item4::before {
+    background-image: url(/resources/images/main/quickmenu_circle_item_4.png);
+  }
+  
+  .quickmenu_circle_item5::before {
+    background-image: url(/resources/images/main/quickmenu_circle_item_5.png);
+  }
+  
+  .quickmenu_circle_item6::before {
+    background-image: url(/resources/images/main/quickmenu_circle_item_6.png);
   }
 }
 
@@ -531,7 +531,6 @@
 @media screen and (min-width: 721px) and (max-width: 1280px) {
   .guide_items {
     width: 100%;
-    clear: both;
 
     .guide_item {
       width: initial;
@@ -547,24 +546,13 @@
 
   .quickmenu_circle_items {
     width: 100%;
-    margin-top: 7em;
   }
 }
 
 
 @media screen and (max-width: 1280px) {
-  .main_quickmenu {
-    position: relative;
-    
-    .innerbox {
-      position: static;
-    }
-  }
 
   .guide_items {
-    position: absolute;
-    top: 0;
-    left: 0;
     margin: 0;
   }
 }
@@ -579,7 +567,7 @@
     height: 41.67em;
   }
 
-  .main_visual_image {
+  [class*='main_visual_image'] {
     .main_visual_title {
       font-size: 3.2em;
     }
@@ -632,7 +620,16 @@
   .quickmenu_circle_items {
     width: 100%;
     clear: both;
-    margin-top: 22em;
+
+    [class*='quickmenu_circle_item'] {
+      font-size: 2em;
+      font-weight: 400;
+
+      &::before {
+        width: 5.75em;
+        height: 5.75em;
+      }
+    }
   }
 
   .event_tab_button {
@@ -667,11 +664,15 @@
 
 
 @media screen and (max-width: 600px) {
-  .main_visual .main_visual_image .main_visual_title {
+  .main_visual [class*='main_visual_image'] .main_visual_title {
     font-size: 2.6em;
 
     br {
       display: block;
     }
+  }
+
+  .quickmenu_circle_items [class*='quickmenu_circle_item'] {
+    font-size: 1.6em;
   }
 }

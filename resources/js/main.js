@@ -51,3 +51,40 @@ let $mainVisual = $('.main_visual_body');
 		play.show();
 	});
 })();
+
+// MAIN QUICKMENU SLIDE
+(function quickSlide(){
+	let parents = $('.main_quickmenu');
+	let slide = parents.find('.quickmenu_circle_items');
+	let prev = parents.find('.board__arrow__prev');
+	let next = parents.find('.board__arrow__next');
+	
+	slide.slick({
+		infinite: true, // 심사 중 true 금지
+		autoplay: true, // 심사 중 true 금지
+		slidesToShow: 6,
+		prevArrow: prev,
+		nextArrow: next,
+		dots: false,
+		pauseOnFocus: true,
+		pauseOnHover: true,
+		pauseOnDotsHover: true,
+		accessibility: true,
+		focusOnChange: true,
+		focusOnSelect: true,
+		responsive: [
+			{
+				breakpoint: 721, // max 768
+				settings: { slidesToShow: 4 },
+			},
+			{
+				breakpoint: 641, // max 640
+				settings: { slidesToShow: 3 },
+			},
+			{
+				breakpoint: 481, // max 414
+				settings: { slidesToShow: 2 },
+			},
+		],
+	});
+})();
