@@ -6,7 +6,6 @@ let $mainVisual = $('.main_visual_body');
 	let slide = parents.find('.main_visual_items');
 	let prev = parents.find('.board__arrow__prev');
 	let next = parents.find('.board__arrow__next');
-	let counter = parents.find('.board__dots__number');
 	let pause = $mainVisual.find('.btn_slide_pause');
 	let play = $mainVisual.find('.btn_slide_play');
 	
@@ -41,14 +40,11 @@ let $mainVisual = $('.main_visual_body');
 	});
 
 	// PLAY AND PAUSE
-	play.hide();
-
 	play.click(function () {
 		slide.slick('slickPlay');
 		play.hide();
 		pause.show();
 	});
-
 	pause.click(function () {
 		slide.slick('slickPause');
 		pause.hide();
