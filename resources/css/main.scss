@@ -18,11 +18,11 @@
   }
 
   .btn_slide_pause {
-    background-image: url(/resources/images/main/main_visual_pause.png);
+    background-image: url(/resources/images/common/main_visual_pause.png);
   }
 
   .btn_slide_play {
-    background-image: url(/resources/images/main/main_visual_play.png);
+    background-image: url(/resources/images/common/main_visual_play.png);
   }
 }
 
@@ -87,7 +87,7 @@
       font-size: 1.25em;
       font-weight: 700;
       border-radius: 2px;
-      background-image: url(/resources/images/main/arrow_more.png);
+      background-image: url(/resources/images/common/btn_arrow_move.png);
       background-color: rgba($color: #75849a, $alpha: 0.6);
       background-repeat: no-repeat;
       background-position: top 1em right 0.8em;
@@ -259,7 +259,6 @@
   padding: 4em 0;
 
   .stt1 {
-    margin: 0 0 0.8em 0;
     font-size: 2.125em;
     float: left;
   }
@@ -304,6 +303,7 @@
 .event_items_wrap {
   display: none;
   width: 100%;
+  margin: 1em 0 0;
 
   &.active {
     display: block;
@@ -420,6 +420,17 @@
       float: left;
       padding: 1.2em 0 0;
       width: 35%;
+
+      a::after {
+        content: '';
+        display: inline-block;
+        width: 38px;
+        height: 20px;
+        margin-left: 12px;
+        background-image: url(/resources/images/common/btn_arrow_move.png);
+        background-repeat: no-repeat;
+        background-position: center;
+      }
     }
 
     .exhibit_item_img {
