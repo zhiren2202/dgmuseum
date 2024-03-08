@@ -25,3 +25,26 @@
 .btn_more {}
 
 .btn_move {}
+
+
+
+.slick-dots {
+  li {
+    button {
+      padding: 0;
+      border: 1px solid #d7d7d7;
+      border-radius: 50%;
+      background-color: #fff;
+
+      &::before {
+        content: '';
+        opacity: 1;
+      }
+    }
+
+    &.slick-active button {
+      border: 1px solid #ff6c13;
+      background-color: #ff6c13;
+    }
+  }
+}

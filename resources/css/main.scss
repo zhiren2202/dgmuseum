@@ -31,23 +31,6 @@
 
   .slick-dots {
     bottom: 2.5em;
-
-    li {
-      button {
-        padding: 0;
-        border-radius: 50%;
-        background-color: #fff;
-  
-        &::before {
-          content: '';
-          opacity: 1;
-        }
-      }
-
-      &.slick-active button {
-        background-color: #ff6c13;
-      }
-    }
   }
 }
 
@@ -268,6 +251,7 @@
 
 .event_tab_head {
   float: right;
+  padding: 0.5em 0;
 
   .event_tab_button {
     float: left;
@@ -301,79 +285,90 @@
   overflow: hidden;
 }
 
-.event_items {
+.event_items_wrap {
   display: none;
   width: 100%;
 
   &.active {
     display: block;
   }
+}
 
-  .event_item {
-    position: relative;
-    padding: 15.375em 2em 1.8em;
+.event_items {
+  .slick-track {
+    max-width: 1200px;
+  }
+
+  .slick-slide {
     width: 32%;
-    float: left;
-    color: #fff;
+    margin-left: 2%;
 
-    & + .event_item {
-      margin-left: 2%;
+    &:first-of-type {
+      margin-left: 0;
+    }
+  }
+}
+
+.event_item {
+  position: relative;
+  padding: 15.375em 0 0;
+  width: 32%;
+  float: left;
+  color: #fff;
+
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 15.375em;
+  }
+
+  .event_item_top {
+    padding: 1.6em 2em 1.8em;
+    border-bottom: 1px solid rgba($color: #fff, $alpha: 0.5);
+    letter-spacing: -0.14em;
+
+    strong {
+      font-size: 1.375em;
+      font-weight: 700;
     }
 
-    &:nth-of-type(1) {background-color: #ffba00;}
-    &:nth-of-type(2) {background-color: #f9554f;}
-    &:nth-of-type(3) {background-color: #149639;}
+    p {
+      margin-top: 0.5em;
+      letter-spacing: -0.07em;
+    }
 
-    img {
-      position: absolute;
-      top: 0;
-      left: 0;
+    button {}
+  }
+
+  .event_item_bottom {
+    padding: 2em 2em 1.8em;
+
+    dl {
       width: 100%;
-      height: 15.375em;
+      overflow: hidden;
+      margin: 0 0 0.8em;
     }
 
-    .event_item_top {
-      padding: 1.6em 0 0;
-      border-bottom: 1px solid rgba($color: #fff, $alpha: 0.5);
-      letter-spacing: -0.14em;
+    dt {
+      float: left;
+      margin: 0 1.8em 0 0;
+    }
+
+    dd {
+      float: left;
 
       strong {
-        font-size: 1.375em;
         font-weight: 700;
-      }
-
-      p {
-        margin-top: 0.5em;
-        letter-spacing: -0.07em;
-      }
-
-      button {}
-    }
-
-    .event_item_bottom {
-      padding: 2em 0 0;
-
-      dl {
-        width: 100%;
-        overflow: hidden;
-        margin: 0 0 0.8em;
-      }
-
-      dt {
-        float: left;
-        margin: 0 1.8em 0 0;
-      }
-
-      dd {
-        float: left;
-
-        strong {
-          font-weight: 700;
-        }
       }
     }
   }
 }
+
+.event_item1 {background-color: #ffba00; margin-left: 0;}
+.event_item2 {background-color: #f9554f;}
+.event_item3 {background-color: #149639;}
 
 // 기획전시
 .main_exhibit {
@@ -527,7 +522,7 @@
   }
 }
 
-
+// 반응형
 @media screen and (min-width: 721px) and (max-width: 1280px) {
   .guide_items {
     width: 100%;
@@ -551,9 +546,22 @@
 
 
 @media screen and (max-width: 1280px) {
-
   .guide_items {
     margin: 0;
+  }
+
+  .event_items {
+    .slick-track {
+      max-width: 100%;
+    }
+
+    .slick-slide {
+      width: 32%;
+    }
+  }
+
+  .main_exhibit .stt1 {
+    left: 1em;
   }
 }
 
@@ -632,18 +640,30 @@
     }
   }
 
+  .main_event {
+    padding: 2em 0;
+  }
+  
   .event_tab_button {
     display: none;
   }
 
-  .event_tab_body {
-    .event_item {
-      width: 100%;
+  .event_items_wrap {
+    padding-bottom: 3em;
+  }
 
-      & + .event_item {
-        margin: 0;
-      }
+  .event_items {
+    .slick-track {
+      max-width: initial;
     }
+
+    .slick-slide {
+      margin-left: 0;
+    }
+  }
+
+  .event_item {
+    width: 100%;
   }
 
   .collection_items {

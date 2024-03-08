@@ -88,3 +88,38 @@ let $mainVisual = $('.main_visual_body');
 		],
 	});
 })();
+
+// MAIN QUICKMENU SLIDE
+(function quickSlide(){
+	let parents = $('.main_event');
+	let slide = parents.find('.event_items');
+	let prev = parents.find('.board__arrow__prev');
+	let next = parents.find('.board__arrow__next');
+	
+	slide.slick({
+		infinite: false,
+		autoplay: false,
+		slidesToShow: 3,
+		prevArrow: prev,
+		nextArrow: next,
+		dots: false,
+		pauseOnFocus: true,
+		pauseOnHover: true,
+		pauseOnDotsHover: true,
+		accessibility: true,
+		focusOnChange: true,
+		focusOnSelect: true,
+    variableWidth: true,
+		responsive: [
+			{
+				breakpoint: 721, // max 768
+				settings: {
+          slidesToShow: 1,
+          variableWidth: false,
+					dots: true,
+					dotsClass: 'slick-dots',
+	},
+			},
+		],
+	});
+})();

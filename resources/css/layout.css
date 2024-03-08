@@ -217,7 +217,7 @@
     display: none;
   }
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1280px) {
   .innerbox {
     padding: 0 1em;
   }
