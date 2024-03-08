@@ -1,23 +1,28 @@
 @import url(/resources/css/slick.min.css);
 @import url(/resources/css/slick-theme.min.css);
 [class*=btn_slide_] {
-  width: 16px;
-  height: 16px;
   position: absolute;
-  bottom: 2.55em;
-  left: 50%;
-  transform: translate(5em, 0);
-}
-
-.btn_slide_pause {
-  background-image: url(/resources/images/main/btn_slide_pause.png);
+  width: 26px;
+  height: 26px;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 120%;
   background-position: center;
 }
 
+.btn_slide_pause {
+  background-image: url(/resources/images/common/arrow_pause.png);
+}
+
 .btn_slide_play {
-  background-color: #fff;
+  background-image: url(/resources/images/common/arrow_play.png);
+}
+
+.btn_slide_prev {
+  background-image: url(/resources/images/common/arrow_prev.png);
+}
+
+.btn_slide_next {
+  background-image: url(/resources/images/common/arrow_next.png);
 }
 
 .slick-dots li button {

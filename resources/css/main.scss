@@ -8,6 +8,22 @@
   position: relative;
   width: 100%;
   height: 100%;
+
+  [class*='btn_slide_'] {
+    width: 16px;
+    height: 16px;
+    bottom: 2.55em;
+    left: 50%;
+    transform: translate(5em,0);
+  }
+
+  .btn_slide_pause {
+    background-image: url(/resources/images/main/main_visual_pause.png);
+  }
+
+  .btn_slide_play {
+    background-image: url(/resources/images/main/main_visual_play.png);
+  }
 }
 
 .main_visual_items {
@@ -467,16 +483,16 @@
 
 // 배너모음
 .main_banner {
-  padding: 2em 0;
+  padding: 1em 0;
   border-top: 1px solid #dfdfdf;
 
   .innerbox {
-    padding: 0 21em 0 8.25em;
+    padding: 0 22.6em 0 8.25em;
   }
 
   .stt1 {
     position: absolute;
-    top: 0;
+    top: 1em;
     left: 0;
     font-size: 0.875em;
     font-weight: 700;
@@ -484,30 +500,65 @@
   }
 }
 
-.banner_items_multi {
-  .banner_item {
-    display: block;
-    float: left;
-    margin-left: 8px;
-    width: 135px;
-    height: 44px;
-    border: 1px solid #dddddd;
+.banner_items_multi_controllers {
+  position: absolute;
+  top: 2em;
+  left: 0;
 
-    &:first-of-type {
-      margin: 0;
-    }
+  [class*='btn_slide_'] {
+    position: relative;
+
+  }
+}
+
+.banner_items_multi {
+  padding: 1em 0;
+
+  .banner_item {
+    float: left;
+    border: 1px solid #dddddd;
 
     img {
       width: 100%;
     }
   }
+
+  .slick-list {
+    margin: 0 -4px;
+  }
+
+  .slick-slide {
+    width: 135px;
+    margin: 0 4px;
+
+    &:first-of-type {
+      margin-left: 0;
+    }
+  }
+}
+
+.banner_items_uni_wrap {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 326px;
+
+  [class*='btn_slide_'] {
+    top: 50%;
+    transform: translate(0,-50%);
+  }
+  
+  .btn_slide_prev {
+    left: 0;
+  }
+
+  .btn_slide_next {
+    right: 0;
+  }
 }
 
 .banner_items_uni {
-  position: absolute;
-  top: 50%;
-  right: 0;
-  transform: translate(0, -50%);
+  margin-left: 32px;
 
   .banner_item {
     display: inline-block;
@@ -518,6 +569,10 @@
     img {
       width: 100%;
     }
+  }
+
+  .slick-list {
+    width: 262px;
   }
 }
 
@@ -561,6 +616,20 @@
 
   .main_exhibit .stt1 {
     left: 1em;
+  }
+
+  .main_banner {
+    .stt1 {
+      left: 1em;
+    }
+  }
+
+  .banner_items_multi_controllers {
+    left: 1em;
+  }
+
+  .banner_items_uni_wrap {
+    right: 1em;
   }
 }
 

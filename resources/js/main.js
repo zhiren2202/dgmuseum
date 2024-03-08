@@ -1,13 +1,13 @@
 // MAIN VISUAL SLIDE
-let $mainVisual = $('.main_visual_body');
+// let $mainVisual = $('.main_visual_body');
 
 (function mainSlide(){
-	let parents = $mainVisual;
+	let parents = $('.main_visual_body');
 	let slide = parents.find('.main_visual_items');
 	let prev = parents.find('.board__arrow__prev');
 	let next = parents.find('.board__arrow__next');
-	let pause = $mainVisual.find('.btn_slide_pause');
-	let play = $mainVisual.find('.btn_slide_play');
+	let pause = parents.find('.btn_slide_pause');
+	let play = parents.find('.btn_slide_play');
 	
 	slide.slick({
 		infinite: true,
@@ -125,7 +125,7 @@ let $mainVisual = $('.main_visual_body');
 })();
 
 // MAIN EXHIBIT SLIDE
-(function mainSlide(){
+(function exhibitSlide(){
 	let parents = $('.main_exhibit');
 	let slide = parents.find('.exhibit_items');
 	let prev = parents.find('.board__arrow__prev');
@@ -154,5 +154,86 @@ let $mainVisual = $('.main_visual_body');
 				},
 			},
 		],
+	});
+})();
+
+// MAIN BANNER SLIDE
+(function multiBannerSlide(){
+	let parents = $('.banner_items_multi_wrap');
+	let slide = parents.find('.banner_items_multi');
+	let prev = parents.find('.btn_slide_prev');
+	let next = parents.find('.btn_slide_next');
+	let pause = parents.find('.btn_slide_pause');
+	let play = parents.find('.btn_slide_play');
+	
+	slide.slick({
+		infinite: false,
+		autoplay: true,
+		speed: 800,
+		slidesToShow: 5,
+		slidesToScroll: 1,
+		prevArrow: prev,
+		nextArrow: next,
+		playText: '재생',
+		pauseText: '정지',
+		dots: false,
+		pauseOnFocus: true,
+		pauseOnHover: true,
+		pauseOnDotsHover: true,
+		accessibility: true,
+		focusOnChange: true,
+		focusOnSelect: true,
+    variableWidth: true,
+		responsive: [
+			{
+				breakpoint: 1199, // max 768
+				settings: {
+					slidesToShow: 4, 
+					// variableWidth: false,
+				},
+			},
+			// {
+			// 	breakpoint: 641, // max 640
+			// 	settings: { slidesToShow: 3 },
+			// },
+			// {
+			// 	breakpoint: 481, // max 414
+			// 	settings: { slidesToShow: 2 },
+			// },
+		],
+	});
+
+	// PLAY AND PAUSE
+	play.click(function () {
+		slide.slick('slickPlay');
+		play.hide();
+		pause.show();
+	});
+	pause.click(function () {
+		slide.slick('slickPause');
+		pause.hide();
+		play.show();
+	});
+})();
+
+(function UniBannerSlide(){
+	let parents = $('.banner_items_uni_wrap');
+	let slide = parents.find('.banner_items_uni');
+	let prev = parents.find('.btn_slide_prev');
+	let next = parents.find('.btn_slide_next');
+	
+	slide.slick({
+		infinite: false,
+		autoplay: false,
+		slidesToShow: 1,
+		prevArrow: prev,
+		nextArrow: next,
+		dots: false,
+		pauseOnFocus: true,
+		pauseOnHover: true,
+		pauseOnDotsHover: true,
+		accessibility: true,
+		focusOnChange: true,
+		focusOnSelect: true,
 	});
 })();
