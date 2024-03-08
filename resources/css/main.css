@@ -11,7 +11,7 @@
 .main_visual_body [class*=btn_slide_] {
   width: 16px;
   height: 16px;
-  bottom: 2.55em;
+  bottom: 2.5em;
   left: 50%;
   transform: translate(5em, 0);
 }

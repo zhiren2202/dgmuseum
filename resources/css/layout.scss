@@ -123,28 +123,21 @@
 }
 
 .footer_link {
-  width: 454px;
   margin: 0 auto;
 
-  &::after {
-    content: '';
-    display: block;
-    clear: both;
-  }
-
   .footer__logo {
-    display: block;
-    float: left;
+    display: inline-block;
     width: 258px;
     height: 38px;
     opacity: 0.8;
+    vertical-align: middle;
   }
 
   .footer__sns {
-    display: block;
-    float: left;
+    display: inline-block;
     width: 176px;
-    margin-left: 20px;
+    margin: 0 0 4px 20px;
+    vertical-align: middle;
 
     li {
       display: block;
@@ -237,10 +230,6 @@
       right: 1em;
     }
   }
-
-  .footer_util {
-    display: none;
-  }
 }
 
 @media screen and (max-width: 1280px) {
@@ -256,8 +245,8 @@
 
 // 모바일
 @media screen and (max-width: 720px) {
-  .main_visual .main_visual_image .main_visual_title {
-    font-size: 3.2em;
+  .footer_util {
+    display: none;
   }
 }
 
@@ -267,14 +256,10 @@
 
     .footer__logo {
       width: 100%;
-      clear: both;
     }
 
     .footer__sns {
-      clear: both;
-      width: 100%;
       margin: 1em 0 0;
-      text-align: center;
 
       li {
         display: inline-block;
