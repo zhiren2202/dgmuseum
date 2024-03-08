@@ -11,7 +11,7 @@ let $mainVisual = $('.main_visual_body');
 	
 	slide.slick({
 		infinite: true,
-		autoplay: true, // 심사 중 true 금지
+		autoplay: true,
 		fade: true,
 		speed: 800,
 		slidesToShow: 1,
@@ -60,8 +60,8 @@ let $mainVisual = $('.main_visual_body');
 	let next = parents.find('.board__arrow__next');
 	
 	slide.slick({
-		infinite: true, // 심사 중 true 금지
-		autoplay: true, // 심사 중 true 금지
+		infinite: true,
+		autoplay: true,
 		slidesToShow: 6,
 		prevArrow: prev,
 		nextArrow: next,
@@ -89,8 +89,8 @@ let $mainVisual = $('.main_visual_body');
 	});
 })();
 
-// MAIN QUICKMENU SLIDE
-(function quickSlide(){
+// MAIN EVENT SLIDE
+(function eventSlide(){
 	let parents = $('.main_event');
 	let slide = parents.find('.event_items');
 	let prev = parents.find('.board__arrow__prev');
@@ -112,13 +112,46 @@ let $mainVisual = $('.main_visual_body');
     variableWidth: true,
 		responsive: [
 			{
-				breakpoint: 721, // max 768
+				breakpoint: 721, // max 720
 				settings: {
           slidesToShow: 1,
           variableWidth: false,
 					dots: true,
 					dotsClass: 'slick-dots',
-	},
+				},
+			},
+		],
+	});
+})();
+
+// MAIN EXHIBIT SLIDE
+(function mainSlide(){
+	let parents = $('.main_exhibit');
+	let slide = parents.find('.exhibit_items');
+	let prev = parents.find('.board__arrow__prev');
+	let next = parents.find('.board__arrow__next');
+	
+	slide.slick({
+		infinite: false,
+		autoplay: false,
+		fade: true,
+		slidesToShow: 1,
+		prevArrow: prev,
+		nextArrow: next,
+		dots: true,
+		dotsClass: 'slick-dots',
+		pauseOnFocus: true,
+		pauseOnHover: true,
+		pauseOnDotsHover: true,
+		accessibility: true,
+		focusOnChange: true,
+		focusOnSelect: true,
+		responsive: [
+			{
+				breakpoint: 721, // max 720
+				settings: {
+					dots: false,
+				},
 			},
 		],
 	});

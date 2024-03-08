@@ -373,7 +373,6 @@
 // 기획전시
 .main_exhibit {
   padding: 5em 0;
-  height: 37.875em;
   color: #fff;
   background-image: url(/resources/images/main/main_exhibit.png);
   background-repeat: no-repeat;
@@ -391,29 +390,20 @@
 .exhibit_items {
   overflow: hidden;
 
+  .slick-dots {
+    width: 35%;
+    top: 0;
+    bottom: initial;
+    text-align: right;
+  }
+
   .exhibit_item {
-    display: none;
-
-    &.active {
-      display: block;
-    }
-
-    .exhibit_item_detail {
+    .exhibit_item_title {
+      font-size: 2.25em;
+      font-weight: 700;
       float: left;
-      padding-top: 2.4em;
-      width: 32.5%;
-
-      h3 {
-        font-size: 2.25em;
-        font-weight: 700;
-      }
-  
-      p {
-        padding: 1.6em 0 0;
-        font-size: 1.06em;
-        line-height: 1.6em;
-        letter-spacing: -0.045em;
-      }
+      padding: 1.2em 0 0;
+      width: 35%;
     }
 
     .exhibit_item_img {
@@ -422,6 +412,15 @@
       height: 0;
       padding-bottom: 36.99999999997791%;
       background-color: #75849a;
+    }
+
+    .exhibit_item_detail {
+      padding: 2em 0 0;
+      font-size: 1.06em;
+      line-height: 1.6em;
+      letter-spacing: -0.045em;
+      float: left;
+      width: 35%;
     }
   }
 }
@@ -664,6 +663,23 @@
 
   .event_item {
     width: 100%;
+  }
+
+  .exhibit_items {
+    .exhibit_item {
+      .exhibit_item_title {
+        width: 100%;
+      }
+  
+      .exhibit_item_detail {
+        width: 100%;
+      }
+  
+      .exhibit_item_img {
+        width: 100%;
+        padding-bottom: 56%;
+      }
+    }
   }
 
   .collection_items {
