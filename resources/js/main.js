@@ -1,6 +1,4 @@
 // MAIN VISUAL SLIDE
-// let $mainVisual = $('.main_visual_body');
-
 (function mainSlide(){
 	let parents = $('.main_visual_body');
 	let slide = parents.find('.main_visual_items');
@@ -128,6 +126,41 @@
 // if($(window).width() < 721) {
 // 	$(".main_event .btn_more span").attr('class','');
 // }
+
+// MAIN EVENT TAB BUTTON
+(function eventTab(){
+	const label = document.querySelector('.event_tab_label');
+	const tabButton = document.querySelectorAll('.event_tab_button');
+	const tabCon = document.querySelectorAll('.event_tabcon');
+
+	const handleSelect = function(item) {
+		label.innerHTML = item.textContent;
+		label.parentNode.classList.remove('active');
+	}
+
+	tabButton.forEach(function(option, index){
+		option.addEventListener('click', function(){
+			handleSelect(option);
+			tabButton.forEach(function(option){
+				option.classList.remove("active");
+			});
+			tabCon.forEach(function(content){
+				content.classList.remove("active");
+			});
+			tabButton[index].classList.add("active");
+			tabCon[index].classList.add("active");
+		});
+	})
+
+	label.addEventListener('click', function(){
+		if(label.parentNode.classList.contains('active')) {
+			label.parentNode.classList.remove('active');
+		} else {
+			label.parentNode.classList.add('active');
+		}
+	});
+
+})();
 
 // MAIN EXHIBIT SLIDE
 (function exhibitSlide(){
