@@ -25,9 +25,12 @@
   background-image: url(/resources/images/common/arrow_next.png);
 }
 
-[class*=btn_more_] {
+.btn_more {
   width: 12px;
   height: 12px;
+  position: absolute;
+  top: 0.8em;
+  right: 0.6em;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -41,6 +44,17 @@
   background-image: url(/resources/images/common/btn_more_white.png);
 }
 
+@media screen and (max-width: 1280px) {
+  .btn_more {
+    right: 1em;
+  }
+}
+@media screen and (max-width: 720px) {
+  .btn_more {
+    width: 32px;
+    height: 32px;
+  }
+}
 .slick-dots li button {
   padding: 0;
   border: 1px solid #d7d7d7;

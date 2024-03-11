@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .main_visual {
   width: 100%;
   height: 44.25em;
@@ -229,6 +230,7 @@
 .event_tab_head {
   float: right;
   padding: 0.5em 0;
+  padding-right: 2em;
 }
 .event_tab_head .event_tab_button {
   float: left;
@@ -280,20 +282,29 @@
 
 .event_item {
   position: relative;
-  padding: 15.375em 0 0;
+  padding: 0;
   width: 32%;
   float: left;
   color: #fff;
 }
-.event_item img {
-  position: absolute;
-  top: 0;
-  left: 0;
+.event_item .event_item_img {
+  position: relative;
   width: 100%;
-  height: 15.375em;
+  height: 0;
+  padding-bottom: 63.1443298969%;
+  overflow: hidden;
+  background-color: #e8e8e8;
+}
+.event_item .event_item_img img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
 }
 .event_item .event_item_top {
-  padding: 1.6em 2em 1.8em;
+  position: relative;
+  padding: 1.4em 2em;
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
   letter-spacing: -0.14em;
 }
@@ -305,8 +316,16 @@
   margin-top: 0.5em;
   letter-spacing: -0.07em;
 }
+.event_item .event_item_top .btn_more {
+  width: 2.5em;
+  height: 1.5em;
+  top: 3.75em;
+  right: 1.875em;
+  color: #555;
+  background-image: url(/resources/images/common/btn_arrow_move.png);
+}
 .event_item .event_item_bottom {
-  padding: 2em 2em 1.8em;
+  padding: 2em 2em 1.5em;
 }
 .event_item .event_item_bottom dl {
   width: 100%;
@@ -356,10 +375,13 @@
   overflow: hidden;
 }
 .exhibit_items .slick-dots {
-  width: 35%;
+  width: 30%;
   top: 0;
   bottom: initial;
   text-align: right;
+}
+.exhibit_items .slick-dots li {
+  margin: 0 3px;
 }
 .exhibit_items .exhibit_item .exhibit_item_title {
   font-size: 2.25em;
@@ -367,6 +389,9 @@
   float: left;
   padding: 1.2em 0 0;
   width: 35%;
+}
+.exhibit_items .exhibit_item .exhibit_item_title a {
+  letter-spacing: -0.07em;
 }
 .exhibit_items .exhibit_item .exhibit_item_title a::after {
   content: "";
@@ -376,14 +401,25 @@
   margin-left: 12px;
   background-image: url(/resources/images/common/btn_arrow_move.png);
   background-repeat: no-repeat;
+  background-size: contain;
   background-position: center;
 }
 .exhibit_items .exhibit_item .exhibit_item_img {
+  position: relative;
   float: right;
-  width: 55.8333333333%;
+  right: 1em;
+  width: 56%;
   height: 0;
-  padding-bottom: 37%;
+  overflow: hidden;
+  padding-bottom: 36.447761194%;
   background-color: #75849a;
+}
+.exhibit_items .exhibit_item .exhibit_item_img img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
 }
 .exhibit_items .exhibit_item .exhibit_item_detail {
   padding: 2em 0 0;
@@ -391,7 +427,7 @@
   line-height: 1.6em;
   letter-spacing: -0.045em;
   float: left;
-  width: 35%;
+  width: 30%;
 }
 
 .main_collection {
@@ -403,6 +439,7 @@
 }
 
 .collection_items .collection_item {
+  display: block;
   float: left;
   width: 23.5%;
 }
@@ -532,6 +569,9 @@
   .event_items .slick-slide {
     width: 32%;
   }
+  .event_tab_head {
+    padding-right: 1.5em;
+  }
   .main_exhibit .stt1 {
     left: 1em;
   }
@@ -601,6 +641,9 @@
   .main_event {
     padding: 2em 0;
   }
+  .main_event .stt1 {
+    font-size: 3em;
+  }
   .event_tab_button {
     display: none;
   }
@@ -616,15 +659,49 @@
   .event_item {
     width: 100%;
   }
+  .event_item .event_item_top {
+    padding-right: 13em;
+  }
+  .event_item .event_item_top strong {
+    font-size: 2em;
+  }
+  .event_item .event_item_top p {
+    font-size: 1.5em;
+  }
+  .event_item .event_item_top .btn_more {
+    /* .blind 빼기 */
+    top: 50%;
+    transform: translate(0, -50%);
+    width: 10em;
+    height: 4.6em;
+    border-radius: 8px;
+    background-image: none;
+    background-color: #fff;
+  }
+  .event_item .event_item_bottom dl {
+    font-size: 1.5em;
+  }
+  .main_exhibit {
+    padding: 3em 0;
+  }
+  .main_exhibit .stt1 {
+    font-size: 1.5em;
+  }
   .exhibit_items .exhibit_item .exhibit_item_title {
     width: 100%;
+    font-size: 3em;
   }
   .exhibit_items .exhibit_item .exhibit_item_detail {
     width: 100%;
+    font-size: 1.375em;
   }
   .exhibit_items .exhibit_item .exhibit_item_img {
     width: 100%;
-    padding-bottom: 56%;
+    margin-top: 2em;
+    padding-bottom: 66.7159763314%;
+  }
+  .main_collection .stt1 {
+    font-size: 3em;
   }
   .collection_items .collection_item {
     display: none;

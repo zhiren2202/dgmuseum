@@ -267,6 +267,7 @@
 .event_tab_head {
   float: right;
   padding: 0.5em 0;
+  padding-right: 2em;
 
   .event_tab_button {
     float: left;
@@ -327,21 +328,35 @@
 
 .event_item {
   position: relative;
-  padding: 15.375em 0 0;
+  // padding: 15.375em 0 0;
+  padding: 0;
   width: 32%;
-  float: left;
+  float: left; 
   color: #fff;
 
-  img {
-    position: absolute;
-    top: 0;
-    left: 0;
+  .event_item_img {
+    position: relative;
     width: 100%;
-    height: 15.375em;
+    // height: 15.375em;
+    height: 0;
+    padding-bottom: 63.14432989690722%;
+    overflow: hidden;
+    background-color: #e8e8e8;
+
+    img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      width: 100%;
+      // width: 100%;
+      // max-height: 100%;
+    }
   }
 
   .event_item_top {
-    padding: 1.6em 2em 1.8em;
+    position: relative;
+    padding: 1.4em 2em;
     border-bottom: 1px solid rgba($color: #fff, $alpha: 0.5);
     letter-spacing: -0.14em;
 
@@ -355,11 +370,18 @@
       letter-spacing: -0.07em;
     }
 
-    button {}
+    .btn_more {
+      width: 2.5em;
+      height: 1.5em;
+      top: 3.75em;
+      right: 1.875em;
+      color: #555;
+      background-image: url(/resources/images/common/btn_arrow_move.png);
+    }
   }
 
   .event_item_bottom {
-    padding: 2em 2em 1.8em;
+    padding: 2em 2em 1.5em;
 
     dl {
       width: 100%;
@@ -407,10 +429,14 @@
   overflow: hidden;
 
   .slick-dots {
-    width: 35%;
+    width: 30%;
     top: 0;
     bottom: initial;
     text-align: right;
+
+    li {
+      margin: 0 3px;
+    }
   }
 
   .exhibit_item {
@@ -421,24 +447,40 @@
       padding: 1.2em 0 0;
       width: 35%;
 
-      a::after {
-        content: '';
-        display: inline-block;
-        width: 38px;
-        height: 20px;
-        margin-left: 12px;
-        background-image: url(/resources/images/common/btn_arrow_move.png);
-        background-repeat: no-repeat;
-        background-position: center;
+      a {
+        letter-spacing: -0.07em;
+
+        &::after {
+          content: '';
+          display: inline-block;
+          width: 38px;
+          height: 20px;
+          margin-left: 12px;
+          background-image: url(/resources/images/common/btn_arrow_move.png);
+          background-repeat: no-repeat;
+          background-size: contain;
+          background-position: center;
+        }
       }
     }
 
     .exhibit_item_img {
+      position: relative;
       float: right;
-      width: 55.83333333333333%;
+      right: 1em;
+      width: 56%;
       height: 0;
-      padding-bottom: 36.99999999997791%;
+      overflow: hidden;
+      padding-bottom: 36.44776119402985%;
       background-color: #75849a;
+
+      img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 100%;
+      }
     }
 
     .exhibit_item_detail {
@@ -447,7 +489,7 @@
       line-height: 1.6em;
       letter-spacing: -0.045em;
       float: left;
-      width: 35%;
+      width: 30%;
     }
   }
 }
@@ -464,6 +506,7 @@
 
 .collection_items {
   .collection_item {
+    display: block;
     float: left;
     width: 23.5%;
 
@@ -625,9 +668,14 @@
     }
   }
 
+  .event_tab_head {
+    padding-right: 1.5em;
+  }
+
   .main_exhibit .stt1 {
     left: 1em;
   }
+  
 
   .main_banner {
     .stt1 {
@@ -721,6 +769,10 @@
 
   .main_event {
     padding: 2em 0;
+
+    .stt1 {
+      font-size: 3em;
+    }
   }
   
   .event_tab_button {
@@ -743,22 +795,70 @@
 
   .event_item {
     width: 100%;
+
+    .event_item_top {
+      padding-right: 13em;
+
+      strong {
+        font-size: 2em;
+      }
+
+      p {
+        font-size: 1.5em;
+      }
+
+      .btn_more {
+        /* .blind 빼기 */
+        top: 50%;
+        transform: translate(0,-50%);
+        // width: 12.25em;
+        // height: 5.75em;
+        width: 10em;
+        height: 4.6em;
+        border-radius: 8px;
+        background-image: none;
+        background-color: #fff;
+      }
+    }
+
+    .event_item_bottom {
+      dl {
+        font-size: 1.5em;
+      }
+    }
+  }
+
+  .main_exhibit {
+    padding: 3em 0;
+
+    .stt1 {
+      font-size: 1.5em;
+    }
   }
 
   .exhibit_items {
     .exhibit_item {
       .exhibit_item_title {
         width: 100%;
+        font-size: 3em;
       }
   
       .exhibit_item_detail {
         width: 100%;
+        font-size: 1.375em;
       }
   
       .exhibit_item_img {
         width: 100%;
-        padding-bottom: 56%;
+        margin-top: 2em;
+        padding-bottom: 66.71597633136095%;
       }
+    }
+  }
+
+  .main_collection {
+    .stt1 {
+      font-size: 3em;
     }
   }
 

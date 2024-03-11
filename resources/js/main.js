@@ -124,6 +124,11 @@
 	});
 })();
 
+// MAIN EVENT .blind
+// if($(window).width() < 721) {
+// 	$(".main_event .btn_more span").attr('class','');
+// }
+
 // MAIN EXHIBIT SLIDE
 (function exhibitSlide(){
 	let parents = $('.main_exhibit');
