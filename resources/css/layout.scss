@@ -158,11 +158,17 @@
       padding: 1em;
       height: 100%;
       border-right: 1px solid #eee;
+      text-align: left;
+    }
+
+    &:first-of-type > ul {
+      border-left: 1px solid #eee;
     }
   }
 
   .lnb_depth2 {
-    font-size: 0.8em;
+    padding: 0.6em 0;
+    // font-size: 0.8em;
     color: #666;
 
     & > a {
