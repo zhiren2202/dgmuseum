@@ -11,3 +11,28 @@ header.addEventListener('mouseover', () => {
 header.addEventListener('mouseleave', () => {
   header.classList.remove('open');
 });
+
+const btnMobile = document.querySelector('.btn_mobilemenu');
+const mobileMenu = document.querySelector(".mobile_menu");
+btnMobile.addEventListener('click', () => {
+  btnMobile.classList.toggle('close');
+  mobileMenu.classList.toggle('open');
+});
+
+function toggleMobileMenu() {
+  const clickedItem = this.parentNode;
+  const items = mobileMenu.querySelectorAll(".menu_item");
+
+  items.forEach((item) => {
+    if (clickedItem === item) {
+      item.classList.add("on");
+    } else {
+      item.classList.remove("on");
+    }
+  });
+}
+
+const titles = mobileMenu.querySelectorAll(".menu__depth1");
+titles.forEach((title) => {
+  title.addEventListener("click", toggleMobileMenu);
+});

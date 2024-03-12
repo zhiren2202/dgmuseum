@@ -52,8 +52,8 @@
 }
 @media screen and (max-width: 720px) {
   .btn_more {
-    width: 32px;
-    height: 32px;
+    width: 2em;
+    height: 2em;
   }
 }
 .slick-dots li button {

@@ -223,6 +223,7 @@
 
   [class*='quickmenu_circle_item'] {
     float: left;
+    padding: 4px 0;
     font-weight: 700;
     color: #666666;
   
@@ -237,6 +238,12 @@
       background-repeat: no-repeat;
       background-size: 70%;
       background-position: center;
+    }
+
+    &:hover {
+      // box-shadow: rgba(0, 0, 0, 0.08) 0px 6px 24px 0px;
+      transition: transform 0.2s ease-out 0s/*, box-shadow 0.2s ease-out 0s*/;
+      transform: translateY(-4px);
     }
   }
   

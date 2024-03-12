@@ -193,6 +193,7 @@
 }
 .quickmenu_circle_items [class*=quickmenu_circle_item] {
   float: left;
+  padding: 4px 0;
   font-weight: 700;
   color: #666666;
 }
@@ -207,6 +208,10 @@
   background-repeat: no-repeat;
   background-size: 70%;
   background-position: center;
+}
+.quickmenu_circle_items [class*=quickmenu_circle_item]:hover {
+  transition: transform 0.2s ease-out 0s;
+  transform: translateY(-4px);
 }
 .quickmenu_circle_items .quickmenu_circle_item1::before {
   background-image: url(/resources/images/main/quickmenu_circle_item_1.png);
