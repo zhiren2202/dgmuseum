@@ -462,7 +462,7 @@
   width: 56%;
   height: 0;
   overflow: hidden;
-  padding-bottom: 36.447761194%;
+  padding-bottom: 37.1104477612%;
   background-color: #75849a;
 }
 .exhibit_items .exhibit_item .exhibit_item_img img {
@@ -602,11 +602,6 @@
   width: 262px;
 }
 
-@media screen and (max-width: 1440px) {
-  .main_exhibit .innerbox::before {
-    left: 0;
-  }
-}
 @media screen and (min-width: 721px) and (max-width: 1280px) {
   .guide_items {
     width: 100%;
@@ -644,6 +639,11 @@
   }
   .main_exhibit .stt1 {
     left: 1em;
+  }
+  .main_exhibit .innerbox::before {
+    left: 0;
+    width: 28em;
+    height: 15.1830985915em;
   }
   .main_banner .stt1 {
     left: 1em;
@@ -712,6 +712,30 @@
   }
   .event_tab_head .event_tab_button::before {
     content: none;
+  }
+  .main_exhibit .innerbox::before {
+    left: 6em;
+    width: 25em;
+    height: 13.5563380282em;
+  }
+  .exhibit_items .slick-dots {
+    width: 50%;
+  }
+  .exhibit_items .exhibit_item .exhibit_item_title {
+    width: 50%;
+  }
+  .exhibit_items .exhibit_item .exhibit_item_img {
+    width: 45%;
+    padding-bottom: 29.8208955224%;
+  }
+  .exhibit_items .exhibit_item .exhibit_item_detail {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 820px) {
+  .main_exhibit .innerbox::before {
+    width: 22em;
+    height: 11.9295774648em;
   }
 }
 @media screen and (max-width: 720px) {
@@ -847,7 +871,7 @@
     right: 0;
     width: 100%;
     margin-top: 2em;
-    padding-bottom: 66.7159763314%;
+    padding-bottom: 66.2686567164%;
   }
   .main_collection .stt1 {
     font-size: 3em;

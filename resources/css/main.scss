@@ -530,7 +530,7 @@
       width: 56%;
       height: 0;
       overflow: hidden;
-      padding-bottom: 36.44776119402985%;
+      padding-bottom: 37.11044776119403%;
       background-color: #75849a;
 
       img {
@@ -699,12 +699,6 @@
   }
 }
 
-@media screen and (max-width: 1440px) {
-  .main_exhibit .innerbox::before {
-    left: 0;
-  }
-}
-
 @media screen and (min-width: 721px) and (max-width: 1280px) {
   .guide_items {
     width: 100%;
@@ -753,10 +747,17 @@
     padding-right: 1.5em;
   }
 
-  .main_exhibit .stt1 {
-    left: 1em;
+  .main_exhibit {
+    .stt1 {
+      left: 1em;
+    }
+
+    .innerbox::before {
+      left: 0;
+      width: 28em;
+      height: 15.1830985915493em;
+    }
   }
-  
 
   .main_banner {
     .stt1 {
@@ -839,6 +840,45 @@
       }
     }
   }
+
+  .main_exhibit {
+    .innerbox::before {
+      left: 6em;
+      width: 25em;
+      height: 13.55633802816902em;
+    }
+  }
+
+  .exhibit_items {
+    .slick-dots {
+      width: 50%;
+    }
+
+    .exhibit_item {
+      .exhibit_item_title {
+        width: 50%;
+      }
+
+      .exhibit_item_img {
+        width: 45%;
+        padding-bottom: 29.82089552238806%;
+      }
+
+      .exhibit_item_detail {
+        width: 50%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .main_exhibit {
+    .innerbox::before {
+      width: 22em;
+      height: 11.92957746478873em;
+    }
+  }
+
 }
 
 // 모바일
@@ -1020,7 +1060,7 @@
         right: 0;
         width: 100%;
         margin-top: 2em;
-        padding-bottom: 66.71597633136095%;
+        padding-bottom: 66.26865671641791%;
       }
     }
   }
