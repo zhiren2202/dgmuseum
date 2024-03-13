@@ -53,9 +53,9 @@
 // MAIN QUICKMENU SLIDE
 (function quickSlide(){
 	let parents = $('.main_quickmenu');
-	let slide = parents.find('.quickmenu_circle_items');
-	let prev = parents.find('.board__arrow__prev');
-	let next = parents.find('.board__arrow__next');
+	let slide = parents.find('.quickmenu_items');
+	let prev = parents.find('.btn_slide_prev');
+	let next = parents.find('.btn_slide_next');
 	
 	slide.slick({
 		infinite: true,
@@ -72,7 +72,7 @@
 		focusOnSelect: true,
 		responsive: [
 			{
-				breakpoint: 721, // max 768
+				breakpoint: 721, // max 720
 				settings: { slidesToShow: 4 },
 			},
 			{
@@ -80,8 +80,12 @@
 				settings: { slidesToShow: 3 },
 			},
 			{
-				breakpoint: 481, // max 414
+				breakpoint: 481, // max 480
 				settings: { slidesToShow: 2 },
+			},
+			{
+				breakpoint: 321, // max 320
+				settings: { slidesToShow: 1 },
 			},
 		],
 	});
