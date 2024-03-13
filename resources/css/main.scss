@@ -134,12 +134,16 @@
   .board_item_wrap {
     position: relative;
     float: left;
-    padding: 0 7em 0 6em;
-    width: 50%;
+    padding: 0 5em 0 6em;
+    width: 48%;
     height: 100%;
 
     & > * {
       line-height: 70px;
+    }
+
+    &:last-of-type {
+      margin-left: 4%;
     }
 
     .board_item_head {
@@ -164,7 +168,7 @@
     .board_item_date {
       position: absolute;
       top: 0;
-      right: 1.8em;
+      right: 0;
       color: #636363;
       font-size: 1em;
       letter-spacing: 0;
@@ -702,10 +706,11 @@
 @media screen and (min-width: 721px) and (max-width: 1280px) {
   .guide_items {
     width: 100%;
+    display: flex;
+    justify-content: center;
 
     .guide_item {
       width: initial;
-      float: left;
       margin: 0;
       margin-left: 1em;
 
@@ -895,28 +900,20 @@
 
   .main_board .board_item_wrap {
     width: 100%;
-    padding: 0 10em 0 8em;
+    padding: 0 6em;
+    font-size: 1.75em;
 
     &:last-of-type {
       display: none;
     }
 
-    .board_item_head {
-      font-size: 1.73em;
-    }
-
-    .board_item_title {
-      font-size: 1.885em;
-    }
-
     .board_item_date {
       right: 0;
-      font-size: 2em;
     }
   }
 
   .guide_items {
-    padding: 2.5em;
+    padding: 1.8em;
     width: 100%;
     clear: both;
     
@@ -925,10 +922,13 @@
 
       dt {
         font-size: 2em;
+        width: 5em;
+        font-weight: 400;
       }
   
       dd {
         font-size: 2.25em;
+        padding-top: 0.2em;
   
         br {
           display: none;
@@ -1099,5 +1099,20 @@
 
   .quickmenu_items [class*='quickmenu_item'] {
     font-size: 1.6em;
+  }
+
+  .guide_items {
+    font-size: 0.8em;
+  }
+
+  .event_item .event_item_top {
+    padding: 1.4em 2em;
+
+    .btn_more {
+      position: static;
+      transform: translate(0,0);
+      display: block;
+      margin-top: 1em;
+    }
   }
 }
