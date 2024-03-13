@@ -88,11 +88,11 @@
   font-size: 1.3125em;
   line-height: 4.425em;
 }
-.header_navbar .lnb_depth1.active::before {
+.header_navbar .lnb_depth1 > a.active::before {
   content: "";
   display: block;
   position: absolute;
-  top: 5.8125em;
+  top: 4.3em;
   left: 0;
   z-index: 1;
   width: 100%;
@@ -212,7 +212,7 @@
   font-weight: 700;
   color: #666;
 }
-.mobile_menu .menu_item .menu__depth2 > li > a:hover, .mobile_menu .menu_item .menu__depth2 > li > a:focus {
+.mobile_menu .menu_item .menu__depth2 > li > a.active, .mobile_menu .menu_item .menu__depth2 > li > a:hover, .mobile_menu .menu_item .menu__depth2 > li > a:focus {
   color: #ff6600;
 }
 .mobile_menu .menu_item .menu__depth3 > li {
@@ -228,7 +228,7 @@
   display: inline-block;
   margin: 0 0.25em 0 0;
 }
-.mobile_menu .menu_item .menu__depth3 > li > a:hover, .mobile_menu .menu_item .menu__depth3 > li > a:focus {
+.mobile_menu .menu_item .menu__depth3 > li > a.active, .mobile_menu .menu_item .menu__depth3 > li > a:hover, .mobile_menu .menu_item .menu__depth3 > li > a:focus {
   color: #ff6600;
 }
 .mobile_menu .menu_item.on {
@@ -328,11 +328,17 @@
   .header_navbar .lnb_depth1 > a {
     font-size: 1.25em;
   }
+  .header_navbar .lnb_depth1 > a.active::before {
+    top: 4.5em;
+  }
 }
 @media screen and (max-width: 1440px) {
   .header_navbar .lnb_depth1 > a {
     font-size: 1em;
     line-height: 5.8125em;
+  }
+  .header_navbar .lnb_depth1 > a.active::before {
+    top: 5.6em;
   }
   .header_navbar .gnb a {
     font-size: 0.8em;
@@ -360,6 +366,7 @@
     position: absolute;
     top: 0;
     left: 0;
+    z-index: 0;
     padding-top: 5.8125em;
     display: block;
     width: 100%;

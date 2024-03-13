@@ -98,19 +98,19 @@
     & > a {
       font-size: 1.3125em;
       line-height: 4.425em;
-    }
 
-    &.active {
-      &::before {
-        content: '';
-        display: block;
-        position: absolute;
-        top: 5.8125em;
-        left: 0;
-        z-index: 1;
-        width: 100%;
-        height: 4px;
-        background-color: #ff6c13;
+      &.active {
+        &::before {
+          content: '';
+          display: block;
+          position: absolute;
+          top: 4.3em;
+          left: 0;
+          z-index: 1;
+          width: 100%;
+          height: 4px;
+          background-color: #ff6c13;
+        }
       }
     }
 
@@ -247,7 +247,7 @@
           font-weight: 700;
           color: #666;
 
-          &:hover, &:focus {
+          &.active, &:hover, &:focus {
             color: #ff6600;
           }
         }
@@ -269,7 +269,7 @@
             margin: 0 0.25em 0 0;
           }
 
-          &:hover, &:focus {
+          &.active, &:hover, &:focus {
             color: #ff6600;
           }
         }
@@ -377,6 +377,10 @@
 @media screen and (max-width: 1600px) {
   .header_navbar .lnb_depth1 > a {
     font-size: 1.25em;
+
+    &.active::before {
+      top: 4.5em;
+    }
   }
 }
 
@@ -384,6 +388,10 @@
   .header_navbar .lnb_depth1 > a {
     font-size: 1em;
     line-height: 5.8125em;
+
+    &.active::before {
+      top: 5.6em;
+    }
   }
 
   .header_navbar .gnb a {
@@ -414,6 +422,7 @@
       position: absolute;
       top: 0;
       left: 0;
+      z-index: 0;
       padding-top: 5.8125em;
       display: block;
       width: 100%;
