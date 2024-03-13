@@ -404,10 +404,11 @@
     display: block;
     transition: 0.3s;
   }
-  .mobile_menu.open + .mobile_menu_shadow {
+  .mobile_menu_shadow.active {
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 1;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.65);

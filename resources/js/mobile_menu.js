@@ -2,9 +2,12 @@
 
 const btnMobile = document.querySelector('.btn_mobilemenu');
 const mobileMenu = document.querySelector('.mobile_menu');
+const mobileMenuShadow = document.querySelector('.mobile_menu_shadow');
+
 btnMobile.addEventListener('click', () => {
   btnMobile.classList.toggle('close');
   mobileMenu.classList.toggle('open');
+  mobileMenuShadow.classList.toggle('active');
 });
 
 function toggleMobileMenu() {
