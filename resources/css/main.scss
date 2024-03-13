@@ -478,6 +478,10 @@
       background-position: center;
     }
   }
+
+  .btn_more {
+    display: none;
+  }
 }
 
 .exhibit_items {
@@ -981,14 +985,26 @@
 
     .stt1 {
       font-size: 1.5em;
+      left: 0.8em;
     }
 
     .innerbox::before {
       display: none;
     }
+
+    .btn_more {
+      display: block;
+      top: 0;
+    }
   }
 
   .exhibit_items {
+    .slick-dots {
+      position: static;
+      width: 100%;
+      text-align: center;
+    }
+
     .exhibit_item {
       .exhibit_item_title {
         width: 100%;

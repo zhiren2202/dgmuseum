@@ -418,6 +418,9 @@
   background-size: contain;
   background-position: center;
 }
+.main_exhibit .btn_more {
+  display: none;
+}
 
 .exhibit_items {
   overflow: hidden;
@@ -818,9 +821,19 @@
   }
   .main_exhibit .stt1 {
     font-size: 1.5em;
+    left: 0.8em;
   }
   .main_exhibit .innerbox::before {
     display: none;
+  }
+  .main_exhibit .btn_more {
+    display: block;
+    top: 0;
+  }
+  .exhibit_items .slick-dots {
+    position: static;
+    width: 100%;
+    text-align: center;
   }
   .exhibit_items .exhibit_item .exhibit_item_title {
     width: 100%;

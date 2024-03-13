@@ -195,14 +195,6 @@ $(window).resize(function (){
 		accessibility: true,
 		focusOnChange: true,
 		focusOnSelect: true,
-		responsive: [
-			{
-				breakpoint: 721, // max 720
-				settings: {
-					dots: false,
-				},
-			},
-		],
 	});
 })();
 
