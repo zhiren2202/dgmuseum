@@ -447,7 +447,9 @@
 
 // 기획전시
 .main_exhibit {
+  position: relative;
   padding: 5em 0;
+  overflow: hidden;
   color: #fff;
   background-image: url(/resources/images/main/main_exhibit.png);
   background-repeat: no-repeat;
@@ -459,6 +461,22 @@
     top: 0;
     left: 0;
     font-size: 1.1875em;
+  }
+
+  .innerbox {
+    &::before {
+      content: '';
+      display: block;
+      width: 35.5em;
+      height: 19.25em;
+      position: absolute;
+      bottom: -5em;
+      left: -4em;
+      background-image: url(/resources/images/main/exhibit_bg.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+    }
   }
 }
 
@@ -677,7 +695,12 @@
   }
 }
 
-// 반응형
+@media screen and (max-width: 1440px) {
+  .main_exhibit .innerbox::before {
+    left: 0;
+  }
+}
+
 @media screen and (min-width: 721px) and (max-width: 1280px) {
   .guide_items {
     width: 100%;
@@ -694,7 +717,6 @@
     }
   }
 }
-
 
 @media screen and (max-width: 1280px) {
   .main_quickmenu {
@@ -959,6 +981,10 @@
 
     .stt1 {
       font-size: 1.5em;
+    }
+
+    .innerbox::before {
+      display: none;
     }
   }
 

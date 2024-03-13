@@ -390,7 +390,9 @@
 }
 
 .main_exhibit {
+  position: relative;
   padding: 5em 0;
+  overflow: hidden;
   color: #fff;
   background-image: url(/resources/images/main/main_exhibit.png);
   background-repeat: no-repeat;
@@ -402,6 +404,19 @@
   top: 0;
   left: 0;
   font-size: 1.1875em;
+}
+.main_exhibit .innerbox::before {
+  content: "";
+  display: block;
+  width: 35.5em;
+  height: 19.25em;
+  position: absolute;
+  bottom: -5em;
+  left: -4em;
+  background-image: url(/resources/images/main/exhibit_bg.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
 
 .exhibit_items {
@@ -584,6 +599,11 @@
   width: 262px;
 }
 
+@media screen and (max-width: 1440px) {
+  .main_exhibit .innerbox::before {
+    left: 0;
+  }
+}
 @media screen and (min-width: 721px) and (max-width: 1280px) {
   .guide_items {
     width: 100%;
@@ -798,6 +818,9 @@
   }
   .main_exhibit .stt1 {
     font-size: 1.5em;
+  }
+  .main_exhibit .innerbox::before {
+    display: none;
   }
   .exhibit_items .exhibit_item .exhibit_item_title {
     width: 100%;
