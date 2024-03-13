@@ -355,8 +355,9 @@
 .event_item .event_item_top .btn_more {
   width: 2.5em;
   height: 1.5em;
-  top: 3.75em;
-  right: 1.875em;
+  top: initial;
+  bottom: 1.2em;
+  right: 2em;
   color: #555;
   background-image: url(/resources/images/common/btn_arrow_move.png);
 }
@@ -735,6 +736,12 @@
   .exhibit_items .exhibit_item .exhibit_item_detail {
     width: 50%;
   }
+  .event_item .event_item_top {
+    padding: 1.4em;
+  }
+  .event_item .event_item_bottom {
+    padding: 2em 1.4em 1.5em;
+  }
 }
 @media screen and (max-width: 820px) {
   .main_exhibit .innerbox::before {
@@ -814,9 +821,6 @@
   .event_item {
     width: 100%;
   }
-  .event_item .event_item_top {
-    padding-right: 13em;
-  }
   .event_item .event_item_top strong {
     font-size: 2em;
   }
@@ -824,19 +828,7 @@
     font-size: 1.5em;
   }
   .event_item .event_item_top .btn_more {
-    top: 50%;
-    transform: translate(0, -50%);
-    width: 10em;
-    height: 4em;
-    line-height: 4em;
-    text-align: center;
-    border-radius: 8px;
-    background-image: none;
-    background-color: #fff;
-  }
-  .event_item .event_item_top .btn_more span {
-    font-size: 1.5em;
-    font-weight: 700;
+    bottom: 1.5em;
   }
   .event_item .event_item_bottom dl {
     font-size: 1.5em;
@@ -903,11 +895,5 @@
   }
   .event_item .event_item_top {
     padding: 1.4em 2em;
-  }
-  .event_item .event_item_top .btn_more {
-    position: static;
-    transform: translate(0, 0);
-    display: block;
-    margin-top: 1em;
   }
 }

@@ -126,18 +126,6 @@
 	});
 })();
 
-// MAIN EVENT .blind
-const eventMoreBtn = $(".main_event .event_item .btn_more span");
-if($(window).width() < 721){
-	eventMoreBtn.attr('class','');
-}
-else {
-	eventMoreBtn.attr('class','blind');
-}
-$(window).resize(function (){
-	$(window).width() < 721 ? eventMoreBtn.attr('class','') : eventMoreBtn.attr('class','blind');
-});
-
 // MAIN EVENT TAB BUTTON
 (function eventTab(){
 	const label = document.querySelector('.event_tab_label');
