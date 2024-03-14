@@ -760,7 +760,7 @@
   .main_board .board_item_wrap {
     width: 100%;
     padding: 0 6em;
-    font-size: 1.75em;
+    font-size: 1.5em;
   }
   .main_board .board_item_wrap:last-of-type {
     display: none;
@@ -769,7 +769,7 @@
     right: 0;
   }
   .guide_items {
-    padding: 1.8em;
+    padding: 1.5em 1em;
     width: 100%;
     clear: both;
   }
@@ -783,7 +783,7 @@
   }
   .guide_items .guide_item dd {
     padding-top: 0.2em;
-    width: 70%;
+    width: 74%;
   }
   .guide_items .guide_item dd br {
     display: none;
