@@ -158,7 +158,6 @@
 			label.parentNode.classList.add('active');
 		}
 	});
-
 })();
 
 // MAIN EXHIBIT SLIDE
