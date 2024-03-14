@@ -408,6 +408,7 @@
 
     p {
       margin-top: 0.5em;
+      padding-right: 3em;
       letter-spacing: -0.07em;
     }
 
@@ -930,16 +931,18 @@
     
     .guide_item {
       margin-bottom: 12px;
+      font-size: 1.8em;
 
       dt {
-        font-size: 2em;
+        // font-size: 2em;
         width: 5em;
         font-weight: 400;
       }
   
       dd {
-        font-size: 2.25em;
+        // font-size: 2.25em;
         padding-top: 0.2em;
+        width: 70%;
   
         br {
           display: none;
@@ -1083,7 +1086,6 @@
   }
 }
 
-
 @media screen and (max-width: 600px) {
   .main_visual [class*='main_visual_image'] .main_visual_title {
     font-size: 2.6em;
@@ -1103,5 +1105,15 @@
 
   .event_item .event_item_top {
     padding: 1.4em 2em;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .guide_items .guide_item {
+    dt {}
+    dd {
+      width: 100%;
+      padding-left: 0.2em;
+    }
   }
 }

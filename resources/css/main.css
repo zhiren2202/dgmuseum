@@ -350,6 +350,7 @@
 }
 .event_item .event_item_top p {
   margin-top: 0.5em;
+  padding-right: 3em;
   letter-spacing: -0.07em;
 }
 .event_item .event_item_top .btn_more {
@@ -774,15 +775,15 @@
   }
   .guide_items .guide_item {
     margin-bottom: 12px;
+    font-size: 1.8em;
   }
   .guide_items .guide_item dt {
-    font-size: 2em;
     width: 5em;
     font-weight: 400;
   }
   .guide_items .guide_item dd {
-    font-size: 2.25em;
     padding-top: 0.2em;
+    width: 70%;
   }
   .guide_items .guide_item dd br {
     display: none;
@@ -895,5 +896,11 @@
   }
   .event_item .event_item_top {
     padding: 1.4em 2em;
+  }
+}
+@media screen and (max-width: 360px) {
+  .guide_items .guide_item dd {
+    width: 100%;
+    padding-left: 0.2em;
   }
 }
