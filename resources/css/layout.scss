@@ -439,20 +439,28 @@
   line-height: 45px;
 
   .path__depth1 {
+    position: relative;
     width: 33.3333%;
     max-width: 10em;
     height: 100%;
     display: block;
     float: left;
-    border-left: 1px solid #dedede;
 
-    &:last-of-type {
-      border-right: 1px solid #dedede;
+    &:first-of-type {
+      border-left: 1px solid #dedede;
+    }
+
+    &.active {
+      .path__depth2 {
+        display: block;
+        border: 1px solid #dedede;
+      }
     }
 
     & > a {
       display: block;
       padding: 0 2em 0 1em;
+      border-right: 1px solid #dedede;
       background-image: url(/resources/images/sub_path_arrow.png);
       background-repeat: no-repeat;
       background-size: 10px 7px;
@@ -462,9 +470,15 @@
 
   .path__depth2 {
     display: none;
+    position: absolute;
+    top: 45px;
+    left: 0;
+    z-index: 1;
     padding: 0 1em;
+    width: 100%;
     line-height: 1em;
-    border-bottom: 1px solid #dedede;
+    background-color: #fff;
+    border: 1px solid #dedede;
 
     & > a {
       display: block;

@@ -1,9 +1,7 @@
+'use strict';
+
 const header = document.querySelector('.header');
 const headerNav = document.querySelector('.header .header_navbar .lnb');
-
-// document.addEventListener('scroll', () => { // 스크롤할 경우 헤드 스타일 변경
-//   (window.scrollY > 1) ? header.classList.add('header--fixed') : header.classList.remove('header--fixed');
-// });
 
 headerNav.addEventListener('mouseover', () => {
   header.classList.add('open');
@@ -30,3 +28,23 @@ $(document).ready(function () {
     }
   });
 });
+
+pathLinkBtn(); // 상단 페이지경로 링크, 형제 중 하나만 슬라이드 업다운
+
+function pathLinkBtn(){
+	let btn = $('.path__depth1 > a');
+	let DEPTHS_CLASSNAME = '.path__depth2';
+	let ACTIVE_CLASSNAME = 'active';
+	
+	btn.on('click', function () {
+		if ($(this).hasClass(ACTIVE_CLASSNAME)) {
+			$(this).removeClass(ACTIVE_CLASSNAME);
+			$(this).siblings(DEPTHS_CLASSNAME).stop().slideUp();
+		} else {
+			btn.removeClass(ACTIVE_CLASSNAME);
+			btn.siblings(DEPTHS_CLASSNAME).stop().slideUp();
+			$(this).addClass(ACTIVE_CLASSNAME);
+			$(this).siblings(DEPTHS_CLASSNAME).stop().slideDown();
+		}
+	});
+}
