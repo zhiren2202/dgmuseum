@@ -255,7 +255,7 @@
 .main_event {
   padding: 4em 0;
 }
-.main_event .stt1 {
+.main_event .main_event_title {
   font-size: 2.125em;
   float: left;
 }
@@ -404,7 +404,7 @@
   background-size: cover;
   background-position: center;
 }
-.main_exhibit .stt1 {
+.main_exhibit .main_exhibit_title {
   position: absolute;
   top: 0;
   left: 0;
@@ -489,7 +489,7 @@
 .main_collection {
   padding: 4em 0;
 }
-.main_collection .stt1 {
+.main_collection .main_collection_title {
   margin: 0 0 0.8em 0;
   font-size: 2.125em;
 }
@@ -535,7 +535,7 @@
 .main_banner .innerbox {
   padding: 0 22.6em 0 8.25em;
 }
-.main_banner .stt1 {
+.main_banner .main_banner_title {
   position: absolute;
   top: 1em;
   left: 0;
@@ -643,7 +643,7 @@
   .event_tab_head {
     padding-right: 1.5em;
   }
-  .main_exhibit .stt1 {
+  .main_exhibit .main_exhibit_title {
     left: 1em;
   }
   .main_exhibit .innerbox::before {
@@ -651,7 +651,7 @@
     width: 28em;
     height: 15.1830985915em;
   }
-  .main_banner .stt1 {
+  .main_banner .main_banner_title {
     left: 1em;
   }
   .banner_items_multi_controllers {
@@ -802,7 +802,7 @@
   .main_event {
     padding: 2em 0;
   }
-  .main_event .stt1 {
+  .main_event .main_event_title {
     font-size: 3em;
   }
   .event_tab_head {
@@ -837,7 +837,7 @@
   .main_exhibit {
     padding: 3em 0;
   }
-  .main_exhibit .stt1 {
+  .main_exhibit .main_exhibit_title {
     font-size: 1.5em;
     left: 0.8em;
   }
@@ -867,7 +867,7 @@
     margin-top: 2em;
     padding-bottom: 66.2686567164%;
   }
-  .main_collection .stt1 {
+  .main_collection .main_collection_title {
     font-size: 3em;
   }
   .collection_items .collection_item {
