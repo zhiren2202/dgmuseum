@@ -1,0 +1,136 @@
+hr {
+  position: relative;
+  margin: 1.625em 0;
+  border: 0px;
+}
+hr.gray {
+  border-top: 1px solid #e9e9e9;
+}
+hr.orange {
+  border-top: 1px solid #e9e9e9;
+}
+hr.orange::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 128px;
+  height: 0px;
+  border-top: 1px solid #ff6600;
+}
+
+.stt1 {
+  margin-bottom: 0.4em;
+  font-size: 1.75em;
+  color: #333;
+  line-height: 1.5;
+}
+.stt1 + p {
+  font-size: 1.125em;
+  color: #333;
+  line-height: 1.5;
+}
+
+.stt2 {
+  font-size: 1.625em;
+  color: #333;
+}
+
+.stt3 {
+  margin-bottom: 1em;
+  color: #555555;
+  font-size: 1.375em;
+  font-weight: 700;
+  letter-spacing: -0.09em;
+}
+.stt3::before {
+  content: "";
+  display: block;
+  float: left;
+  width: 16px;
+  height: 3px;
+  margin: 0.3em 0.3em 0 0;
+  background-color: #ff6600;
+}
+
+.text_box p {
+  margin-bottom: 1em;
+  line-height: 1.5;
+}
+
+.img_box {
+  float: right;
+}
+.img_box img {
+  max-width: 100%;
+}
+
+.ul_1 {
+  padding-bottom: 2em;
+}
+.ul_1 li {
+  position: relative;
+  color: #555555;
+}
+.ul_1 li:last-of-type {
+  margin-bottom: 0;
+}
+.ul_1 strong {
+  font-weight: 700;
+}
+.ul_1 > li {
+  padding: 0 0 0 0.5em;
+  margin-bottom: 1em;
+}
+.ul_1 > li::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0.5em;
+  left: 0;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: #c1c1c1;
+}
+.ul_1 > li > ul {
+  padding: 0.5em 0 0;
+}
+.ul_1 > li > ul > li {
+  margin-bottom: 0.5em;
+}
+.ul_1 > li > ul > li::before {
+  content: "-";
+  display: inline-block;
+  margin: 0 0.5em 0 0;
+}
+
+[class*=col-] {
+  overflow: hidden;
+}
+[class*=col-] > * {
+  float: left;
+}
+
+.col-2-20per .col1 {
+  width: 20%;
+}
+.col-2-20per .col2 {
+  width: 80%;
+}
+
+.col-2-30per .col1 {
+  width: 30%;
+}
+.col-2-30per .col2 {
+  width: 70%;
+}
+
+.col-2-60per .col1 {
+  width: 60%;
+}
+.col-2-60per .col2 {
+  width: 40%;
+}
