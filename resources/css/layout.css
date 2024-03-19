@@ -162,6 +162,9 @@
   font-size: 0.9375em;
   color: #666;
 }
+.header_navbar .gnb a.eng {
+  letter-spacing: 0;
+}
 
 .mobile_menu {
   display: none;
