@@ -300,6 +300,27 @@ hr.orange::before {
   margin: 2em 0;
   text-align: center;
 }
+.board_pagination [class*=board__btn__] {
+  width: 1em;
+  height: 1em;
+  margin: 0 0.5em;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.board_pagination .board__btn__first {
+  background-image: url(/resources/images/board_btn_first.png);
+}
+.board_pagination .board__btn__prev {
+  background-image: url(/resources/images/board_btn_prev.png);
+}
+.board_pagination .board__btn__next {
+  background-image: url(/resources/images/board_btn_next.png);
+}
+.board_pagination .board__btn__last {
+  background-image: url(/resources/images/board_btn_last.png);
+}
 
 .board__page {
   display: inline-block;
@@ -311,30 +332,48 @@ hr.orange::before {
   background-color: #9ca3ae;
 }
 
-[class*=board__btn__] {
-  width: 1em;
-  height: 1em;
-  margin: 0 0.5em;
-  vertical-align: middle;
+.board_search {
+  position: relative;
+  max-width: 27.5em;
+  height: 2.85em;
+  margin: 0 auto;
+  padding: 0 3em 0 7em;
+}
+.board_search [class*=board__search__] {
+  display: block;
+  float: left;
+  height: 100%;
+}
+.board_search .board__search__select {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0 1.375em;
+  width: 7em;
+  color: #888;
+  border: 1px solid #dbdbdb;
+  border-right: 0;
+  background-image: url(/resources/images/search_arrow.png);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 10px 8px;
+  background-position: right 1em center;
+}
+.board_search .board__search__word {
+  width: 100%;
+  padding: 0.5em;
+  border: 1px solid #dbdbdb;
+  border-right: 0;
+}
+.board_search .board__search__btn {
+  width: 3em;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #75849a;
+  background-image: url(/resources/images/search_btn.png);
+  background-repeat: no-repeat;
+  background-size: 1.5em 1.5em;
   background-position: center;
-}
-
-.board__btn__first {
-  background-image: url(/resources/images/board_btn_first.png);
-}
-
-.board__btn__prev {
-  background-image: url(/resources/images/board_btn_prev.png);
-}
-
-.board__btn__next {
-  background-image: url(/resources/images/board_btn_next.png);
-}
-
-.board__btn__last {
-  background-image: url(/resources/images/board_btn_last.png);
 }
 
 .ico_file {
