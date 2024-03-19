@@ -468,13 +468,8 @@
   height: 0;
   overflow: hidden;
   padding-bottom: 37.1104477612%;
-  background-color: #75849a;
 }
 .exhibit_items .exhibit_item .exhibit_item_img img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   width: 100%;
 }
 .exhibit_items .exhibit_item .exhibit_item_detail {
@@ -513,10 +508,6 @@
   background-color: #75849a;
 }
 .collection_items .collection_item .collection_item_img img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   width: 100%;
 }
 .collection_items .collection_item .collection_item_title {
