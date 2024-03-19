@@ -48,17 +48,17 @@
 
 @media screen and (max-width: 1280px) {
   .btn_more {
-    top: 1.2em;
+    // top: 1.2em;
     right: 1em;
   }
 }
 
-@media screen and (max-width: 720px) {
-  .btn_more {
-    width: 2em;
-    height: 2em;
-  }
-}
+// @media screen and (max-width: 720px) {
+//   .btn_more {
+//     width: 2em;
+//     height: 2em;
+//   }
+// }
 
 .slick-dots {
   li {

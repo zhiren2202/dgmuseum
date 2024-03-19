@@ -485,7 +485,7 @@
   padding: 4em 0;
 }
 .main_collection .main_collection_title {
-  margin: 0 0 0.8em 0;
+  margin: 0 0 0.5em 0;
   font-size: 2.125em;
 }
 
@@ -655,6 +655,9 @@
   }
 }
 @media screen and (max-width: 1024px) {
+  .main_event .btn_more {
+    top: 1.2em;
+  }
   .event_tab_head {
     position: relative;
     right: 1.5em;
@@ -796,7 +799,7 @@
     padding: 2em 0;
   }
   .main_event .main_event_title {
-    font-size: 3em;
+    font-size: 2.5em;
   }
   .event_tab_head {
     width: 100%;
@@ -839,7 +842,7 @@
   }
   .main_exhibit .btn_more {
     display: block;
-    top: 0;
+    top: 0.2em;
   }
   .exhibit_items .slick-dots {
     position: static;
@@ -861,7 +864,7 @@
     padding-bottom: 66.2686567164%;
   }
   .main_collection .main_collection_title {
-    font-size: 3em;
+    font-size: 2.5em;
   }
   .collection_items .collection_item {
     display: none;
