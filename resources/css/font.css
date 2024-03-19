@@ -15,9 +15,9 @@
     font-family: 'SpoqaHanSans';
     font-style: normal;
     font-weight: 400;
-    src: url('/resources/font/SpoqaHanSansNeo-Regular.woff2') format('woff2'),
-        url('/resources/font/SpoqaHanSansNeo-Regular.woff') format('woff'),
-        url('/resources/font/SpoqaHanSansNeo-Regular.ttf') format('truetype'),
-        url('/resources/font/SpoqaHanSansNeo-Regular.otf') format('opentype'),
-        url('/resources/font/SpoqaHanSansNeo-Regular.eot') format('embedded-opentype');
+    src: url('../../resources/font/SpoqaHanSansNeo-Regular.woff2') format('woff2'),
+        url('../../resources/font/SpoqaHanSansNeo-Regular.woff') format('woff'),
+        url('../../resources/font/SpoqaHanSansNeo-Regular.ttf') format('truetype'),
+        url('../../resources/font/SpoqaHanSansNeo-Regular.otf') format('opentype'),
+        url('../../resources/font/SpoqaHanSansNeo-Regular.eot') format('embedded-opentype');
 }

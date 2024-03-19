@@ -281,7 +281,7 @@ hr {
         margin: 0 0 0 1em;
         width: 1.875em;
         height: 1.125em;
-        background-image: url(/resources/images/common/btn_arrow_move.png);
+        background-image: url(../../resources/images/common/btn_arrow_move.png);
         background-repeat: no-repeat;
         background-size: contain;
         background-position: center;
@@ -366,19 +366,19 @@ hr {
   }
   
   .board__btn__first {
-    background-image: url(/resources/images/board_btn_first.png);
+    background-image: url(../../resources/images/board_btn_first.png);
   }
   
   .board__btn__prev {
-    background-image: url(/resources/images/board_btn_prev.png);
+    background-image: url(../../resources/images/board_btn_prev.png);
   }
   
   .board__btn__next {
-    background-image: url(/resources/images/board_btn_next.png);
+    background-image: url(../../resources/images/board_btn_next.png);
   }
   
   .board__btn__last {
-    background-image: url(/resources/images/board_btn_last.png);
+    background-image: url(../../resources/images/board_btn_last.png);
   }
 }
 
@@ -418,7 +418,7 @@ hr {
     // border-right: 1px solid #dbdbdb;
     border: 1px solid #dbdbdb;
     border-right: 0;
-    background-image: url(/resources/images/search_arrow.png);
+    background-image: url(../../resources/images/search_arrow.png);
     background-repeat: no-repeat;
     background-size: 10px 8px;
     background-position: right 1em center;
@@ -437,7 +437,7 @@ hr {
     top: 0;
     right: 0;
     background-color: #75849a;
-    background-image: url(/resources/images/search_btn.png);
+    background-image: url(../../resources/images/search_btn.png);
     background-repeat: no-repeat;
     background-size: 1.5em 1.5em;
     background-position: center;
@@ -452,7 +452,7 @@ hr {
   display: block;
   width: 1.25em;
   height: 1.25em;
-  background-image: url(/resources/images/ico_file.png);
+  background-image: url(../../resources/images/ico_file.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;

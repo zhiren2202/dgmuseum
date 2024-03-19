@@ -1,5 +1,5 @@
-@import url(/resources/css/slick.min.css);
-@import url(/resources/css/slick-theme.min.css);
+@import url(../../resources/css/slick.min.css);
+@import url(../../resources/css/slick-theme.min.css);
 
 
 [class*='btn_slide_'] {
@@ -12,19 +12,19 @@
 }
 
 .btn_slide_pause {
-  background-image: url(/resources/images/common/arrow_pause.png);
+  background-image: url(../../resources/images/common/arrow_pause.png);
 }
 
 .btn_slide_play {
-  background-image: url(/resources/images/common/arrow_play.png);
+  background-image: url(../../resources/images/common/arrow_play.png);
 }
 
 .btn_slide_prev {
-  background-image: url(/resources/images/common/arrow_prev.png);
+  background-image: url(../../resources/images/common/arrow_prev.png);
 }
 
 .btn_slide_next {
-  background-image: url(/resources/images/common/arrow_next.png);
+  background-image: url(../../resources/images/common/arrow_next.png);
 }
 
 .btn_more {
@@ -39,11 +39,11 @@
 }
 
 .btn_more_gray {
-  background-image: url(/resources/images/common/btn_more_gray.png);
+  background-image: url(../../resources/images/common/btn_more_gray.png);
 }
 
 .btn_more_white {
-  background-image: url(/resources/images/common/btn_more_white.png);
+  background-image: url(../../resources/images/common/btn_more_white.png);
 }
 
 @media screen and (max-width: 1280px) {
