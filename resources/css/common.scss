@@ -4,10 +4,10 @@
 
 [class*='btn_slide_'] {
   position: absolute;
-  width: 26px;
-  height: 26px;
+  width: 30px;
+  height: 30px;
   background-repeat: no-repeat;
-  background-size: 120%;
+  background-size: cover;
   background-position: center;
 }
 
@@ -34,7 +34,7 @@
   top: 0.8em;
   right: 0.6em;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position: center;
 }
 

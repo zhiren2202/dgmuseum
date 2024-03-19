@@ -9,7 +9,7 @@
   height: 100%;
 }
 .main_visual_body [class*=btn_slide_] {
-  width: 16px;
+  width: 20px;
   height: 16px;
   bottom: 2.5em;
   left: 50%;
@@ -551,6 +551,8 @@
 }
 .banner_items_multi_controllers [class*=btn_slide_] {
   position: relative;
+  display: block;
+  float: left;
 }
 
 .banner_items_multi {
@@ -578,7 +580,7 @@
   position: absolute;
   top: 0;
   right: 0;
-  width: 326px;
+  width: 334px;
 }
 .banner_items_uni_wrap [class*=btn_slide_] {
   top: 50%;
@@ -592,7 +594,7 @@
 }
 
 .banner_items_uni {
-  margin-left: 32px;
+  margin-left: 36px;
 }
 .banner_items_uni .banner_item {
   display: inline-block;
