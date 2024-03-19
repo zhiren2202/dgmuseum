@@ -458,7 +458,7 @@
 }
 
 .sub_page .innerbox {
-  padding: 5em 1em;
+  padding: 5em 0em;
 }
 
 @media screen and (max-width: 1600px) {
@@ -552,6 +552,9 @@
   }
   .path__menu {
     padding: 0 8em 0 3.5em;
+  }
+  .sub_page .innerbox {
+    padding: 5em 1em;
   }
 }
 @media screen and (max-width: 720px) {
