@@ -203,11 +203,11 @@
   transform: translate(0, -50%);
 }
 .quickmenu_wrap .btn_slide_prev {
-  left: 0.5em;
+  left: 1em;
   background-image: url(../../resources/images/common/arrow_prev_slide.png);
 }
 .quickmenu_wrap .btn_slide_next {
-  right: 0.5em;
+  right: 1em;
   background-image: url(../../resources/images/common/arrow_next_slide.png);
 }
 
@@ -787,6 +787,7 @@
   }
   .quickmenu_wrap {
     padding: 0 3em;
+    margin: 2em 0;
   }
   .quickmenu_items [class*=quickmenu_item] {
     font-size: 2em;
@@ -891,6 +892,24 @@
   .main_visual [class*=main_visual_image] .main_visual_title br {
     display: block;
   }
+  .main_board {
+    height: 60px;
+  }
+  .main_board .board_item_wrap {
+    padding: 0 5em;
+  }
+  .main_board .board_item_wrap > * {
+    line-height: 60px;
+  }
+  .main_board .board_item_wrap .board_item_head {
+    font-size: 1.125em;
+  }
+  .main_board .board_item_wrap .board_item_title {
+    font-size: 1em;
+  }
+  .main_board .board_item_wrap .board_item_date {
+    font-size: 0.9em;
+  }
   .quickmenu_items [class*=quickmenu_item] {
     font-size: 1.6em;
   }
@@ -899,6 +918,14 @@
   }
   .event_item .event_item_top {
     padding: 1.4em 2em;
+  }
+}
+@media screen and (max-width: 480px) {
+  .quickmenu_wrap {
+    margin: 1.5em 0;
+  }
+  .quickmenu_items [class*=quickmenu_item] {
+    font-size: 1.4em;
   }
 }
 @media screen and (max-width: 360px) {
