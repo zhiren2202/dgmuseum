@@ -371,14 +371,21 @@
 }
 
 .footer_address {
-  margin: 1.4em 0 0.2em 0;
+  margin: 1.4em 0 0.5em 0;
   color: #c8c8c8;
-  font-size: 0.875em;
+  // font-size: 0.875em;
+  font-size: 14px;
+
+  span {
+    display: inline-block;
+    margin: 0 0.5em 0 0;
+  }
 }
 
 .footer_copyright {
   color: #c8c8c8;
-  font-size: 0.75em;
+  // font-size: 0.75em;
+  font-size: 12px;
   letter-spacing: -0.05em;
 }
 
@@ -680,6 +687,7 @@
 
     .footer__logo {
       width: 100%;
+      height: auto;
     }
 
     .footer__sns {
@@ -697,7 +705,6 @@
 
   .path__mobile {
     display: block;
-    // padding: 0 8em 0 0;
   }
 }
 
@@ -723,3 +730,8 @@
   }
 }
 
+@media screen and (max-width: 282px) {
+  .footer_link .footer__logo img {
+    width: 100%;
+  }
+}
