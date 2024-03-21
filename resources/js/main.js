@@ -195,7 +195,7 @@
 	let play = parents.find('.btn_slide_play');
 	
 	slide.slick({
-		infinite: false,
+		infinite: true,
 		autoplay: true,
 		speed: 800,
 		slidesToShow: 5,
@@ -214,20 +214,12 @@
     variableWidth: true,
 		responsive: [
 			{
-				breakpoint: 1199, // max 768
+				breakpoint: 1281, // max 768
 				settings: {
 					slidesToShow: 4, 
-					// variableWidth: false,
+					variableWidth: false,
 				},
 			},
-			// {
-			// 	breakpoint: 641, // max 640
-			// 	settings: { slidesToShow: 3 },
-			// },
-			// {
-			// 	breakpoint: 481, // max 414
-			// 	settings: { slidesToShow: 2 },
-			// },
 		],
 	});
 

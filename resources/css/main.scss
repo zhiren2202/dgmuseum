@@ -664,6 +664,8 @@
   right: 0;
   // width: 326px;
   width: 334px;
+  // width: 20.875em;
+  height: 100%;
 
   [class*='btn_slide_'] {
     top: 50%;
@@ -682,15 +684,28 @@
 .banner_items_uni {
   // margin-left: 32px;
   margin-left: 36px;
+  height: 100%;
+
+  .slick-list, .slick-track {
+    height: 100%;
+  }
+
+  .slick-slide > div {
+    height: 100%;
+  }
 
   .banner_item {
     display: inline-block;
-    width: 262px;
-    height: 80px;
+    // width: 262px;
+    width: 16.375em;
+    // height: 80px;
+    // height: 5em;
+    height: 100%;
     border: 1px solid #dddddd;
 
     img {
-      width: 100%;
+      // width: 100%;
+      height: 100%;
     }
   }
 
@@ -885,6 +900,12 @@
 
     .event_item_bottom {
       padding: 2em 1.4em 1.5em;
+    }
+  }
+
+  .main_banner {
+    .innerbox {
+      padding-right: 25em;
     }
   }
 }
