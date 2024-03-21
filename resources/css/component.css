@@ -56,6 +56,23 @@ hr.orange::before {
   background-color: #ff6600;
 }
 
+.stt4 {
+  font-size: 1.375em;
+  margin: 0 0 0.8em 0;
+  font-weight: 700;
+}
+.stt4 em {
+  font-weight: 400;
+}
+.stt4::after {
+  content: "";
+  display: block;
+  width: 26px;
+  height: 2px;
+  margin: 0.3em 0.3em 0 0;
+  background-color: #ff6600;
+}
+
 .text_box p {
   margin-bottom: 1em;
   line-height: 1.5;
@@ -66,6 +83,12 @@ hr.orange::before {
 }
 .img_box img {
   max-width: 100%;
+}
+
+.bg-gray {
+  padding: 3.5em 2.25em;
+  margin-bottom: 3.5em;
+  background-color: #f8f8f8;
 }
 
 .ul_1 {
@@ -111,8 +134,15 @@ hr.orange::before {
 [class*=col-] {
   overflow: hidden;
 }
-[class*=col-] > * {
+[class*=col-] > [class*=col] {
   float: left;
+  padding: 0 1em;
+}
+[class*=col-] > [class*=col]:first-of-type {
+  padding: 0 1em 0 0;
+}
+[class*=col-] > [class*=col]:last-of-type {
+  padding: 0 0 0 1em;
 }
 
 .col-2-20per .col1 {
@@ -129,11 +159,28 @@ hr.orange::before {
   width: 70%;
 }
 
+.col-2-50per .col1 {
+  width: 50%;
+}
+.col-2-50per .col2 {
+  width: 50%;
+}
+
 .col-2-60per .col1 {
   width: 60%;
 }
 .col-2-60per .col2 {
   width: 40%;
+}
+
+.col-3-33per .col1 {
+  width: 33.333%;
+}
+.col-3-33per .col2 {
+  width: 33.333%;
+}
+.col-3-33per .col3 {
+  width: 33.333%;
 }
 
 .w-5per {
