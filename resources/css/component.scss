@@ -88,18 +88,73 @@ hr {
   }
 }
 
-.img_box {
-  float: right;
+.infobox {
+  margin-bottom: 3.5em; 
+  padding: 3.5em 2.25em;
+  background-color: #f8f8f8;
+}
 
-  img {
-    max-width: 100%;
+.gallery {
+  margin-bottom: 3.5em;
+
+  .imgbox {
+    border: 1px solid #e6e6e6;
   }
 }
 
-.bg-gray {
-  padding: 3.5em 2.25em;
-  margin-bottom: 3.5em;
-  background-color: #f8f8f8;
+.doc_image {
+  float: right;
+  margin-bottom: 1em;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+  }
+}
+
+.imgbox {
+  width: 100%;
+  height: 0;
+  padding-bottom: 67.0487106017192%;
+  margin-bottom: 1em;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+  }
+}
+
+.img-circle {
+  float: left;
+  width: 10.75em;
+  height: 10.75em;
+  border-radius: 50%;
+  margin-bottom: 1em;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+  }
+
+  & + p {
+    float: left;
+    padding: 0 1em;
+  }
+}
+
+.img_title {
+  color: #555;
+  font-size: 1.125em;
+  font-weight: 700;
+}
+
+.img_detail {
+  color: #999;
+  font-size: 0.875em;
+}
+
+.info_text {
+  margin-bottom: 1em;
 }
 
 .ul_1 {
@@ -155,69 +210,97 @@ hr {
 
   & > [class*='col'] {
     float: left;
-    padding: 0 1em;
+    padding: 0 1%;
 
     &:first-of-type {
-      padding: 0 1em 0 0;
+      padding: 0 1% 0 0;
     }
 
     &:last-of-type {
-      padding: 0 0 0 1em;
+      padding: 0 0 0 1%;
     }
   }
 }
 
 .col-2-20per {
-  .col1 {
+  & > .col1 {
     width: 20%;
   }
 
-  .col2 {
+  & > .col2 {
     width: 80%;
   }
 }
 
 .col-2-30per {
-  .col1 {
+  & > .col1 {
     width: 30%;
   }
 
-  .col2 {
+  & > .col2 {
     width: 70%;
   }
 }
 
+.col-2-40per {
+  & > .col1 {
+    width: 40%;
+  }
+
+  & > .col2 {
+    width: 60%;
+  }
+}
+
 .col-2-50per {
-  .col1 {
+  & > .col1 {
     width: 50%;
   }
 
-  .col2 {
+  & > .col2 {
     width: 50%;
   }
 }
 
 .col-2-60per {
-  .col1 {
+  & > .col1 {
     width: 60%;
   }
 
-  .col2 {
+  & > .col2 {
     width: 40%;
   }
 }
 
 .col-3-33per {
-  .col1 {
-    width: 33.333%;
+  & > .col1 {
+    width: 33%;
   }
 
-  .col2 {
-    width: 33.333%;
+  & > .col2 {
+    width: 34%;
   }
 
-  .col3 {
-    width: 33.333%;
+  & > .col3 {
+    width: 33%;
+  }
+}
+
+.col-4-25per {
+  & > .col1 {
+    width: 24.5%;
+  }
+
+  & > .col2 {
+    width: 25.5%;
+  }
+
+  & > .col3 {
+    width: 25.5%;
+  }
+
+  & > .col4 {
+    width: 24.5%;
   }
 }
 

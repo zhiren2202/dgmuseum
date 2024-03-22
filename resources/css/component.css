@@ -78,17 +78,68 @@ hr.orange::before {
   line-height: 1.5;
 }
 
-.img_box {
-  float: right;
-}
-.img_box img {
-  max-width: 100%;
+.infobox {
+  margin-bottom: 3.5em;
+  padding: 3.5em 2.25em;
+  background-color: #f8f8f8;
 }
 
-.bg-gray {
-  padding: 3.5em 2.25em;
+.gallery {
   margin-bottom: 3.5em;
-  background-color: #f8f8f8;
+}
+.gallery .imgbox {
+  border: 1px solid #e6e6e6;
+}
+
+.doc_image {
+  float: right;
+  margin-bottom: 1em;
+  overflow: hidden;
+}
+.doc_image img {
+  width: 100%;
+}
+
+.imgbox {
+  width: 100%;
+  height: 0;
+  padding-bottom: 67.0487106017%;
+  margin-bottom: 1em;
+  overflow: hidden;
+}
+.imgbox img {
+  width: 100%;
+}
+
+.img-circle {
+  float: left;
+  width: 10.75em;
+  height: 10.75em;
+  border-radius: 50%;
+  margin-bottom: 1em;
+  overflow: hidden;
+}
+.img-circle img {
+  width: 100%;
+}
+.img-circle + p {
+  float: left;
+  padding: 0 1em;
+}
+
+.img_title {
+  color: #555;
+  font-size: 1.125em;
+  font-weight: 700;
+}
+
+.img_detail {
+  color: #999;
+  font-size: 0.875em;
+}
+
+.info_text {
+  margin-bottom: 1em;
 }
 
 .ul_1 {
@@ -136,51 +187,71 @@ hr.orange::before {
 }
 [class*=col-] > [class*=col] {
   float: left;
-  padding: 0 1em;
+  padding: 0 1%;
 }
 [class*=col-] > [class*=col]:first-of-type {
-  padding: 0 1em 0 0;
+  padding: 0 1% 0 0;
 }
 [class*=col-] > [class*=col]:last-of-type {
-  padding: 0 0 0 1em;
+  padding: 0 0 0 1%;
 }
 
-.col-2-20per .col1 {
+.col-2-20per > .col1 {
   width: 20%;
 }
-.col-2-20per .col2 {
+.col-2-20per > .col2 {
   width: 80%;
 }
 
-.col-2-30per .col1 {
+.col-2-30per > .col1 {
   width: 30%;
 }
-.col-2-30per .col2 {
+.col-2-30per > .col2 {
   width: 70%;
 }
 
-.col-2-50per .col1 {
+.col-2-40per > .col1 {
+  width: 40%;
+}
+.col-2-40per > .col2 {
+  width: 60%;
+}
+
+.col-2-50per > .col1 {
   width: 50%;
 }
-.col-2-50per .col2 {
+.col-2-50per > .col2 {
   width: 50%;
 }
 
-.col-2-60per .col1 {
+.col-2-60per > .col1 {
   width: 60%;
 }
-.col-2-60per .col2 {
+.col-2-60per > .col2 {
   width: 40%;
 }
 
-.col-3-33per .col1 {
-  width: 33.333%;
+.col-3-33per > .col1 {
+  width: 33%;
 }
-.col-3-33per .col2 {
-  width: 33.333%;
+.col-3-33per > .col2 {
+  width: 34%;
 }
-.col-3-33per .col3 {
-  width: 33.333%;
+.col-3-33per > .col3 {
+  width: 33%;
+}
+
+.col-4-25per > .col1 {
+  width: 24.5%;
+}
+.col-4-25per > .col2 {
+  width: 25.5%;
+}
+.col-4-25per > .col3 {
+  width: 25.5%;
+}
+.col-4-25per > .col4 {
+  width: 24.5%;
 }
 
 .w-5per {
