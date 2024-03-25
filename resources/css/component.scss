@@ -459,6 +459,8 @@ hr {
 }
 
 .board_item_btn {
+  overflow: hidden;
+
   .btn {
     float: left;
     padding: 0.875em;
@@ -468,6 +470,38 @@ hr {
     &:first-of-type {
       margin: 0;
     }
+  }
+}
+
+// BOARD MARK
+.board_mark {
+  display: inline-block;
+  padding: 0.5em 2em;
+  min-width: 6.75em;
+  // height: 34px;
+  text-align: center;
+  color: #fff;
+  border-radius: 2px;
+  background-color: #ff6600;
+
+  &.closed {
+    background-color: #787878;
+  }
+}
+
+.board_mark_small {
+  display: inline-block;
+  padding: 0.3em 0.6em;
+  min-width: 3.43em;
+  font-size: 0.875em;
+  text-align: center;
+  background-color: #fff;
+  color: #ff3622;
+  border: 1px solid #ff9854;
+
+  &.free { 
+    color: #777;
+    border: 1px solid #a2adbb;
   }
 }
 
