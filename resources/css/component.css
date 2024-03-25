@@ -621,6 +621,56 @@ hr.orange::before {
   letter-spacing: 0;
 }
 
+.gallery_board_items {
+  overflow: hidden;
+}
+
+.gallery_board_item {
+  display: block;
+  float: left;
+  margin: 0 0.5% 1em;
+  width: 24.25%;
+  border: 1px solid #e9e9e9;
+}
+.gallery_board_item:nth-of-type(4n-3) {
+  margin-left: 0;
+}
+.gallery_board_item:nth-of-type(4n) {
+  margin-right: 0;
+}
+.gallery_board_item .board_item_img {
+  width: 100%;
+  height: 0;
+  padding-bottom: 140%;
+  overflow: hidden;
+  background-color: #efefef;
+}
+.gallery_board_item .board_item_img img {
+  width: 100%;
+}
+.gallery_board_item .board_item_contents {
+  padding: 2.4em 1.4em 2.6em;
+  background-image: url(../images/common/btn_arrow_move_orange.png);
+  background-repeat: no-repeat;
+  background-size: 2.3em 1.3em;
+  background-position: right 1.4em bottom 4.2em;
+}
+.gallery_board_item .board_item_title {
+  margin: 0 0 0.6em 0;
+  color: #555;
+  font-size: 1.31em;
+  font-weight: 700;
+}
+.gallery_board_item .board_item_date {
+  margin: 0 0 0.6em 0;
+  color: #666;
+  font-size: 0.9375em;
+}
+.gallery_board_item .board_item_detail {
+  color: #666;
+  font-size: 0.9375em;
+}
+
 .board_list {
   width: 100%;
   border-top: 2px solid #92959b;
@@ -821,6 +871,19 @@ hr.orange::before {
   .article_board_item {
     padding: 2em 1.5em;
   }
+  .gallery_board_item {
+    width: 32%;
+    margin: 0 1% 1em;
+  }
+  .gallery_board_item:nth-of-type(4n-3), .gallery_board_item:nth-of-type(4n) {
+    margin: 0 1% 1em;
+  }
+  .gallery_board_item:nth-of-type(3n-2) {
+    margin-left: 0;
+  }
+  .gallery_board_item:nth-of-type(3n) {
+    margin-right: 0;
+  }
 }
 @media screen and (max-width: 768px) {
   .board_item .board_item_title {
@@ -859,6 +922,22 @@ hr.orange::before {
     width: 100%;
     margin: 0 0 1em 0;
   }
+  .gallery_board_item {
+    width: 49.5%;
+    margin: 0 0 1em 0;
+  }
+  .gallery_board_item:nth-of-type(4n-3), .gallery_board_item:nth-of-type(4n) {
+    margin: 0 0 1em 0;
+  }
+  .gallery_board_item:nth-of-type(3n-2), .gallery_board_item:nth-of-type(3n) {
+    margin: 0 0 1em 0;
+  }
+  .gallery_board_item:nth-of-type(2n) {
+    margin-left: 1%;
+  }
+  .gallery_board_item .board_item_contents {
+    background-position: right 1.4em bottom 2.5em;
+  }
 }
 @media screen and (max-width: 480px) {
   .board_item .board_item_title {
@@ -874,5 +953,9 @@ hr.orange::before {
   }
   .board_list .mobile-none {
     display: none;
+  }
+  .gallery_board_item {
+    width: 100%;
+    margin: 0 0 1em 0;
   }
 }
