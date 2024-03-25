@@ -358,11 +358,16 @@ hr {
 }
 
 // BUTTON
+.btn_wrap {
+  font-size: 1.375em;
+  margin: 0 0 1em 0;
+}
+
 .btn {
   padding: 0.6em 1em;
   min-width: 9.5em;
+  border-radius: 2px;
   color: #fff;
-  font-size: 1.375em;
   font-weight: 700;
 }
 
@@ -376,6 +381,35 @@ hr {
 
 .btn3 {
   background-color: #9ca3ae;
+}
+
+.btn4 {
+  color: #ff6600;
+  background-color: #fff;
+  border: 1px solid #ff6600;
+
+  &.btn-arrow {
+    text-align: left;
+
+    &::after {
+      content: '';
+      display: block;
+      float: right;
+      margin: 0 0 0 1em;
+      width: 2.3em;
+      height: 1.3em;
+      background-image: url(../../resources/images/common/btn_arrow_move_orange.png);
+    }
+  }
+
+  &:hover, &:focus {
+    color: #fff;
+    background-color: #ff6600;
+
+    &::after {
+      background-image: url(../../resources/images/common/btn_arrow_move_orange_hover.png);
+    }
+  }
 }
 
 .btn-arrow {
@@ -400,35 +434,40 @@ hr {
   color: #666;
   font-weight: 400;
   background-color: #fff;
-
-  &.icon-left {
-    text-align: left;
-
-    &::before {
-      float: left;
-      margin-right: 1em;
-    }
-  }
+  text-align: left;
 
   &.icon-right {
-    text-align: left;
-
     &::before {
       float: right;
       margin-left: 1em;
+      margin: 0.2em 0 0 1em;
     }
   }
 
   &::before {
     content: '';
     display: block;
-    margin: 0.2em 0 0 0;
+    float: left;
+    margin: 0.2em 1em 0 0;
     width: 20px;
     height: 18px;
     background-image: url(../../resources/images/ico_file.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
+  }
+}
+
+.board_item_btn {
+  .btn {
+    float: left;
+    padding: 0.875em;
+    margin: 0 0 0 2px;
+    min-width: 6.6em;
+
+    &:first-of-type {
+      margin: 0;
+    }
   }
 }
 
@@ -474,47 +513,6 @@ hr {
     top: 50%;
     right: 2.5em;
     transform: translate(0,-50%);
-    font-size: 1em;
-
-    button {
-      float: left;
-      padding: 0.875em;
-      margin: 0 0 0 2px;
-      min-width: 6.6em;
-      // color: #fff;
-      font-size: inherit;
-      // font-weight: 700;
-      // background-color: #9ca3ae;
-
-      &:first-of-type {
-        margin: 0;
-      }
-    }
-
-    // .btn_enable {
-    //   &::after {
-    //     content: '';
-    //     display: block;
-    //     float: right;
-    //     margin: 0 0 0 1em;
-    //     width: 1.875em;
-    //     height: 1.125em;
-    //     background-image: url(../../resources/images/common/btn_arrow_move.png);
-    //     background-repeat: no-repeat;
-    //     background-size: contain;
-    //     background-position: center;
-    //   }
-    // }
-
-    .btn_disable {
-      background-color: #c9cdd4;
-    }
-
-    &::after {
-      content: '';
-      display: block;
-      clear: both;
-    }
   }
 }
 
