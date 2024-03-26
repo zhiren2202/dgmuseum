@@ -931,6 +931,7 @@ hr.orange::before {
   display: inline-block;
   min-width: 4.2em;
   text-align: right;
+  font-size: 1.125em;
   font-weight: 700;
 }
 .choice__radio__wrap input[type=radio] {
