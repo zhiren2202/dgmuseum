@@ -24,7 +24,7 @@
 .header {
   position: fixed;
   z-index: 2;
-  padding: 0 20em;
+  padding: 0 21em 0 20em;
   height: 5.8125em;
   background-color: #fff;
 }
@@ -471,18 +471,22 @@
 @media screen and (max-width: 1600px) {
   .header_navbar .lnb_depth1 > a {
     font-size: 1.25em;
+    line-height: 4.7em;
   }
   .header_navbar .lnb_depth1 > a.active::before {
     top: 4.5em;
   }
 }
 @media screen and (max-width: 1440px) {
+  .header {
+    padding: 0 19em 0 20em;
+  }
   .header_navbar .lnb_depth1 > a {
-    font-size: 1em;
-    line-height: 5.8125em;
+    font-size: 1.125em;
+    line-height: 5.2em;
   }
   .header_navbar .lnb_depth1 > a.active::before {
-    top: 5.6em;
+    top: 5em;
   }
   .header_navbar .gnb a {
     font-size: 0.8em;
