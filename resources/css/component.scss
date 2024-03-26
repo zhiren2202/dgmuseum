@@ -88,13 +88,13 @@ hr {
   }
 }
 
-.infobox {
+.box_gray {
   margin-bottom: 3.5em; 
   padding: 3.5em 2.25em;
   background-color: #f8f8f8;
 }
 
-.gallery {
+.box_gallery {
   margin-bottom: 3.5em;
 
   .imgbox {
@@ -984,6 +984,72 @@ hr {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
+}
+
+// INPUT FORM
+.agree__body {
+  margin-bottom: 0.6em;
+  padding: 1.75em;
+  border: 1px solid #dbdbdb;
+  color: #555;
+  background-color: #f9f9f9;
+
+  dl {
+    margin-bottom: 2.5em;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+
+    dt {
+      margin-bottom: 0.5em;
+      font-weight: 700;
+    }
+
+    dd {
+      margin-bottom: 0.5em;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.agree__footer {
+  overflow: hidden;
+}
+
+.agree__phrase {
+  float: left;
+  color: #555;
+}
+
+.agree__check__wrap {
+  float: right;
+  height: 1.5em;
+
+  input[type='checkbox'] {
+    display: block;
+    float: left;
+    width: 1.5em;
+    height: 1.5em;
+    margin: 0 0.5em 0 0;
+    border: 1px solid #c1c1c1;
+    border-radius: 50%;
+
+    & + label {
+      color: #555;
+      line-height: 1.5;
+      cursor: pointer;
+    }
+  }
+
+  input[type='checkbox']:checked {
+    border-color: #ff6600;
+    background-color: #ff6600;
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 1200px) {

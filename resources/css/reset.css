@@ -56,7 +56,7 @@ a {
 }
 
 input {
-    /* -webkit-appearance: none; */
+    -webkit-appearance: none;
     border-radius: 0;
     border-width: 0;
     margin: 0;
