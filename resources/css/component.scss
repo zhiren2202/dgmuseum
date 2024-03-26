@@ -1029,6 +1029,12 @@ hr {
   float: right;
   height: 1.5em;
 
+  li {
+    display: block;
+    float: left;
+    margin-left: 1em;
+  }
+
   input[type='checkbox'] {
     display: block;
     float: left;
@@ -1048,7 +1054,60 @@ hr {
   input[type='checkbox']:checked {
     border-color: #ff6600;
     background-color: #ff6600;
-    text-align: center;
+  }
+}
+
+.choice_wrap {
+  padding: 2.5em 1.5em;
+  border: 1px solid #d3d3d3;
+  color: #555;
+}
+
+.choice__radio__wrap {
+  li {
+    display: block;
+    margin-bottom: 1.2em;
+    overflow: hidden;
+    letter-spacing: -0.06em;
+
+    span {
+      margin-right: 1.4em;
+      font-size: 1.25em;
+    }
+
+    strong {
+      font-size: 1.125em;
+      letter-spacing: -0.01em;
+    }
+
+    em {
+      display: inline-block;
+      min-width: 4.2em;
+      text-align: right;
+      font-weight: 700;
+    }
+  }
+
+  input[type='radio'] {
+    display: block;
+    float: left;
+    width: 1.375em;
+    height: 1.375em;
+    margin: 0 0.5em 0 0;
+    border: 1px solid #b5b5b5;
+    border-radius: 50%;
+
+    & + label {
+      margin-right: 0.6em;
+      font-size: 1.25em;
+    }
+  }
+
+  input[type='radio']:checked {
+    background-image: url(../images/common/radio_checked.png);
+    background-repeat: no-repeat;
+    background-size: 0.5em 0.5em;
+    background-position: center;
   }
 }
 
