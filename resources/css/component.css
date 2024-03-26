@@ -959,7 +959,7 @@ hr.orange::before {
 
 .apply_wrap {
   max-width: 810px;
-  padding: 2em 2.5em;
+  padding: 1.5em 1.8em;
   margin: 0 auto;
   overflow: hidden;
   border: 1px solid #dbdbdb;
@@ -969,10 +969,10 @@ hr.orange::before {
 .apply__item {
   position: relative;
   float: left;
-  width: 48%;
+  width: 49%;
   height: 2.75em;
   margin: 6px 0;
-  margin-left: 4%;
+  margin-left: 2%;
   padding: 0 0 0 8em;
 }
 .apply__item:nth-of-type(2n-1) {
@@ -1001,6 +1001,16 @@ hr.orange::before {
   padding: 0.5em;
   background-color: #fff;
   border: 1px solid #dbdbdb;
+}
+.apply__item__body .search__code {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 6em;
+  height: 2.75em;
+  background-color: #9ca3ae;
+  color: #fff;
+  font-weight: 700;
 }
 
 @media screen and (max-width: 1200px) {
@@ -1094,9 +1104,6 @@ hr.orange::before {
   }
   .gallery_board_item .board_item_contents {
     background-position: right 1.4em bottom 2.5em;
-  }
-  .apply_wrap {
-    padding: 1.5em 1.8em;
   }
   .apply__item {
     width: 100%;
