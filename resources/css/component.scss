@@ -1244,6 +1244,57 @@ td {
     }
 }
 
+// CALENDAR
+.calendar {
+  table {
+    color: #666;
+
+    thead {
+      tr th {
+        padding: 1em 0;
+        border: 1px solid #e8e8e8;
+        border-top: 2px solid #92959b;
+        border-bottom: 1px solid #cfcfcf;
+        background-color: #f9f9f9;
+      }
+    }
+
+    tbody {
+      tr td {
+        width: 14.28571428571429%;
+        border: 1px solid #e9e9e9;
+        text-align: left;
+        word-break: initial;
+
+        .calendar__day {
+          min-height: 7.75em;
+          padding: 0.5em;
+
+          .board_mark {
+            padding: 0.3em 0.5em;
+            margin-right: 0.5em;
+            min-width: 20px;
+            font-size: 0.77em;
+          }
+
+          ul li {
+            margin-bottom: 0.5em;
+            font-size: 0.815em;
+          }
+        }
+
+        &.sat {
+          color: #0081e5;
+        }
+
+        &.sun {
+          color: #f30000;
+        }
+      }  
+    }
+  }
+}
+
 @media screen and (max-width: 1200px) {
   .board_tabs {
     &.tab-5 .board_tab {
