@@ -651,33 +651,8 @@
     width: 32%;
   }
   .event_tab_head {
-    padding-right: 1.5em;
-  }
-  .main_exhibit .main_exhibit_title {
-    left: 1em;
-  }
-  .main_exhibit .innerbox::before {
-    left: 0;
-    width: 28em;
-    height: 15.1830985915em;
-  }
-  .main_banner .main_banner_title {
-    left: 1em;
-  }
-  .banner_items_multi_controllers {
-    left: 0.5em;
-  }
-  .banner_items_uni_wrap {
-    right: 1em;
-  }
-}
-@media screen and (max-width: 1024px) {
-  .main_event .btn_more {
-    top: 1.2em;
-  }
-  .event_tab_head {
     position: relative;
-    right: 1.5em;
+    right: 2em;
     z-index: 1;
     padding: 0;
     width: 220px;
@@ -732,6 +707,28 @@
   }
   .event_tab_head .event_tab_button::before {
     content: none;
+  }
+  .main_exhibit .main_exhibit_title {
+    left: 1em;
+  }
+  .main_exhibit .innerbox::before {
+    left: 0;
+    width: 28em;
+    height: 15.1830985915em;
+  }
+  .main_banner .main_banner_title {
+    left: 1em;
+  }
+  .banner_items_multi_controllers {
+    left: 0.5em;
+  }
+  .banner_items_uni_wrap {
+    right: 1em;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .main_event .btn_more {
+    top: 0.8em;
   }
   .main_exhibit .innerbox::before {
     left: 6em;

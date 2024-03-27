@@ -761,47 +761,8 @@
   }
 
   .event_tab_head {
-    padding-right: 1.5em;
-  }
-
-  .main_exhibit {
-    .main_exhibit_title {
-      left: 1em;
-    }
-
-    .innerbox::before {
-      left: 0;
-      width: 28em;
-      height: 15.1830985915493em;
-    }
-  }
-
-  .main_banner {
-    .main_banner_title {
-      left: 1em;
-    }
-  }
-
-  .banner_items_multi_controllers {
-    left: 0.5em;
-  }
-
-  .banner_items_uni_wrap {
-    right: 1em;
-  }
-}
-
-// 태블릿
-@media screen and (max-width: 1024px) {
-  .main_event {
-    .btn_more {
-      top: 1.2em;
-    }
-  }
-
-  .event_tab_head {
     position: relative;
-    right: 1.5em;
+    right: 2em;
     z-index: 1;
     padding: 0;
     width: 220px;
@@ -862,6 +823,41 @@
       &::before {
         content: none;
       }
+    }
+  }
+
+  .main_exhibit {
+    .main_exhibit_title {
+      left: 1em;
+    }
+
+    .innerbox::before {
+      left: 0;
+      width: 28em;
+      height: 15.1830985915493em;
+    }
+  }
+
+  .main_banner {
+    .main_banner_title {
+      left: 1em;
+    }
+  }
+
+  .banner_items_multi_controllers {
+    left: 0.5em;
+  }
+
+  .banner_items_uni_wrap {
+    right: 1em;
+  }
+}
+
+// 태블릿
+@media screen and (max-width: 1024px) {
+  .main_event {
+    .btn_more {
+      top: 0.8em;
     }
   }
 
