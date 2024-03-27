@@ -86,7 +86,6 @@
 		],
 	});
 })();
-$(window).on('load resize', quickSlide);
 
 
 
