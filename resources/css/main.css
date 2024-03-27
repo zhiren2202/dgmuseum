@@ -256,8 +256,9 @@
   padding: 4em 0;
 }
 .main_event .main_event_title {
-  font-size: 2.125em;
   float: left;
+  font-size: 2.125em;
+  font-weight: 700;
 }
 
 .event_tab_head {
@@ -487,6 +488,7 @@
 .main_collection .main_collection_title {
   margin: 0 0 0.5em 0;
   font-size: 2.125em;
+  font-weight: 700;
 }
 
 .collection_items .collection_item {
@@ -538,12 +540,14 @@
 .banner_items_multi_controllers {
   position: absolute;
   top: 2em;
-  left: 0;
+  left: -0.3em;
 }
 .banner_items_multi_controllers [class*=btn_slide_] {
   position: relative;
   display: block;
   float: left;
+  width: 1.875em;
+  height: 1.875em;
 }
 
 .banner_items_multi {
@@ -598,13 +602,19 @@
   height: 100%;
 }
 .banner_items_uni .banner_item {
+  position: relative;
   display: inline-block;
   width: 16.375em;
   height: 100%;
   border: 1px solid #dddddd;
+  overflow: hidden;
 }
 .banner_items_uni .banner_item img {
-  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
 }
 
 @media screen and (min-width: 721px) and (max-width: 1280px) {
@@ -655,7 +665,7 @@
     left: 1em;
   }
   .banner_items_multi_controllers {
-    left: 1em;
+    left: 0.5em;
   }
   .banner_items_uni_wrap {
     right: 1em;
@@ -809,9 +819,6 @@
   .quickmenu_items [class*=quickmenu_item]::before {
     width: 5.75em;
     height: 5.75em;
-  }
-  .main_event {
-    padding: 2em 0;
   }
   .main_event .main_event_title {
     font-size: 2.5em;

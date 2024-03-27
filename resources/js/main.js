@@ -220,6 +220,13 @@
 					variableWidth: false,
 				},
 			},
+			{
+				breakpoint: 821, // max 768
+				settings: {
+					slidesToShow: 3, 
+					variableWidth: false,
+				},
+			},
 		],
 	});
 
