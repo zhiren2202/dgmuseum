@@ -81,15 +81,14 @@
 			},
 			{
 				breakpoint: 481, // max 480
-				settings: { slidesToShow: 2 },
-			},
-			{
-				breakpoint: 321, // max 320
-				settings: { slidesToShow: 1 },
+				settings: "unslick"
 			},
 		],
 	});
 })();
+$(window).on('load resize', quickSlide);
+
+
 
 // MAIN EVENT SLIDE
 (function eventSlide(){

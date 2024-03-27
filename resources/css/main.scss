@@ -1161,12 +1161,27 @@
 
 @media screen and (max-width: 480px) {
   .quickmenu_wrap {
-    margin: 1.5em 0;
+    padding: 0 1em;
+    margin: 1em 0;
+
+    [class*=btn_] {
+      display: none;
+    }
   }
 
   .quickmenu_items {
+    overflow: hidden;
+    padding: 1em 0.2em;
+
     [class*='quickmenu_item'] {
+      width: 32.3333%;
+      margin: 0 0.5%;
       font-size: 1.4em;
+
+      &::before {
+        width: 4em;
+        height: 4em;
+      }
     }
   }
 }
