@@ -1200,15 +1200,15 @@ td {
     thead {
       tr {
         th {
-          border: 1px solid #e9e9e9;
+          border-bottom: 1px solid #e9e9e9;
+
+          & + th {
+            border-left: 1px solid #e9e9e9;
+          }
         }
   
         &:first-of-type th {
           border-top: 1px solid #86898f;
-        }
-  
-        &:last-of-type th {
-          border-bottom: 0;
         }
       }
     }
@@ -1216,10 +1216,12 @@ td {
     tbody {
       th {
         border: 1px solid #e9e9e9;
+        border-left: 0;
       }
       
       td {
-        border: 1px solid #e9e9e9;
+        border-bottom: 1px solid #e9e9e9;
+        border-left: 1px solid #e9e9e9;
   
         strong {
           margin-left: 1.5em;
@@ -1232,6 +1234,7 @@ td {
         color: #3c7c99;
         font-size: 1.06em;
         font-weight: 700;
+        border-left: 0;
         background-color: #f8fbfd;
       }
   
@@ -1313,6 +1316,10 @@ td {
   .org__table {
     .mo-hidden {
       display: none;
+    }
+
+    .mo-removeBorder {
+      border-left: 0;
     }
   }
 }
