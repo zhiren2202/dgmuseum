@@ -270,6 +270,10 @@ hr.orange::before {
   width: 20%;
 }
 
+.w-25per {
+  width: 20%;
+}
+
 .w-30per {
   width: 30%;
 }
@@ -671,36 +675,43 @@ hr.orange::before {
   font-size: 0.9375em;
 }
 
-.board_list {
+th, td {
+  word-break: keep-all;
+}
+
+td {
+  text-align: center;
+}
+td.td-left {
+  text-align: left;
+}
+td.td-right {
+  text-align: right;
+}
+td.td-center {
+  text-align: center;
+}
+
+.board_list table {
   width: 100%;
   border-top: 2px solid #92959b;
   table-layout: fixed;
 }
-.board_list thead tr th {
+.board_list table thead tr th {
   height: 46px;
   border-bottom: 1px solid #d0d0d0;
 }
-.board_list tbody tr.fixed td:first-of-type {
+.board_list table tbody tr.fixed td:first-of-type {
   color: #ff5c1c;
   font-weight: 700;
 }
-.board_list tbody tr td {
+.board_list table tbody tr td {
   position: relative;
   height: 62px;
   border-bottom: 1px solid #e9e9e9;
-  text-align: center;
   padding: 0 10px;
 }
-.board_list tbody tr td.td-left {
-  text-align: left;
-}
-.board_list tbody tr td.td-right {
-  text-align: right;
-}
-.board_list tbody tr td.td-center {
-  text-align: center;
-}
-.board_list tbody tr td .board__title {
+.board_list table tbody tr td .board__title {
   max-width: 100%;
   display: inline-block;
   white-space: nowrap;
@@ -1013,6 +1024,42 @@ hr.orange::before {
   font-weight: 700;
 }
 
+.table_type1 {
+  color: #666;
+}
+.table_type1 th, .table_type1 td {
+  padding: 1.2em 1em;
+}
+.table_type1 thead tr th {
+  border: 1px solid #e9e9e9;
+}
+.table_type1 thead tr:first-of-type th {
+  border-top: 1px solid #86898f;
+}
+.table_type1 thead tr:last-of-type th {
+  border-bottom: 0;
+}
+.table_type1 tbody th {
+  border: 1px solid #e9e9e9;
+}
+.table_type1 tbody td {
+  border: 1px solid #e9e9e9;
+}
+.table_type1 tbody td strong {
+  margin-left: 1.5em;
+  color: #333;
+}
+.table_type1 tbody .tbody_th_1 {
+  text-align: center;
+  color: #3c7c99;
+  font-size: 1.06em;
+  font-weight: 700;
+  background-color: #f8fbfd;
+}
+.table_type1 tbody .tbody_th_2 {
+  color: #557f92;
+}
+
 @media screen and (max-width: 1200px) {
   .board_tabs.tab-5 .board_tab {
     width: 33.3333%;
@@ -1060,6 +1107,11 @@ hr.orange::before {
   }
   .board_item .board_item_date {
     padding: 1em 16em 2.5em 2.5em;
+  }
+}
+@media screen and (max-width: 720px) {
+  .org__table .mo-hidden {
+    display: none;
   }
 }
 @media screen and (max-width: 600px) {
