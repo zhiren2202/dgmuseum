@@ -908,6 +908,9 @@ td.td-center {
   margin: 0.5em;
   word-break: break-all;
 }
+.board_view_footer [class*=footer__] + [class*=footer__] {
+  padding: 0 1em;
+}
 .board_view_footer .footer__title {
   width: 10%;
   margin: 0.5em 0;
@@ -927,9 +930,48 @@ td.td-center {
 }
 
 .board_view_btn {
-  margin: 0 0 1em 0;
+  margin: 0 0 2em 0;
   text-align: center;
   font-size: 1.375em;
+}
+
+.board_view_pagination .pagination_items {
+  position: relative;
+  padding: 1em 10%;
+  overflow: hidden;
+  border-top: 1px solid #e2e2e2;
+}
+.board_view_pagination .pagination_items > * {
+  float: left;
+}
+.board_view_pagination .pagination_items:last-of-type {
+  border-bottom: 1px solid #e2e2e2;
+}
+.board_view_pagination .pagination_items .item_indicate {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+  width: 10%;
+  text-align: center;
+}
+.board_view_pagination .pagination_items .item_indicate::after {
+  content: "|";
+  display: block;
+  float: right;
+  color: #e2e2e2;
+}
+.board_view_pagination .pagination_items .item_title {
+  padding: 0 1.3em;
+  width: 100%;
+}
+.board_view_pagination .pagination_items .item_date {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(0, -50%);
+  width: 10%;
+  text-align: center;
 }
 
 /********** INPUT FORM **********/
@@ -1274,6 +1316,9 @@ td.td-center {
   .board_view_footer [class*=footer__] {
     width: 100%;
   }
+  .board_view_footer [class*=footer__] + [class*=footer__] {
+    padding: 0;
+  }
 }
 @media screen and (max-width: 600px) {
   .apply_board_item {
@@ -1322,6 +1367,13 @@ td.td-center {
     width: 100%;
     margin-left: 0;
   }
+  .board_view_pagination .pagination_items {
+    padding: 1em 15%;
+  }
+  .board_view_pagination .pagination_items .item_indicate,
+  .board_view_pagination .pagination_items .item_date {
+    width: 15%;
+  }
 }
 @media screen and (max-width: 480px) {
   .board_item .board_item_title {
@@ -1341,6 +1393,13 @@ td.td-center {
   .gallery_board_item {
     width: 100%;
     margin: 0 0 1em 0;
+  }
+  .board_view_pagination .pagination_items {
+    padding: 1em 20%;
+  }
+  .board_view_pagination .pagination_items .item_indicate,
+  .board_view_pagination .pagination_items .item_date {
+    width: 20%;
   }
 }
 @media screen and (max-width: 320px) {
