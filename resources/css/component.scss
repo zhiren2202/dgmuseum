@@ -1136,6 +1136,55 @@ td {
   }
 }
 
+.board_view_visual {
+  position: relative;
+  width: 100%;
+  height: 22.25em;
+  background-image: url(../images/sub_visual.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  .board_view_contents {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20.5em;
+    height: 100%;
+    padding: 3em 1.5em;
+    color: #fff;
+    background-color: rgba($color: #424862, $alpha: 0.65);
+  }
+
+  .board_view_detail dl {
+    margin: 0 0 0.5em 0;
+    letter-spacing: -0.03em;
+
+    dt {
+      float: left;
+      min-width: 5.5em;
+    }
+
+    dd {
+      float: left;
+    }
+
+    &::after {
+      content: '';
+      display: block;
+      clear: both;
+    }
+  }
+
+  .board_view_btn {
+    position: absolute;
+    left: 50%;
+    bottom: 1.7em;
+    transform: translate(-50%,0);
+    margin: 0;
+  }
+}
+
 
 /********** INPUT FORM **********/
 .agree__body {
@@ -1688,5 +1737,9 @@ td {
     position: static;
     transform: translate(0,0);
     margin-bottom: 0.5em;
+  }
+
+  .board_view_visual .board_view_contents {
+    width: 100%;
   }
 }
