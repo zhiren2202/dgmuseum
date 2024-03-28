@@ -361,7 +361,7 @@ hr {
   width: 100%;
 }
 
-// BUTTON
+/********** BUTTON **********/
 .btn_wrap {
   font-size: 1.375em;
   margin: 0 0 1em 0;
@@ -477,7 +477,7 @@ hr {
   }
 }
 
-// BOARD MARK
+/********** BOARD MARK **********/
 .board_mark {
   display: inline-block;
   padding: 0.5em 2em;
@@ -508,7 +508,7 @@ hr {
   }
 }
 
-// BOARD
+/********** BOARD **********/
 .board_items {
   width: 100%;
   max-height: 500px;
@@ -999,7 +999,94 @@ td {
   background-position: center;
 }
 
-// INPUT FORM
+/********** BOARD VIEW **********/
+.board_view_header {
+  .board__view__title {
+    padding: 1em 0;
+    border-top: 2px solid #92959b;
+    border-bottom: 1px solid #d0d0d0;
+    color: #555;
+    font-size: 1.75em;
+  }
+
+  .board__view__detail {
+    overflow: hidden;
+    padding: 1.2em 0;
+    color: #666;
+    font-size: 0.94em;
+
+    li {
+      display: block;
+      float: left;
+
+      & + li {
+        &::before {
+          content: '|';
+          display: block;
+          float: left;
+          margin: 0 1em;
+          color: #ddd;
+        }
+      }
+    }
+  }
+}
+
+.board_view_body {
+  padding: 3em 0;
+  min-height: 20em;
+}
+
+.board_view_footer {
+  overflow: hidden;
+  padding: 0.5em 0;
+  border-top: 1px solid #e9e9e9;
+  border-bottom: 0;
+  color: #666;
+  
+  [class*='footer__'] {
+    float: left;
+    width: 90%;
+    font-size: 0.94em;
+
+    a {
+      display: inline-block;
+      margin: 0.5em;
+      word-break: break-all;
+    }
+  }
+
+  .footer__title {
+    width: 10%;
+    margin: 0.5em 0;
+    text-align: center;
+    letter-spacing: -0.01em;
+  }
+
+  .footer__download {
+    a {
+      padding-right: 2em;
+      background-image: url(../../resources/images/ico_file.png);
+      background-repeat: no-repeat;
+      background-size: 1.33em 1.2em;
+      background-position: right center;
+    }
+  }
+
+  &:last-of-type {
+    margin-bottom: 1.5em;
+    border-bottom: 1px solid #cfcfcf;
+  }
+}
+
+.board_view_btn {
+  margin: 0 0 1em 0;
+  text-align: center;
+  font-size: 1.375em;
+}
+
+
+/********** INPUT FORM **********/
 .agree__body {
   margin-bottom: 0.6em;
   padding: 1.75em;
@@ -1189,7 +1276,7 @@ td {
   }
 }
 
-// TABLE
+/********** TABLE **********/
 .table_type1 {
     color: #666;
   
@@ -1244,7 +1331,7 @@ td {
     }
 }
 
-// CALENDAR
+/********** CALENDAR **********/
 .calendar {
   .calendar__date {
     margin-bottom: 1em;
@@ -1332,6 +1419,7 @@ td {
   }
 }
 
+/********** RESPONSIVE **********/
 @media screen and (max-width: 1200px) {
   .board_tabs {
     &.tab-5 .board_tab {
@@ -1408,6 +1496,18 @@ td {
 
     .mo-removeBorder {
       border-left: 0;
+    }
+  }
+
+  .board_view_footer {
+    .footer__title {
+      width: 100%;
+      padding-left: 0.5em;
+      text-align: left;
+    }
+
+    [class*='footer__'] {
+      width: 100%;
     }
   }
 }

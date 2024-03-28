@@ -310,6 +310,7 @@ hr.orange::before {
   width: 100%;
 }
 
+/********** BUTTON **********/
 .btn_wrap {
   font-size: 1.375em;
   margin: 0 0 1em 0;
@@ -414,6 +415,7 @@ hr.orange::before {
   margin: 0;
 }
 
+/********** BOARD MARK **********/
 .board_mark {
   display: inline-block;
   padding: 0.5em 2em;
@@ -442,6 +444,7 @@ hr.orange::before {
   border: 1px solid #a2adbb;
 }
 
+/********** BOARD **********/
 .board_items {
   width: 100%;
   max-height: 500px;
@@ -857,6 +860,79 @@ td.td-center {
   background-position: center;
 }
 
+/********** BOARD VIEW **********/
+.board_view_header .board__view__title {
+  padding: 1em 0;
+  border-top: 2px solid #92959b;
+  border-bottom: 1px solid #d0d0d0;
+  color: #555;
+  font-size: 1.75em;
+}
+.board_view_header .board__view__detail {
+  overflow: hidden;
+  padding: 1.2em 0;
+  color: #666;
+  font-size: 0.94em;
+}
+.board_view_header .board__view__detail li {
+  display: block;
+  float: left;
+}
+.board_view_header .board__view__detail li + li::before {
+  content: "|";
+  display: block;
+  float: left;
+  margin: 0 1em;
+  color: #ddd;
+}
+
+.board_view_body {
+  padding: 3em 0;
+  min-height: 20em;
+}
+
+.board_view_footer {
+  overflow: hidden;
+  padding: 0.5em 0;
+  border-top: 1px solid #e9e9e9;
+  border-bottom: 0;
+  color: #666;
+}
+.board_view_footer [class*=footer__] {
+  float: left;
+  width: 90%;
+  font-size: 0.94em;
+}
+.board_view_footer [class*=footer__] a {
+  display: inline-block;
+  margin: 0.5em;
+  word-break: break-all;
+}
+.board_view_footer .footer__title {
+  width: 10%;
+  margin: 0.5em 0;
+  text-align: center;
+  letter-spacing: -0.01em;
+}
+.board_view_footer .footer__download a {
+  padding-right: 2em;
+  background-image: url(../../resources/images/ico_file.png);
+  background-repeat: no-repeat;
+  background-size: 1.33em 1.2em;
+  background-position: right center;
+}
+.board_view_footer:last-of-type {
+  margin-bottom: 1.5em;
+  border-bottom: 1px solid #cfcfcf;
+}
+
+.board_view_btn {
+  margin: 0 0 1em 0;
+  text-align: center;
+  font-size: 1.375em;
+}
+
+/********** INPUT FORM **********/
 .agree__body {
   margin-bottom: 0.6em;
   padding: 1.75em;
@@ -1024,6 +1100,7 @@ td.td-center {
   font-weight: 700;
 }
 
+/********** TABLE **********/
 .table_type1 {
   color: #666;
 }
@@ -1063,6 +1140,7 @@ td.td-center {
   color: #557f92;
 }
 
+/********** CALENDAR **********/
 .calendar .calendar__date {
   margin-bottom: 1em;
   text-align: center;
@@ -1131,6 +1209,7 @@ td.td-center {
   color: #f30000;
 }
 
+/********** RESPONSIVE **********/
 @media screen and (max-width: 1200px) {
   .board_tabs.tab-5 .board_tab {
     width: 33.3333%;
@@ -1186,6 +1265,14 @@ td.td-center {
   }
   .org__table .mo-removeBorder {
     border-left: 0;
+  }
+  .board_view_footer .footer__title {
+    width: 100%;
+    padding-left: 0.5em;
+    text-align: left;
+  }
+  .board_view_footer [class*=footer__] {
+    width: 100%;
   }
 }
 @media screen and (max-width: 600px) {
