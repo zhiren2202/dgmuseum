@@ -1063,6 +1063,36 @@ td.td-center {
   color: #557f92;
 }
 
+.calendar .calendar__date {
+  margin-bottom: 1em;
+  text-align: center;
+}
+.calendar .calendar__date label {
+  float: left;
+}
+.calendar .calendar__date [class*=calendar__date__] {
+  display: inline-block;
+  padding: 0 1em 0 0.7em;
+  height: 1.875em;
+  border: 1px solid #dbdbdb;
+  font-size: 1.5em;
+  color: #333;
+  background-image: url(../../resources/images/common/select_arrow.png);
+  background-repeat: no-repeat;
+  background-size: 0.45em 0.295em;
+  background-position: center right 0.5em;
+}
+.calendar .calendar__date [class*=calendar__date__] + span {
+  color: #666;
+  font-size: 1.5em;
+}
+.calendar .calendar__date .calendar__date__year {
+  width: 5.2em;
+}
+.calendar .calendar__date .calendar__date__month {
+  width: 3.5em;
+  margin-left: 0.3em;
+}
 .calendar table {
   color: #666;
 }
@@ -1083,15 +1113,16 @@ td.td-center {
   min-height: 7.75em;
   padding: 0.5em;
 }
-.calendar table tbody tr td .calendar__day .board_mark {
-  padding: 0.3em 0.5em;
-  margin-right: 0.5em;
-  min-width: 20px;
-  font-size: 0.77em;
-}
 .calendar table tbody tr td .calendar__day ul li {
   margin-bottom: 0.5em;
   font-size: 0.815em;
+  line-height: 1.5;
+}
+.calendar table tbody tr td .calendar__day .board_mark {
+  padding: 0.2em 0.5em;
+  margin-right: 0.5em;
+  min-width: 20px;
+  font-size: 0.77em;
 }
 .calendar table tbody tr td.sat {
   color: #0081e5;

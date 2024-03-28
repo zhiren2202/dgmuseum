@@ -1246,6 +1246,42 @@ td {
 
 // CALENDAR
 .calendar {
+  .calendar__date {
+    margin-bottom: 1em;
+    text-align: center;
+
+    label {
+      float: left;
+    }
+
+    [class*='calendar__date__'] {
+      display: inline-block;
+      padding: 0 1em 0 0.7em;
+      height: 1.875em;
+      border: 1px solid #dbdbdb;
+      font-size: 1.5em;
+      color: #333;
+      background-image: url(../../resources/images/common/select_arrow.png);
+      background-repeat: no-repeat;
+      background-size: 0.45em 0.295em;
+      background-position: center right 0.5em;
+
+      & + span {
+        color: #666;
+        font-size: 1.5em;
+      }
+    }
+
+    .calendar__date__year {
+      width: 5.2em;
+    }
+
+    .calendar__date__month {
+      width: 3.5em;
+      margin-left: 0.3em;
+    }
+  }
+
   table {
     color: #666;
 
@@ -1270,16 +1306,17 @@ td {
           min-height: 7.75em;
           padding: 0.5em;
 
-          .board_mark {
-            padding: 0.3em 0.5em;
-            margin-right: 0.5em;
-            min-width: 20px;
-            font-size: 0.77em;
-          }
-
           ul li {
             margin-bottom: 0.5em;
             font-size: 0.815em;
+            line-height: 1.5;
+          }
+
+          .board_mark {
+            padding: 0.2em 0.5em;
+            margin-right: 0.5em;
+            min-width: 20px;
+            font-size: 0.77em;
           }
         }
 
