@@ -73,9 +73,34 @@ hr.orange::before {
   background-color: #ff6600;
 }
 
+.font-red {
+  color: #f6362b;
+}
+
 .text_box p {
   margin-bottom: 1em;
   line-height: 1.5;
+}
+
+.status_box {
+  padding: 3.4em 1em 2.4em;
+  border: 1px solid #d3d3d3;
+  text-align: center;
+}
+.status_box > * {
+  display: block;
+}
+.status_box strong {
+  margin-bottom: 0.3em;
+  font-size: 1.875em;
+}
+.status_box em {
+  font-size: 1.375em;
+  color: #333;
+}
+.status_box p {
+  margin-top: 2.2em;
+  color: #777;
 }
 
 .box_gray {
