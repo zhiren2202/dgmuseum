@@ -50,6 +50,7 @@ hr {
   font-size: 1.375em;
   font-weight: 700;
   letter-spacing: -0.09em;
+  word-break: keep-all;
 
   &::before {
     content: '';
@@ -66,6 +67,7 @@ hr {
   font-size: 1.375em;
   margin: 0 0 0.8em 0;
   font-weight: 700;
+  word-break: keep-all;
 
   em {
     font-weight: 400;
@@ -203,21 +205,25 @@ hr {
   }
 }
 
+.info_item {
+  overflow: hidden;
+  word-break: keep-all;
+}
+
 .img-circle {
   float: left;
-  width: 10.75em;
-  height: 10.75em;
-  border-radius: 50%;
   margin-bottom: 1em;
   overflow: hidden;
 
   img {
-    width: 100%;
+    width: 10.75em;
+    height: 10.75em;
+    border-radius: 50%;
   }
 
-  & + p {
-    float: left;
-    padding: 0 1em;
+  & + .info_text {
+    padding: 0 1em 0 12em;
+    margin: 0;
   }
 }
 
@@ -1650,6 +1656,18 @@ td {
 
     &:nth-of-type(3n) {
       margin-right: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 912px) {
+  .img-circle {
+    width: 100%;
+    text-align: center;
+
+    & + .info_text {
+      float: left;
+      padding: 0 1em;
     }
   }
 }
