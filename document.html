@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document Guide</title>
+  <link rel="stylesheet" href="./resources/css/reset.css">
+  <link rel="stylesheet" href="./resources/css/common.css">
+  <link rel="stylesheet" href="./resources/css/layout.css">
+  <link rel="stylesheet" href="./resources/css/component.css">
+  <script src="./resources/js/jquery-3.7.1.min.js" defer></script>
+  <script src="./resources/js/slick.min.js" defer></script>
+  <script src="./resources/js/layout.js" defer></script>
+  <script src="./resources/js/mobile_menu.js" defer></script>
+</head>
+<body>
+
+  <header class="header">
+    <h1 class="header_logo">
+      <a href="#" title="메인 페이지로 이동">
+        <img src="./resources/images/main/logo.png" alt="대구교육박물관 DAEGU MUSEUM OF EDUCATION">
+      </a>
+    </h1>
+    <nav class="header_navbar">
+      <ul class="lnb">
+        <li class="lnb_depth1">
+          <a href="#">이용안내</a>
+          <div class="lnb_depth2_wrap">
+            <ul>
+              <li class="lnb_depth2"><a href="#">관람안내</a></li>
+              <li class="lnb_depth2">
+                <a href="#">시설안내</a>
+                <ul>
+                  <li class="lnb_depth3"><a href="#">편의공간</a></li>
+                  <li class="lnb_depth3"><a href="#">대관시설</a></li>
+                  <li class="lnb_depth3"><a href="#">층별시설안내</a></li>
+                </ul>
+              </li>
+              <li class="lnb_depth2"><a href="#">전시해설예약</a></li>
+              <li class="lnb_depth2"><a href="#">단체관람예약</a></li>
+              <li class="lnb_depth2"><a href="#">현장체험학습</a></li>
+              <li class="lnb_depth2"><a href="#">자주하는질문</a></li>
+              <li class="lnb_depth2"><a href="#">찾아오시는길</a></li>
+              <li class="lnb_depth2"><a href="#">예약확인</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="lnb_depth1">
+          <a href="#">전시</a>
+          <div class="lnb_depth2_wrap">
+            <ul>
+              <li class="lnb_depth2">
+                <a href="#">기획전시</a>
+                <ul>
+                  <li class="lnb_depth3"><a href="#">현재전시</a></li>
+                  <li class="lnb_depth3"><a href="#">예정전시</a></li>
+                  <li class="lnb_depth3"><a href="#">지난전시</a></li>
+                </ul>
+              </li>
+              <li class="lnb_depth2">
+                <a href="#">상설전시</a>
+                <ul>
+                  <li class="lnb_depth3"><a href="#">교육역사관</a></li>
+                  <li class="lnb_depth3"><a href="#">대구교육관</a></li>
+                  <li class="lnb_depth3"><a href="#">유아교육실</a></li>
+                  <li class="lnb_depth3"><a href="#">특수교육실</a></li>
+                  <li class="lnb_depth3"><a href="#">금계기증유물실</a></li>
+                  <li class="lnb_depth3"><a href="#">주제전시실</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="lnb_depth1">
+          <a href="#">교육/행사</a>
+          <div class="lnb_depth2_wrap">
+            <ul>
+              <li class="lnb_depth2"><a href="#">교육달력</a></li>
+              <li class="lnb_depth2">
+                <a href="#">교육신청</a>
+                <ul>
+                  <li class="lnb_depth3"><a href="#">즐거운 주말 체험교실</a></li>
+                  <li class="lnb_depth3"><a href="#">신나는 방학 테마교실</a></li>
+                  <li class="lnb_depth3"><a href="#">수요일밤, 문화가 있는 날</a></li>
+                  <li class="lnb_depth3"><a href="#">교원직무연수</a></li>
+                  <li class="lnb_depth3"><a href="#">각종대회 및 공모전</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="lnb_depth1">
+          <a href="#">자료실</a>
+          <div class="lnb_depth2_wrap">
+            <ul>
+              <li class="lnb_depth2"><a href="#">소장품소개</a></li>
+              <li class="lnb_depth2"><a href="#">소장품검색</a></li>
+              <li class="lnb_depth2"><a href="#">발간자료현황</a></li>
+              <li class="lnb_depth2"><a href="#">자료기증 및 수집</a></li>
+              <li class="lnb_depth2"><a href="#">자료열람/복제</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="lnb_depth1">
+          <a href="#">소식/참여</a>
+          <div class="lnb_depth2_wrap">
+            <ul>
+              <li class="lnb_depth2"><a href="#">공지사항</a></li>
+              <li class="lnb_depth2"><a href="#">보도현황</a></li>
+              <li class="lnb_depth2"><a href="#">자원봉사</a></li>
+              <li class="lnb_depth2"><a href="#">소식지</a></li>
+              <li class="lnb_depth2"><a href="#">전자민원</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="lnb_depth1">
+          <a href="#">정보공개</a>
+          <div class="lnb_depth2_wrap">
+            <ul>
+              <li class="lnb_depth2"><a href="#">정보공개제도</a></li>
+              <li class="lnb_depth2"><a href="#">사전정보공표</a></li>
+              <li class="lnb_depth2"><a href="#">공공데이터개방</a></li>
+              <li class="lnb_depth2"><a href="#">정보공개목록</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="lnb_depth1">
+          <a href="#">박물관소개</a>
+          <div class="lnb_depth2_wrap">
+            <ul>
+              <li class="lnb_depth2"><a href="#">인사말</a></li>
+              <li class="lnb_depth2"><a href="#">연혁</a></li>
+              <li class="lnb_depth2"><a href="#">비전과 미션</a></li>
+              <li class="lnb_depth2"><a href="#">조직도</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+      <div class="gnb">
+        <a href="#">홈</a>
+        <a href="#">찾아오시는 길</a>
+        <a href="#">ENGLICH</a>
+        <button type="button" class="btn_sitemap" title="사이트맵">
+          <span class="blind">사이트맵으로 이동</span>
+        </button>
+      </div>
+      <button type="button" class="btn_mobilemenu" title="메뉴">
+        <span class="blind">전체 메뉴 보기</span>
+      </button> 
+    </nav>
+    <div class="mobile_menu">
+      <ul class="menu_items">
+        <li class="menu_item on">
+          <button type="button" class="menu__depth1">이용안내</button>
+          <ul class="menu__depth2">
+            <li><a href="#">관람안내</a></li>
+            <li>
+              <a href="#">시설안내</a>
+              <ul class="menu__depth3">
+                <li><a href="#">편의공간</a></li>
+                <li><a href="#">대관시설</a></li>
+                <li><a href="#">층별시설안내</a></li>
+              </ul>
+            </li>
+            <li><a href="#">전시해설예약</a></li>
+            <li><a href="#">단체관람예약</a></li>
+            <li><a href="#">현장체험학습</a></li>
+            <li><a href="#">자주하는질문</a></li>
+            <li><a href="#">찾아오시는길</a></li>
+            <li><a href="#">예약확인</a></li>
+          </ul>
+        </li>
+        <li class="menu_item">
+          <button type="button" class="menu__depth1">전시</button>
+          <ul class="menu__depth2">
+            <li>
+              <a href="#">기획전시</a>
+              <ul class="menu__depth3">
+                <li><a href="#">현재전시</a></li>
+                <li><a href="#">예정전시</a></li>
+                <li><a href="#">지난전시</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">상설전시</a>
+              <ul class="menu__depth3">
+                <li><a href="#">교육역사관</a></li>
+                <li><a href="#">대구교육관</a></li>
+                <li><a href="#">유아교육실</a></li>
+                <li><a href="#">특수교육실</a></li>
+                <li><a href="#">금계기증유물실</a></li>
+                <li><a href="#">주제전시실</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li class="menu_item">
+          <button type="button" class="menu__depth1">교육/행사</button>
+          <ul class="menu__depth2">
+            <li><a href="#">교육달력</a></li>
+            <li>
+              <a href="#">교육신청</a>
+              <ul class="menu__depth3">
+                <li><a href="#">즐거운 주말 체험교실</a></li>
+                <li><a href="#">신나는 방학 테마교실</a></li>
+                <li><a href="#">수요일밤, 문화가 있는 날</a></li>
+                <li><a href="#">교원직무연수</a></li>
+                <li><a href="#">각종대회 및 공모전</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li class="menu_item">
+          <button type="button" class="menu__depth1">자료실</button>
+          <ul class="menu__depth2">
+            <li><a href="#">소장품소개</a></li>
+            <li><a href="#">소장품검색</a></li>
+            <li><a href="#">발간자료현황</a></li>
+            <li><a href="#">자료기증 및 수집</a></li>
+            <li><a href="#">자료열람/복제</a></li>
+          </ul>
+        </li>
+        <li class="menu_item">
+          <button type="button" class="menu__depth1">소식/참여</button>
+          <ul class="menu__depth2">
+            <li><a href="#">공지사항</a></li>
+            <li><a href="#">보도현황</a></li>
+            <li><a href="#">자원봉사</a></li>
+            <li><a href="#">소식지</a></li>
+            <li><a href="#">전자민원</a></li>
+          </ul>
+        </li>
+        <li class="menu_item">
+          <button type="button" class="menu__depth1">정보공개</button>
+          <ul class="menu__depth2">
+            <li><a href="#">정보공개제도</a></li>
+            <li><a href="#">사전정보공표</a></li>
+            <li><a href="#">공공데이터개방</a></li>
+            <li><a href="#">정보공개목록</a></li>
+          </ul>
+        </li>
+        <li class="menu_item">
+          <button type="button" class="menu__depth1">박물관소개</button>
+          <ul class="menu__depth2">
+            <li><a href="#">인사말</a></li>
+            <li><a href="#">연혁</a></li>
+            <li><a href="#">비전과 미션</a></li>
+            <li><a href="#">조직도</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <div class="mobile_menu_shadow"></div>
+
+  <main class="container">
+    <div class="sub_visual">
+      <h2 class="sub_visual_title">예약확인</h2>
+    </div>
+    <nav class="sub_path">
+      <div class="innerbox">
+        <a href="javascript:void(0)" class="path__home">홈</a>
+        <ul class="path__menu">
+          <li class="path__depth1">
+            <a href="javascript:void(0)">이용안내</a>
+            <div class="path__depth2">
+              <a href="#" class="first active" title="선택됨">이용안내</a>
+              <a href="#">전시</a>
+              <a href="#">교육/행사</a>
+              <a href="#">자료실</a>
+              <a href="#">소식/참여</a>
+              <a href="#">정보공개</a>
+              <a href="#">박물관소개</a>
+            </div>
+          </li>
+          <li class="path__depth1">
+            <a href="javascript:void(0)">예약확인</a>
+            <div class="path__depth2">
+              <a href="#">관람안내</a>
+              <a href="#">시설안내</a>
+              <a href="#">전시해설예약</a>
+              <a href="#">단체관람예약</a>
+              <a href="#">현장체험학습</a>
+              <a href="#">자주하는질문</a>
+              <a href="#">찾아오시는길</a>
+              <a href="#" class="first active" title="선택됨">예약확인</a>
+            </div>
+          </li>
+          <li class="path__depth1">
+            <a href="javascript:void(0)">예약확인</a>
+            <div class="path__depth2">
+              <a href="#">관람안내</a>
+              <a href="#">시설안내</a>
+              <a href="#">전시해설예약</a>
+              <a href="#">단체관람예약</a>
+              <a href="#">현장체험학습</a>
+              <a href="#">자주하는질문</a>
+              <a href="#">찾아오시는길</a>
+              <a href="#" class="first active" title="선택됨">예약확인</a>
+            </div>
+          </li>
+        </ul>
+        <p class="path__mobile">홈 > 이용안내 > 예약확인 > 예약확인</p>
+        <div class="path__util">
+          <a href="#" class="path__util__share" title="공유하기"><span class="blind">공유아이콘</span></a>
+          <a href="#" class="path__util__print" title="인쇄하기"><span class="blind">인쇄아이콘</span></a>
+          <a href="#" class="path__util__qrcode" title="QR코드보기"><span class="blind">QR코드아이콘</span></a>
+        </div>
+      </div>
+    </nav>
+    <div class="sub_page">
+      <div class="innerbox">
+
+        <h3 class="stt3">1단</h3>
+        <ul class="ul_1">
+          <li>박물관의 모든 공간은 금연구역입니다.</li>
+          <li>전시실 입장 전에 휴대전화는 진동으로 전환하여 다른 사람의 관람에 방해가 되지 않도록 협조 바랍니다.</li>
+          <li>전시실에서는 플래시/삼각대 등을 이용한 촬영과 상업적 용도를 위한 촬영은 삼가 주십시오.</li>
+          <li>박물관 내에서는 <strong>자전거, 킥보드, 인라인스케이트, 바퀴달린 신발</strong> 등은 이용할 수 없습니다.</li>
+          <li>전시물에 손을 대거나 손상을 입힐 수 있는 행위는 삼가 주십시오.</li>
+          <li><strong>수증제한</strong>
+            <ul>
+              <li>소장경위 혹은 소유권의 출처와 관련하여 논란의 여지가 있는 경우</li>
+              <li>교육적 가치가 없다고 판단되는 경우</li>
+            </ul>
+          </li>
+          <li>전시실 내 음식물 반입과 안내견 이외의 애완동물의 출입은 금지되어 있습니다.</li>
+          <li>전시실에서는 정숙해 주시고 뛰어다니는 행위는 삼가 주십시오.</li>
+        </ul>
+
+        <hr class="gray">
+        <h3 class="stt3">2단 type1</h3>
+        <div class="col-2-20per">
+          <div class="col1">
+            <h3 class="stt2">기증안내</h3>
+          </div>
+          <div class="col2">
+            <ul class="ul_1">
+              <li>전시실 입장 전에 휴대전화는 진동으로 전환하여 다른 사람의 관람에 방해가 되지 않도록 협조 바랍니다.</li>
+              <li>박물관의 모든 공간은 금연구역입니다.</li>
+              <li>전시실에서는 플래시/삼각대 등을 이용한 촬영과 상업적 용도를 위한 촬영은 삼가 주십시오.</li>
+              <li>박물관 내에서는 <strong>자전거, 킥보드, 인라인스케이트, 바퀴달린 신발</strong> 등은 이용할 수 없습니다.</li>
+              <li>전시물에 손을 대거나 손상을 입힐 수 있는 행위는 삼가 주십시오.</li>
+              <li><strong>수증제한</strong>
+                <ul>
+                  <li>소장경위 혹은 소유권의 출처와 관련하여 논란의 여지가 있는 경우</li>
+                  <li>교육적 가치가 없다고 판단되는 경우</li>
+                </ul>
+              </li>
+              <li>전시실에서는 정숙해 주시고 뛰어다니는 행위는 삼가 주십시오.</li>
+              <li>전시실 내 음식물 반입과 안내견 이외의 애완동물의 출입은 금지되어 있습니다.</li>
+            </ul>
+          </div>
+        </div>
+
+        <hr class="gray">
+        <h3 class="stt3">2단 type2</h3>
+        <div class="col-2-30per">
+          <div class="col1">
+            <h3 class="stt2">마음이 통하는 <br>교육콘텐츠의 탄생</h3>
+          </div>
+          <div class="col2">
+            <div class="text_box">
+              <p>국회는 헌법개정안이 공고된 날로부터 60일 이내에 의결하여야 하며, 국회의 의결은 재적의원 3분의 2 이상의 찬성을 얻어야 한다. 이 헌법시행 당시에 이 헌법에 의하여 새로 설치될 기관의 권한에 속하는 직무를 행하고 있는 기관은 이 헌법에 의하여 새로운 기관이 설치될 때까지 존속하며 그 직무를 행한다.</p>
+              <p>국회는 헌법개정안이 공고된 날로부터 60일 이내에 의결하여야 하며, 국회의 의결은 재적의원 3분의 2 이상의 찬성을 얻어야 한다. 이 헌법시행 당시에 이 헌법에 의하여 새로 설치될 기관의 권한에 속하는 직무를 행하고 있는 기관은 이 헌법에 의하여 새로운 기관이 설치될 때까지 존속하며 그 직무를 행한다.</p>
+              <p>국회는 헌법개정안이 공고된 날로부터 60일 이내에 의결하여야 하며, 국회의 의결은 재적의원 3분의 2 이상의 찬성을 얻어야 한다. 이 헌법시행 당시에 이 헌법에 의하여 새로 설치될 기관의 권한에 속하는 직무를 행하고 있는 기관은 이 헌법에 의하여 새로운 기관이 설치될 때까지 존속하며 그 직무를 행한다.</p>
+              <p>국회는 헌법개정안이 공고된 날로부터 60일 이내에 의결하여야 하며, 국회의 의결은 재적의원 3분의 2 이상의 찬성을 얻어야 한다. 이 헌법시행 당시에 이 헌법에 의하여 새로 설치될 기관의 권한에 속하는 직무를 행하고 있는 기관은 이 헌법에 의하여 새로운 기관이 설치될 때까지 존속하며 그 직무를 행한다.</p>
+            </div>
+          </div>
+        </div>
+
+        <hr class="gray">
+        <h3 class="stt3">2단 type3</h3>
+        <div class="col-2-60per">
+          <div class="col1">
+            <h3 class="stt3">관람시 유의사항</h3>
+            <ul class="ul_1">
+              <li>박물관 내에서는 <strong>자전거, 킥보드, 인라인스케이트, 바퀴달린 신발</strong> 등은 이용할 수 없습니다.</li>
+              <li>전시물에 손을 대거나 손상을 입힐 수 있는 행위는 삼가 주십시오.</li>
+            </ul>
+            <h3 class="stt3">관람시 유의사항</h3>
+            <ul class="ul_1">
+              <li>전시물에 손을 대거나 손상을 입힐 수 있는 행위는 삼가 주십시오.</li>
+              <li><strong>수증제한</strong>
+                <ul>
+                  <li>소장경위 혹은 소유권의 출처와 관련하여 논란의 여지가 있는 경우</li>
+                  <li>교육적 가치가 없다고 판단되는 경우</li>
+                </ul>
+              </li>
+            </ul>
+            <h3 class="stt3">관람시 유의사항</h3>
+            <ul class="ul_1">
+              <li>박물관 내에서는 <strong>자전거, 킥보드, 인라인스케이트, 바퀴달린 신발</strong> 등은 이용할 수 없습니다.</li>
+            </ul>
+          </div>
+          <div class="col2">
+            <div class="doc_image">
+              <img src="./resources/images/content1.jpg" alt="">
+            </div>
+          </div>
+        </div>
+        <h3 class="stt3">관람시 유의사항</h3>
+        <ul class="ul_1">
+          <li>박물관 내에서는 <strong>자전거, 킥보드, 인라인스케이트, 바퀴달린 신발</strong> 등은 이용할 수 없습니다.</li>
+          <li>전시물에 손을 대거나 손상을 입힐 수 있는 행위는 삼가 주십시오.</li>
+        </ul>
+
+        <hr class="gray">
+        <h3 class="stt3">장애를 넘기 위한 우리의 노력, 공감에서 시작됩니다.</h3>
+        <div class="box_gallery col-2-50per">
+          <div class="col1">
+            <div class="imgbox">
+              <img src="./resources/images/main/collection_item_1.jpg" alt="">
+            </div>
+            <p class="img_title">대구 유치원의 모습</p>
+            <em class="img_detail">1954년</em>
+          </div>
+          <div class="col2">
+            <div class="imgbox">
+              <img src="./resources/images/main/collection_item_1.jpg" alt="">
+            </div>
+            <p class="img_title">대구 유치원의 모습</p>
+            <em class="img_detail">1954년</em>
+          </div>
+        </div>
+
+        <h3 class="stt3">장애를 넘기 위한 우리의 노력, 공감에서 시작됩니다.</h3>
+        <div class="box_gallery col-3-33per">
+          <div class="col1">
+            <div class="imgbox">
+              <img src="./resources/images/main/collection_item_1.jpg" alt="">
+            </div>
+            <p class="img_title">대구 유치원의 모습</p>
+            <em class="img_detail">1954년</em>
+          </div>
+          <div class="col2">
+            <div class="imgbox">
+              <img src="./resources/images/main/collection_item_1.jpg" alt="">
+            </div>
+            <p class="img_title">대구 유치원의 모습</p>
+            <em class="img_detail">1954년</em>
+          </div>
+          <div class="col3">
+            <div class="imgbox">
+              <img src="./resources/images/main/collection_item_1.jpg" alt="">
+            </div>
+            <p class="img_title">대구 유치원의 모습</p>
+            <em class="img_detail">1954년</em>
+          </div>
+        </div>
+
+        <h3 class="stt3">장애를 넘기 위한 우리의 노력, 공감에서 시작됩니다.</h3>
+        <div class="box_gallery col-4-25per">
+          <div class="col1">
+            <div class="imgbox">
+              <img src="./resources/images/main/collection_item_1.jpg" alt="">
+            </div>
+            <p class="img_title">대구 유치원의 모습</p>
+            <em class="img_detail">1954년</em>
+          </div>
+          <div class="col2">
+            <div class="imgbox">
+              <img src="./resources/images/main/collection_item_1.jpg" alt="">
+            </div>
+            <p class="img_title">대구 유치원의 모습</p>
+            <em class="img_detail">1954년</em>
+          </div>
+          <div class="col3">
+            <div class="imgbox">
+              <img src="./resources/images/main/collection_item_1.jpg" alt="">
+            </div>
+            <p class="img_title">대구 유치원의 모습</p>
+            <em class="img_detail">1954년</em>
+          </div>
+          <div class="col4">
+            <div class="imgbox">
+              <img src="#" alt="">
+            </div>
+            <p class="img_title">대구 유치원의 모습</p>
+            <em class="img_detail">1954년</em>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <section class="footer_link">
+      <a href="#" class="footer__logo">
+        <img src="./resources/images/main/logo_white.png" alt="대구교육박물관 DAEGU MUSEUM OF EDUCATION">
+      </a>
+      <ul class="footer__sns">
+        <li><a href="#" target="_blank" title="새창열기" class="ico_blog"><span class="blind">네이버블로그</span></a></li>
+        <li><a href="#" target="_blank" title="새창열기" class="ico_twitter"><span class="blind">트위터</span></a></li>
+        <li><a href="#" target="_blank" title="새창열기" class="ico_facebook"><span class="blind">페이스북</span></a></li>
+        <li><a href="#" target="_blank" title="새창열기" class="ico_kakao"><span class="blind">카카오톡</span></a></li>
+        <li><a href="#" target="_blank" title="새창열기" class="ico_insta"><span class="blind">인스타그램</span></a></li>
+      </ul>
+    </section>
+    <ul class="footer_util">
+      <li><a href="#">박물관소개</a></li>
+      <li><a href="#">오시는길</a></li>
+      <li><a href="#">자료기증</a></li>
+      <li><a href="#">홈페이지운영지침</a></li>
+      <li><a href="#">개인정보처리방침</a></li>
+    </ul>
+    <address class="footer_address">
+      (41535) 대구광역시 북구 대동로 1길 40(산격동)&nbsp;&nbsp;&nbsp;T. 053-258-4569&nbsp;&nbsp;&nbsp;F. 053-258-4569  
+    </address>
+    <cite class="footer_copyright">
+      COPYRIGHT 2018 ⓒ 대구교육박물관.&nbsp;&nbsp;&nbsp;ALL RIGHTS RESERVED.
+    </cite>
+  </footer>
+  
+</body>
+</html>
