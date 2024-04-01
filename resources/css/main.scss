@@ -11,10 +11,11 @@
 
   [class*='btn_slide_'] {
     width: 20px;
-    height: 16px;
+    height: 20px;
     bottom: 2.5em;
     left: 50%;
     transform: translate(5em,0);
+    background-size: contain;
   }
 
   .btn_slide_pause {
@@ -372,6 +373,16 @@
       margin-left: 0;
     }
   }
+
+  .slick-dots li {
+    button {
+      border: 1px solid #d7d7d7;
+    }
+
+    &.slick-active button {
+      border: 1px solid #ff6c13;
+    }
+  } 
 }
 
 .event_item {
@@ -501,10 +512,6 @@
     top: 0;
     bottom: initial;
     text-align: right;
-
-    li {
-      margin: 0 3px;
-    }
   }
 
   .exhibit_item {

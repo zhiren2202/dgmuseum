@@ -49,15 +49,23 @@
     right: 1em;
   }
 }
+.slick-dots li {
+  width: 20px;
+  height: 20px;
+}
 .slick-dots li button {
   padding: 0;
-  border: 1px solid #d7d7d7;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #fff;
   border-radius: 50%;
   background-color: #fff;
 }
 .slick-dots li button::before {
   content: "";
   opacity: 1;
+  width: 20px;
+  height: 20px;
 }
 .slick-dots li.slick-active button {
   border: 1px solid #ff6c13;

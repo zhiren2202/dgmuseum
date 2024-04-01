@@ -10,10 +10,11 @@
 }
 .main_visual_body [class*=btn_slide_] {
   width: 20px;
-  height: 16px;
+  height: 20px;
   bottom: 2.5em;
   left: 50%;
   transform: translate(5em, 0);
+  background-size: contain;
 }
 .main_visual_body .btn_slide_pause {
   background-image: url(../../resources/images/common/main_visual_pause.png);
@@ -318,6 +319,12 @@
 .event_items .slick-slide:first-of-type {
   margin-left: 0;
 }
+.event_items .slick-dots li button {
+  border: 1px solid #d7d7d7;
+}
+.event_items .slick-dots li.slick-active button {
+  border: 1px solid #ff6c13;
+}
 
 .event_item {
   position: relative;
@@ -438,9 +445,6 @@
   top: 0;
   bottom: initial;
   text-align: right;
-}
-.exhibit_items .slick-dots li {
-  margin: 0 3px;
 }
 .exhibit_items .exhibit_item .exhibit_item_title {
   font-size: 2.25em;
