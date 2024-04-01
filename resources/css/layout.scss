@@ -470,10 +470,14 @@
       padding: 1em 2em 1em 1em;
       height: 100%;
       border-right: 1px solid #dedede;
-      background-image: url(../../resources/images/sub_path_arrow.png);
+      background-image: url(../../resources/images/sub_path_arrow_down.png);
       background-repeat: no-repeat;
       background-size: 10px 7px;
       background-position: center right 0.5em;
+
+      &.active {
+        background-image: url(../../resources/images/sub_path_arrow_up.png);
+      }
     }
   }
 
