@@ -778,16 +778,20 @@
     height: 45px;
     border-radius: 4px;
     border: 1px solid #ccc;
-    background-image: url(../../resources/images/common/select_arrow.png);
+    background-image: url(../../resources/images/common/select_arrow_down.png);
     background-repeat: no-repeat;
     background-size: 12px 7px;
     background-position: center right 1em;
 
-    &.active ul {
-      max-height: 500px;
-      border: 1px solid #ddd;
-      border-top: 0;
-    }
+    &.active {
+      background-image: url(../../resources/images/common/select_arrow_up.png);
+
+      ul {
+        max-height: 500px;
+        border: 1px solid #ddd;
+        border-top: 0;
+      }
+    } 
     
     .event_tab_label {
       display: block;

@@ -665,10 +665,13 @@
     height: 45px;
     border-radius: 4px;
     border: 1px solid #ccc;
-    background-image: url(../../resources/images/common/select_arrow.png);
+    background-image: url(../../resources/images/common/select_arrow_down.png);
     background-repeat: no-repeat;
     background-size: 12px 7px;
     background-position: center right 1em;
+  }
+  .event_tab_head.active {
+    background-image: url(../../resources/images/common/select_arrow_up.png);
   }
   .event_tab_head.active ul {
     max-height: 500px;
