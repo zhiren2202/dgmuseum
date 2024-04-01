@@ -90,7 +90,7 @@ hr {
 .text_box {
   p {
     margin-bottom: 1em;
-    line-height: 1.5;
+    line-height: 1.7;
   }
 }
 
@@ -240,6 +240,7 @@ hr {
 
 .info_text {
   margin-bottom: 1em;
+  line-height: 1.7;
 }
 
 .ul_1 {
@@ -248,6 +249,7 @@ hr {
   li {
     position: relative;
     color: #555;
+    line-height: 1.5;
 
     &:last-of-type {
       margin-bottom: 0;
@@ -260,7 +262,7 @@ hr {
 
   & > li {
     padding: 0 0 0 0.5em;
-    margin-bottom: 1em;
+    margin-bottom: 0.75em;
 
     &::before {
       content: '';
@@ -278,7 +280,7 @@ hr {
       padding: 0.5em 0 0;
 
       & > li {
-        margin-bottom: 0.5em;
+        margin-bottom: 0.25em;
 
         &::before {
           content: '-';

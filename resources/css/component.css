@@ -81,7 +81,7 @@ hr.orange::before {
 
 .text_box p {
   margin-bottom: 1em;
-  line-height: 1.5;
+  line-height: 1.7;
 }
 
 .status_box {
@@ -224,6 +224,7 @@ hr.orange::before {
 
 .info_text {
   margin-bottom: 1em;
+  line-height: 1.7;
 }
 
 .ul_1 {
@@ -232,6 +233,7 @@ hr.orange::before {
 .ul_1 li {
   position: relative;
   color: #555;
+  line-height: 1.5;
 }
 .ul_1 li:last-of-type {
   margin-bottom: 0;
@@ -241,7 +243,7 @@ hr.orange::before {
 }
 .ul_1 > li {
   padding: 0 0 0 0.5em;
-  margin-bottom: 1em;
+  margin-bottom: 0.75em;
 }
 .ul_1 > li::before {
   content: "";
@@ -258,7 +260,7 @@ hr.orange::before {
   padding: 0.5em 0 0;
 }
 .ul_1 > li > ul > li {
-  margin-bottom: 0.5em;
+  margin-bottom: 0.25em;
 }
 .ul_1 > li > ul > li::before {
   content: "-";
