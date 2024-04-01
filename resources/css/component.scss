@@ -1595,6 +1595,10 @@ td {
             min-width: 20px;
             font-size: 0.77em;
           }
+
+          &:hover {
+            background-color: #fffdeb;
+          }
         }
 
         &.sat {
