@@ -972,8 +972,8 @@ td.td-center {
 }
 
 .board_view_body {
-  padding: 3em 0;
-  min-height: 20em;
+  padding: 3em 0 5em 0;
+  line-height: 1.7;
 }
 
 .board_view_footer {
@@ -1003,11 +1003,11 @@ td.td-center {
   letter-spacing: -0.01em;
 }
 .board_view_footer .footer__download a {
-  padding-right: 2em;
+  padding-left: 1.75em;
   background-image: url(../../resources/images/ico_file.png);
   background-repeat: no-repeat;
   background-size: 1.33em 1.2em;
-  background-position: right center;
+  background-position: left center;
 }
 .board_view_footer:last-of-type {
   margin-bottom: 1.5em;
