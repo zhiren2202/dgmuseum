@@ -462,18 +462,26 @@ hr {
 
 .btn1 {
   background-color: #75849a;
+
+  &:hover {
+    background-color: #59677e;
+  }
 }
 
+// .btn2 {
+//   background-color: #bac1cc;
+// }
+
 .btn2 {
-  background-color: #bac1cc;
+  background-color: #8c939f;
+
+  &:hover {
+    background-color: #6b727f;
+  }
 }
 
 .btn3 {
-  background-color: #9ca3ae;
-}
-
-.btn4 {
-  color: #ff6600;
+  color: #ff5400;
   background-color: #fff;
   border: 1px solid #ff6600;
 
@@ -519,18 +527,14 @@ hr {
 }
 
 .btn-download {
-  border: 1px solid #e9e9e9;
+  border: 1px solid #c0c2c5;
   color: #666;
   font-weight: 400;
   background-color: #fff;
   text-align: left;
 
-  &.icon-right {
-    &::before {
-      float: right;
-      margin-left: 1em;
-      margin: 0.2em 0 0 1em;
-    }
+  &:hover {
+    background-color: #efefef;
   }
 
   &::before {

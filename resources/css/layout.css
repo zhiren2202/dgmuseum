@@ -126,7 +126,7 @@
   letter-spacing: -0.075em;
 }
 .header_navbar .lnb_depth2 > a:hover, .header_navbar .lnb_depth2 > a:focus {
-  color: #ff6600;
+  color: #ff5400;
 }
 .header_navbar .lnb_depth2 > ul {
   padding: 1em 0 0.5em;
@@ -145,7 +145,7 @@
   margin: 0 0.25em 0 0;
 }
 .header_navbar .lnb_depth3 > a:hover, .header_navbar .lnb_depth3 > a:focus {
-  color: #ff6600;
+  color: #ff5400;
   border-bottom: 1px solid #ff6600;
 }
 .header_navbar .gnb {
@@ -219,7 +219,7 @@
   color: #666;
 }
 .mobile_menu .menu_item .menu__depth2 > li > a.active, .mobile_menu .menu_item .menu__depth2 > li > a:hover, .mobile_menu .menu_item .menu__depth2 > li > a:focus {
-  color: #ff6600;
+  color: #ff5400;
 }
 .mobile_menu .menu_item .menu__depth3 > li {
   padding: 0.5em 0 0;
@@ -235,7 +235,7 @@
   margin: 0 0.25em 0 0;
 }
 .mobile_menu .menu_item .menu__depth3 > li > a.active, .mobile_menu .menu_item .menu__depth3 > li > a:hover, .mobile_menu .menu_item .menu__depth3 > li > a:focus {
-  color: #ff6600;
+  color: #ff5400;
 }
 .mobile_menu .menu_item.on {
   max-height: 600px;
@@ -433,7 +433,7 @@
   border-bottom: none;
 }
 .path__menu .path__depth2 > a:hover, .path__menu .path__depth2 > a:focus {
-  color: #ff6600;
+  color: #ff5400;
 }
 
 .path__mobile {

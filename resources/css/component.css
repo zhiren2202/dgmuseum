@@ -411,24 +411,26 @@ hr.orange::before {
 .btn1 {
   background-color: #75849a;
 }
+.btn1:hover {
+  background-color: #59677e;
+}
 
 .btn2 {
-  background-color: #bac1cc;
+  background-color: #8c939f;
+}
+.btn2:hover {
+  background-color: #6b727f;
 }
 
 .btn3 {
-  background-color: #9ca3ae;
-}
-
-.btn4 {
-  color: #ff6600;
+  color: #ff5400;
   background-color: #fff;
   border: 1px solid #ff6600;
 }
-.btn4.btn-arrow {
+.btn3.btn-arrow {
   text-align: left;
 }
-.btn4.btn-arrow::after {
+.btn3.btn-arrow::after {
   content: "";
   display: block;
   float: right;
@@ -437,11 +439,11 @@ hr.orange::before {
   height: 1.3em;
   background-image: url(../../resources/images/common/btn_arrow_move_orange.png);
 }
-.btn4:hover, .btn4:focus {
+.btn3:hover, .btn3:focus {
   color: #fff;
   background-color: #ff6600;
 }
-.btn4:hover::after, .btn4:focus::after {
+.btn3:hover::after, .btn3:focus::after {
   background-image: url(../../resources/images/common/btn_arrow_move_orange_hover.png);
 }
 
@@ -462,16 +464,14 @@ hr.orange::before {
 }
 
 .btn-download {
-  border: 1px solid #e9e9e9;
+  border: 1px solid #c0c2c5;
   color: #666;
   font-weight: 400;
   background-color: #fff;
   text-align: left;
 }
-.btn-download.icon-right::before {
-  float: right;
-  margin-left: 1em;
-  margin: 0.2em 0 0 1em;
+.btn-download:hover {
+  background-color: #efefef;
 }
 .btn-download::before {
   content: "";
