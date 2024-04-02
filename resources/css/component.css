@@ -662,6 +662,9 @@ hr.orange::before {
   background-size: contain;
   background-position: center;
 }
+.apply_board_item .board_item_more a:hover, .apply_board_item .board_item_more a:focus {
+  color: #ff5400;
+}
 .apply_board_item .board_item_more .board_mark {
   margin: 0 0 1em 0;
 }
@@ -810,6 +813,9 @@ td.td-center {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+.board_list table tbody tr td .board__title:hover, .board_list table tbody tr td .board__title:focus {
+  color: #ff5400;
 }
 
 .board_pagination {

@@ -747,6 +747,10 @@ hr {
         background-size: contain;
         background-position: center;
       }
+
+      &:hover, &:focus {
+        color: #ff5400;
+      }
     }
 
     .board_mark {
@@ -926,6 +930,10 @@ td {
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
+
+        &:hover, &:focus {
+          color: #ff5400;
+        }
       }
     }
   }
