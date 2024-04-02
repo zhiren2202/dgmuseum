@@ -1593,6 +1593,10 @@ td {
             margin-bottom: 0.5em;
             font-size: 0.815em;
             line-height: 1.5;
+
+            a:hover {
+              color: #000;
+            }
           }
 
           .board_mark {

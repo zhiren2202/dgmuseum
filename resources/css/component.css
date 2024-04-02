@@ -1375,6 +1375,9 @@ td.td-center {
   font-size: 0.815em;
   line-height: 1.5;
 }
+.calendar table tbody tr td .calendar__day ul li a:hover {
+  color: #000;
+}
 .calendar table tbody tr td .calendar__day .board_mark {
   padding: 0.2em 0.5em;
   margin-right: 0.5em;
