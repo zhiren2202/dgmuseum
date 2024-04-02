@@ -892,6 +892,9 @@ td.td-center {
   background-size: 1.5em 1.5em;
   background-position: center;
 }
+.board_search .board__search__btn:hover, .board_search .board__search__btn:focus {
+  background-color: #59677e;
+}
 
 .board_tabs {
   width: 100%;
@@ -1274,9 +1277,12 @@ td.td-center {
   right: 0;
   width: 6em;
   height: 2.75em;
-  background-color: #9ca3ae;
+  background-color: #75849a;
   color: #fff;
   font-weight: 700;
+}
+.apply__item__body .search__code:hover, .apply__item__body .search__code:focus {
+  background-color: #59677e;
 }
 
 /********** TABLE **********/
