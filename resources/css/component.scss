@@ -251,6 +251,7 @@ hr {
     position: relative;
     color: #555;
     line-height: 1.5;
+    word-break: keep-all;
 
     &:last-of-type {
       margin-bottom: 0;

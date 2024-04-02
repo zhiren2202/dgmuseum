@@ -235,6 +235,7 @@ hr.orange::before {
   position: relative;
   color: #555;
   line-height: 1.5;
+  word-break: keep-all;
 }
 .ul_1 li:last-of-type {
   margin-bottom: 0;
