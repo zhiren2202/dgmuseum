@@ -1146,6 +1146,7 @@ td {
       display: inline-block;
       margin: 0.5em;
       word-break: break-all;
+      line-height: 1.7;
     }
 
     & + [class*='footer__'] {
@@ -1158,6 +1159,7 @@ td {
     margin: 0.5em 0;
     text-align: center;
     letter-spacing: -0.01em;
+    line-height: 1.7;
   }
 
   .footer__download {
@@ -1216,6 +1218,7 @@ td {
     .item_title {
       padding: 0 1.3em;
       width: 100%;
+      line-height: 1.7;
     }
 
     .item_date {
