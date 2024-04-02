@@ -750,7 +750,7 @@ hr {
       }
 
       &:hover, &:focus {
-        color: #ff5400;
+        color: #000;
       }
     }
 
@@ -909,6 +909,8 @@ td {
 }
 
 .board_list {
+  color: #666;
+
   table {
     width: 100%;
     border-top: 2px solid #92959b;
@@ -945,7 +947,7 @@ td {
         text-overflow: ellipsis;
 
         &:hover, &:focus {
-          color: #ff5400;
+          color: #000;
         }
       }
     }
@@ -1169,6 +1171,10 @@ td {
       margin: 0.5em;
       word-break: break-all;
       line-height: 1.7;
+
+      &:hover, &:focus {
+        color: #000;
+      }
     }
 
     & + [class*='footer__'] {
@@ -1241,6 +1247,14 @@ td {
       padding: 0 1.3em;
       width: 100%;
       line-height: 1.7;
+
+      a {
+        color: #666;
+
+        &:hover, &:focus {
+          color: #000;
+        }
+      }
     }
 
     .item_date {

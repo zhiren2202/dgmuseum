@@ -664,7 +664,7 @@ hr.orange::before {
   background-position: center;
 }
 .apply_board_item .board_item_more a:hover, .apply_board_item .board_item_more a:focus {
-  color: #ff5400;
+  color: #000;
 }
 .apply_board_item .board_item_more .board_mark {
   margin: 0 0 1em 0;
@@ -798,6 +798,9 @@ td.td-center {
   text-align: center;
 }
 
+.board_list {
+  color: #666;
+}
 .board_list table {
   width: 100%;
   border-top: 2px solid #92959b;
@@ -826,7 +829,7 @@ td.td-center {
   text-overflow: ellipsis;
 }
 .board_list table tbody tr td .board__title:hover, .board_list table tbody tr td .board__title:focus {
-  color: #ff5400;
+  color: #000;
 }
 
 .board_pagination {
@@ -1020,6 +1023,9 @@ td.td-center {
   word-break: break-all;
   line-height: 1.7;
 }
+.board_view_footer [class*=footer__] a:hover, .board_view_footer [class*=footer__] a:focus {
+  color: #000;
+}
 .board_view_footer [class*=footer__] + [class*=footer__] {
   padding: 0 1em;
 }
@@ -1078,6 +1084,12 @@ td.td-center {
   padding: 0 1.3em;
   width: 100%;
   line-height: 1.7;
+}
+.board_view_pagination .pagination_items .item_title a {
+  color: #666;
+}
+.board_view_pagination .pagination_items .item_title a:hover, .board_view_pagination .pagination_items .item_title a:focus {
+  color: #000;
 }
 .board_view_pagination .pagination_items .item_date {
   position: absolute;
