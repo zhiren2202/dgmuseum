@@ -234,8 +234,9 @@ hr {
 }
 
 .img_detail {
+  display: inline-block;
+  margin-top: 0.175em;
   color: #999;
-  font-size: 0.875em;
 }
 
 .info_text {
@@ -679,10 +680,6 @@ hr {
 
     img {
       width: 100%;
-      // position: absolute;
-      // top: 50%;
-      // left: 50%;
-      // transform: translate(-50%,-50%);
     }
   }
 
@@ -693,7 +690,6 @@ hr {
   .board_item_title {
     .board_item_subtitle {
       margin: 0 0.5em 0 0;
-      font-size: 0.875em;
       color: #888;
     }
 
@@ -870,14 +866,12 @@ hr {
   }
 
   .board_item_date {
-    margin: 0 0 0.6em 0;
+    margin: 0 0 0.175em 0;
     color: #666;
-    font-size: 0.9375em;
   }
 
   .board_item_detail {
     color: #666;
-    font-size: 0.9375em;
   }
 }
 
@@ -1080,6 +1074,7 @@ td {
   &.active {
     background-color: #ff6600;
     color: #fff;
+    font-weight: 700;
   }
 }
 
