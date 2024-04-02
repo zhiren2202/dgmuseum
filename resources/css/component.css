@@ -229,7 +229,7 @@ hr.orange::before {
 }
 
 .ul_1 {
-  padding-bottom: 2em;
+  padding: 0 1em 2em;
 }
 .ul_1 li {
   position: relative;
