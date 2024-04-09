@@ -1054,6 +1054,8 @@ td {
   width: 100%;
   overflow: hidden;
   margin-bottom: 2.5em;
+  display: flex;
+  flex-wrap: wrap;
 
   &.tab-1 .board_tab {
     width:  100%;
@@ -1083,7 +1085,6 @@ td {
 .board_tab {
   display: block;
   float: left;
-  height: 100%;
   padding: 0.9em 0.2em;
   font-size: 1.125em;
   text-align: center;
@@ -2030,10 +2031,17 @@ td {
       }
     }
   }
-
-  
   
   .board_tabs {
+    &.tab-3 .board_tab {
+      width: 50%;
+      
+      &:nth-of-type(3) {
+        border-top: 0;
+        border-right: 1px solid #d4d4d4;
+      }
+    }
+
     &.tab-4 .board_tab {
       width: 50%;
       
