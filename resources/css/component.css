@@ -457,23 +457,25 @@ hr.orange::before {
 
 .btn {
   padding: 0.6em 1em;
-  min-width: 9.5em;
+  margin: 0.5em 0 0;
+  min-width: 3em;
   border-radius: 2px;
-  color: #fff;
   font-weight: 700;
 }
 
-.btn1 {
+.btn-navy {
   background-color: #75849a;
+  color: #fff;
 }
-.btn1:hover {
+.btn-navy:hover {
   background-color: #59677e;
 }
 
-.btn2 {
+.btn-gray {
   background-color: #8c939f;
+  color: #fff;
 }
-.btn2:hover {
+.btn-gray:hover {
   background-color: #6b727f;
 }
 
@@ -519,6 +521,7 @@ hr.orange::before {
 }
 
 .btn-download {
+  padding: 0.6em;
   border: 1px solid #c0c2c5;
   color: #666;
   font-weight: 400;
@@ -532,7 +535,7 @@ hr.orange::before {
   content: "";
   display: block;
   float: left;
-  margin: 0.2em 1em 0 0;
+  margin: 0.2em 0.5em;
   width: 20px;
   height: 18px;
   background-image: url(../../resources/images/ico_file.png);
