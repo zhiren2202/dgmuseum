@@ -309,61 +309,67 @@
       <div class="innerbox">
         <h3 class="stt3">신청정보 입력</h3>
         <form action="#" method="">
-          <div class="apply_wrap">
-            <div class="apply__item">
-              <div class="apply__item__head">
+          <div class="table-form">
+            <div class="cell_tr">
+              <div class="cell_th">
                 <strong>학교(기관)코드</strong>
               </div>
-              <div class="apply__item__body">
-                <input type="text" class="input__code" disabled>
-                <label for="" class="blind">학교(기관)코드</label>
+              <div class="cell_td">
+                <input type="text" id="inputCode" class="input_code" disabled>
+                <label for="inputCode" class="blind">학교(기관)코드</label>
                 <button type="button" class="search__code">코드찾기</button>
               </div>
             </div>
-            <div class="apply__item">
-              <div class="apply__item__head">
+            <div class="cell_tr">
+              <div class="cell_th">
                 <strong>신청 인원(명)</strong>
               </div>
-              <div class="apply__item__body">
-                <input type="text" class="input__num">
-                <label for="" class="blind">신청 인원(명)</label>
+              <div class="cell_td">
+                <input type="text" id="inputNum" class="input_num">
+                <label for="inputNum" class="blind">신청 인원(명)</label>
               </div>
             </div>
-            <div class="apply__item">
-              <div class="apply__item__head">
+            <div class="cell_tr">
+              <div class="cell_th">
                 신청교사 이름
               </div>
-              <div class="apply__item__body">
-                <input type="text" class="input__name">
-                <label for="" class="blind">신청 인원(명)</label>
+              <div class="cell_td">
+                <input type="text" id="inputName" class="input_name">
+                <label for="inputName" class="blind">신청 인원(명)</label>
               </div>
             </div>
-            <div class="apply__item">
-              <div class="apply__item__head">
+            <div class="cell_tr">
+              <div class="cell_th">
                 신청교사 휴대폰
               </div>
-              <div class="apply__item__body">
-                <input type="text" class="input__phone">
-                <label for="" class="blind">신청교사 휴대폰</label>
+              <div class="cell_td">
+                <input type="text" id="inputPhone" class="input_phone">
+                <label for="inputPhone" class="blind">신청교사 휴대폰</label>
               </div>
             </div>
-            <div class="apply__item">
-              <div class="apply__item__head">
+            <div class="cell_tr">
+              <div class="cell_th">
                 신청교사 이메일
               </div>
-              <div class="apply__item__body">
-                <input type="text" class="input__email">
-                <label for="" class="blind">신청교사 이메일</label>
+              <div class="cell_td">
+                <input type="text" id="inputEmail" class="input_email">
+                <label for="inputEmail" class="blind">신청교사 이메일</label>
               </div>
             </div>
-            <div class="apply__item">
-              <div class="apply__item__head">
+            <div class="cell_tr">
+              <div class="cell_th">
                 참여자1 생년월일
               </div>
-              <div class="apply__item__body">
-                <input type="text" class="input__email">
-                <label for="" class="blind">참여자1 생년월일</label>
+              <div class="cell_td">
+                <input type="text" id="inputBirth" class="input_birth">
+                <label for="inputBirth" class="blind">참여자1 생년월일</label>
               </div>
+            </div>
+            <div class="cell_tr">
+              <div class="cell_th">
+                참여자1 생년월일
+              </div>
+              <div class="cell_td">2000-10-10</div>
             </div>
           </div>
         </form>
@@ -373,13 +379,13 @@
         <form action="#" method="">
           <div class="board_search">
             <label for="" class="blind"></label>
-            <select name="" id="" class="board__search__select">
+            <select name="" id="" class="board_search_select">
               <option value="1">제목</option>
               <option value="2">내용</option>
             </select>
             <label for="" class="blind"></label>
-            <input type="text" class="board__search__word">
-            <button type="button" class="board__search__btn">
+            <input type="text" class="board_search_word">
+            <button type="button" class="board_search_btn">
               <span class="blind">게시물 검색</span>
             </button>
           </div>

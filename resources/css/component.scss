@@ -1004,13 +1004,13 @@ td {
   margin: 0 auto;
   padding: 0 3em 0 7em;
 
-  [class*='board__search__'] {
+  [class*='board_search_'] {
     display: block;
     float: left;
     height: 100%;
   }
 
-  .board__search__select {
+  .board_search_select {
     position: absolute;
     top: 0;
     left: 0;
@@ -1025,14 +1025,14 @@ td {
     background-position: right 1em center;
   }
 
-  .board__search__word {
+  .board_search_word {
     width: 100%;
     padding: 0.5em;
     border: 1px solid #dbdbdb;
     border-right: 0;
   }
 
-  .board__search__btn {
+  .board_search_btn {
     width: 3em;
     position: absolute;
     top: 0;
@@ -1450,7 +1450,7 @@ td {
   }
 }
 
-.apply_wrap {
+.table-form {
   max-width: 810px;
   padding: 1.5em 1.8em;
   margin: 0 auto;
@@ -1459,7 +1459,7 @@ td {
   background-color: #f9f9f9;
 }
 
-.apply__item {
+.cell_tr {
   position: relative;
   float: left;
   width: 49%;
@@ -1473,7 +1473,7 @@ td {
   }
 }
 
-.apply__item__head {
+.cell_th {
   position: absolute;
   top: 50%;
   left: 0;
@@ -1486,13 +1486,14 @@ td {
   }
 }
 
-.apply__item__body {
+.cell_td {
   width: 100%;
-  height: 100%;
+  height: 2.75em;
+  line-height: 2.75;
 
-  [class*='input__'] {
+  [class*='input_'] {
     width: 100%;
-    height: 2.75em;
+    height: 100%;
     padding: 0.5em;
     background-color: #fff;
     border: 1px solid #dbdbdb;
@@ -1976,7 +1977,7 @@ td {
     }
   }
 
-  .apply__item {
+  .cell_tr {
     width: 100%;
     margin-left: 0;
   }
@@ -2087,12 +2088,12 @@ td {
 }
 
 @media screen and (max-width: 320px) {
-  .apply__item {
+  .cell_tr {
     padding: 0;
     height: auto;
   }
 
-  .apply__item__head {
+  .cell_th {
     position: static;
     transform: translate(0,0);
     margin-bottom: 0.5em;
